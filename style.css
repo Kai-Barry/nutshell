@@ -1,0 +1,135 @@
+/*generic styling*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family:'Dosis','Nanum Myeongjo';
+	overflow-x: hidden;
+	background-color: beige;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*Nav Bar*/
+.nav-bar {
+	position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    z-index: 12;
+    color: white;
+}
+
+.navigation-bar {
+    float: right;
+    margin: 28px;
+    font-size: 17px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navigation-bar a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar a:link,.navigation-bar a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.navigation-bar a:hover {
+	color: red;
+	text-decoration: none;
+	transition: color, background-color;
+	transition-duration: 0.3s;
+}
+
+ #nav-logo {
+     position: absolute;
+     top: 12px;
+     left: 16px;
+     width: 100px;
+ }
+
+ /* Main screen*/
+ .one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    height: calc(100% - 560px);
+ }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search img {
+    width: 20%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.search-bar {
+    display: flex;
+    flex:1;
+    z-index: 3;
+    height: 60px;
+    border: 1px solid #dfe1e5;
+    background: white;
+    box-shadow: none;
+    border-radius: 24px;
+    width: auto;
+}
+.magnifind {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding-right: 13px;
+    margin-top: -5px;
+    padding: 5px 8px 0 14px
+}
+
+.magnifind img {
+    width: 100%;
+}
+ /* .search-bar input[type=text] {
+    margin: 20%; 
+    width: 50%;
+ } */
+
+
+
+/* Other*/ 
+ .right {
+    float: right;
+    width: 50%;
+    height: 100%;
+ }
+
+ .left {
+    float: left;
+    width: 50%;
+    height: 100%;
+ }
+ 
+ #placeholder-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    z-index: -1;
+ }
