@@ -138,7 +138,11 @@ ul {
     border-radius: 20px;
 }
 .translater-box textarea{
+    margin: 10px;
     direction: ltr;
+    background-color: transparent;
+    border: none;
+    outline: none;
     font-size: 23px;
 }
 
