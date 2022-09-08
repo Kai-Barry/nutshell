@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <!-- <script src="js/serach.js"></script> -->
     </head>
     <body>
         <nav class="sticky-bar">
@@ -35,10 +36,31 @@
                         <img id="magnifind-img" src="images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <input type="text" placeholder="Search..">
+                        <form id="search" action="#">
+                            <input type="text" placeholder="Search.." onkeydown="myfunction(event)">
+                        </form>
+                        <script>
+                            function handle(e){
+                                if(e.key === "Enter"){
+                                    alert("Enter was just pressed.");
+                                }
+                        
+                                return false;
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
         </div> 
+        <div class="two">
+            <p>results</p>
+            <p id="demo"></p>
+        </div>
+        <script>
+            function myFunction(event) {
+              var x = event.key;
+              document.getElementById("demo").innerHTML = "The pressed key was: " + x;
+            }
+        </script>
     </body>
 </html>

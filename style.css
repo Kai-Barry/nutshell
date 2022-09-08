@@ -68,7 +68,15 @@ ul {
     width: 100%;
     height: calc(100% - 560px);
  }
-
+ .two {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    height: calc(100% - 560px);
+ }
 
  /* Serach Bar*/
 .search {
@@ -144,6 +152,8 @@ ul {
     border: none;
     outline: none;
     font-size: 23px;
+    min-width: 500px;
+    min-height: 200px;
 }
 
 
