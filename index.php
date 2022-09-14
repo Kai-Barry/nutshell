@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <script src="js/serach.js"></script>
 	<title>Search<?php
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
@@ -17,18 +18,8 @@
                         <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <form id="search" action="#">
-                            <input type="text" placeholder="Search.." onkeydown="myfunction(event)">
-                        </form>
-                        <script>
-                            function handle(e){
-                                if(e.key === "Enter"){
-                                    alert("Enter was just pressed.");
-                                }
-                        
-                                return false;
-                            }
-                        </script>
+                        <input id="search-element" type="text" placeholder="Search.." onkeydown="myfunction(event)">
+                        <script>runListener()</script>
                     </div>
                 </div>
             </div>
@@ -37,12 +28,6 @@
             <p>results</p>
             <p id="demo"></p>
         </div>
-        <script>
-            function myFunction(event) {
-              var x = event.key;
-              document.getElementById("demo").innerHTML = "The pressed key was: " + x;
-            }
-        </script>
         <?php echo $footerFile;?>
     </body>
 </html>
