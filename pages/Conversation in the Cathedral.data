@@ -1,0 +1,19 @@
+#Header Data
+#Title:
+Conversation in the Cathedral
+#Heading
+Conversation in the Cathedral
+#Body html
+#\======/
+<h2>This page contains 3 summaries:</h2>
+<p>"New Article Created By GPT3" is generated from the knowledge of GPT3 alone,
+<br>
+"Summarised New Article" is then a summary of the article targeted at middle school students.
+<br>
+"Summarised Article From Wikipedia" is GPT3 summarising the contents of the wikipedia page found <a href="https://en.wikipedia.org/wiki/Conversation_in_the_Cathedral"> here </a></p>
+<h3> New Article Created By GPT3 </h3>
+A Conversation in the Cathedral is a novel by Nobel Prize-winning Peruvian author Mario Vargas Llosa. The novel is set during the early years of the military regime in Peru (1968–1975) and is considered one of Vargas Llosa's most political works. It tells the story of Santiago Zavala, a young man from a wealthy family who has been sent to prison for his involvement in a student protest, and Ambrosio, an older man who has been in prison for most of his life. The two men strike up a conversation that covers a wide range of topics, including politics, religion, and literature.
+<h3> Summarised New Article </h3>
+A Conversation in the Cathedral is a novel by Mario Vargas Llosa that is set during the early years of the military regime in Peru. The novel tells the story of Santiago Zavala, a young man from a wealthy family who has been sent to prison for his involvement in a student protest, and Ambrosio, an older man who has been in prison for most of his life. The two men strike up a conversation that covers a wide range of topics, including politics, religion, and literature.
+<h3> Summarised Article From Wikipedia </h3>
+The novel "Conversation in The Cathedral" by Mario Vargas Llosa is set in Peru during the 1950s. It follows the story of Santiago Zavala, a student activist, as he tries to uncover the truth about his father's involvement in the murder of a notorious underworld figure. Along the way, he sheds light on the workings of a dictatorship. The novel is an examination of the deep roots of corruption and failure in Peruvian politics and government during the 1950s.

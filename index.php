@@ -1,32 +1,13 @@
+<?php
+	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
+	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>In a Nutshell</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-        <!-- <script src="js/serach.js"></script> -->
-    </head>
-    <body>
-        <nav class="sticky-bar">
-            <div id ="hamburger">
-
-            </div>
-            <div id ="nav-bar">
-                <div id="nav-logo">
-                    <img id="nav-logo" src="images/logo.png" alt="Navigation logo">
-                </div>
-                <ul class="navigation-bar">
-                    <li>
-                        <a href="index.html">Search</a>
-                    </li>
-                    <li>
-                        <a href="translate.html">Summariser</a>
-                    </li>
-                </ul> 
-            </div>
-        </nav>
+	<title>Search<?php
+		echo $headerFile; ?>
+<!-- Set up template html code here-->
         <div class="one">
             <!-- <img id="placeholder-background" src="images/placeholder.jpg" alt="Navigation logo"> -->
             <div class="search">

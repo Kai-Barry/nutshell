@@ -1,43 +1,53 @@
+<?php
+	$page = $_GET["page"];
+	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
+	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
+	$file = file_get_contents("./pages/" . $page  . ".data", FILE_USE_INCLUDE_PATH);
+	//echo "page file: " . $page . "\n";
+	//echo "<file: " . $file . "\nfile>\n";
+	$data = explode("\======/", $file);
+	foreach ($data as &$value) {
+		$value = preg_split("/\r\n|\n|\r/", $value);
+		$i = 0;
+		foreach ($value as &$line) {
+			if ($line[0] == '#') {
+				unset($value[$i]);
+			}
+			$i++;
+		}
+		$value = array_filter(array_values($value));
+	}
+	unset($value);
+	$title = $data[0][0];
+	$header = $data[0][1];
+	$body = $data[1];
+	/*$j = 0;
+	foreach ($data as &$value) {
+		//echo $value;
+		$k = $j; //the second array starts at 1??
+		foreach ($value as &$ste) {
+                	echo "[" . $j . "][" . $k . "]: " . $ste;
+			$k++;
+        	}
+		$j++;
+	}
+	unset($value);*/
+	//echo "title: " . $title;
+?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>In a Nutshell</title>
-        <link rel="stylesheet" href="infostyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-        <!-- <script src="js/serach.js"></script> -->
-    </head>
-    <body>
-        <nav class="sticky-bar">
-            <div id ="hamburger">
-
-            </div>
-            <div id ="nav-bar">
-                <div id="nav-logo">
-                    <img id="nav-logo" src="images/logo.png" alt="Navigation logo">
-                </div>
-                <ul class="navigation-bar">
-                    <li>
-                        <a href="index.html">Search</a>
-                    </li>
-                    <li>
-                        <a href="translate.html">Summariser</a>
-                    </li>
-                </ul> 
-            </div>
-        </nav>
-        <div class="Text">
-            <h1>Title</h1>
-            <h2>This page contains 3 paragraphs</h2>
-            <p>"new article"</p>
-            <h3> subheading 1</h3>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            <h3> subheading 2</h3>
-            <p>para 2</p>
-            <h3> subheading 3</h3>
-            <p>para 3</p>
-        </div>
-        
-    </body>
+	<title><?php
+		echo $title;
+		echo $headerFile; ?>
+<!-- Set up template html code here-->
+<h1><?php echo $header;?></h1>
+<?php
+foreach ($body as &$value) {
+	echo $value . "\n";
+}
+unset($value);
+?>
+<?php echo $footerFile;?>
+</body>
 </html>
