@@ -11,10 +11,10 @@
         <div class="one">
             <!-- <img id="placeholder-background" src="images/placeholder.jpg" alt="Navigation logo"> -->
             <div class="search">
-                <img src="images/logo-2.png" alt="logo">
+                <img src="Images/logo-2.png" alt="logo">
                 <div class="search-bar">
                     <div class="magnifind">
-                        <img id="magnifind-img" src="images/magnigying-glass.png" alt="magnifind">
+                        <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
                         <form id="search" action="#">
@@ -43,5 +43,6 @@
               document.getElementById("demo").innerHTML = "The pressed key was: " + x;
             }
         </script>
+        <?php echo $footerFile;?>
     </body>
 </html>
