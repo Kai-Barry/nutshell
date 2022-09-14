@@ -20,6 +20,7 @@
 	unset($value);
 	$title = $data[0][0];
 	$header = $data[0][1];
+	$wikiURL = $data[0][2];
 	$body = $data[1];
 	/*$j = 0;
 	foreach ($data as &$value) {
@@ -42,12 +43,33 @@
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
 <h1><?php echo $header;?></h1>
-<?php
-foreach ($body as &$value) {
-	echo $value . "\n";
+<h2>This page contains 3 summaries:</h2>
+<p>"New Article Created By GPT3" is generated from the knowledge of GPT3 alone,
+<br>
+"Summarised New Article" is then a summary of the article targeted at middle school students.
+<br>
+"Summarised Article From Wikipedia" is GPT3 summarising the contents of the wikipedia page found <a href="<?php echo $wikiURL;?>">here</a>.</p>
+<h3>New Article Created By GPT3</h3>
+<p><?php
+foreach ($data[1] as &$line) {
+    echo $line;
 }
-unset($value);
-?>
+unset($line);
+?></p>
+<h3>Summarised New Article Created By GPT3</h3>
+<p><?php
+foreach ($data[2] as &$line) {
+    echo $line;
+}
+unset($line);
+?></p>
+<h3>Summarised New Article From Wikipedia</h3>
+<p><?php
+foreach ($data[3] as &$line) {
+    echo $line;
+}
+unset($line);
+?></p>
 <?php echo $footerFile;?>
 </body>
 </html>
