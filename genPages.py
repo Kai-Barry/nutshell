@@ -2,31 +2,14 @@
 #Run using python 3.10 on the server
 #Set up your own openAPI key
 
-import requests, bs4, openai, os, wikipedia, re
+from ast import arg
+import requests, bs4, openai, os, wikipedia, re, sys
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-"""while True:
-	site = pywikibot.Site()
-	page = pywikibot.Page(site, u"Main_Page")
-	text = page.text
-	lines = text.split("\n")
-	auto_text = "Amount of times this page has been auto updated: "
-	#put_throttle = 0
-
-	if lines[-1].startswith(auto_text):
-		lines[-1] = auto_text + str(int(lines[-1][len(auto_text) - 1:]) + 1)
-	else:
-		lines.append(auto_text + "1")
-	new_text = ""
-	for line in lines:
-		new_text += line + "\n"
-	if len(new_text) > 1:
-		new_text = new_text[0:-1]
-	page.text = new_text
-	page.save("bot update Main_Page")
-	print (new_text)"""
 wikipedia.set_rate_limiting(0)
+argIndex = 1
+usingRequested = len(sys.argv) > 1
 while True:
 	input_text = ""
 	url = ""
@@ -37,19 +20,28 @@ while True:
 		subject = html.find(id="firstHeading").text #html.title.text
 		#subject = subject.strip(" - Wikipedia")
 		print("Subject: " + subject)"""
-		try:
+		#try:
+		if len(sys.argv) > argIndex:
+			subject = sys.argv[argIndex]
+			argIndex+=1
+		elif usingRequested:
+			quit()
+		else:
 			subject = wikipedia.random(1)
-			print("Subject: " + subject)
-			#if subject != re.sub(r'[^A-Za-z0-9() ]+', '', subject):
-			#	print("Invalid name")
-			#	continue
-			wiki = wikipedia.page(subject)
-			url = wiki.url
-			input_text_orig = wiki.content
-			input_text_orig = re.sub(r'\n\s*\n', '\n\n', input_text_orig)
-			input_text = input_text_orig.split("== Footnotes ==")[0].split("== See also ==")[0].split("== References ==")[0].split("== External links ==")[0]
-		except:
-			input_text = ""
+		print("Subject: " + subject)
+		#if subject != re.sub(r'[^A-Za-z0-9() ]+', '', subject):
+		#	print("Invalid name")
+		#	continue
+		wiki = wikipedia.page(subject)
+		url = wiki.url
+		input_text_orig = wiki.content
+		input_text_orig = re.sub(r'\n\s*\n', '\n\n', input_text_orig)
+		input_text = input_text_orig.split("== Footnotes ==")[0].split("== See also ==")[0].split("== References ==")[0].split("== External links ==")[0]
+		#except:
+		#	input_text = ""
+		#	if usingRequested:
+		#		print("Subject: " + subject + " Error finding wikipedia page.")
+		#		quit(1)
 	#print ("Existing page:\n\n" + input_text_orig)
 	#print ("Existing page stripped:\n\n" + input_text)
 
