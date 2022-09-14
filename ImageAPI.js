@@ -9,30 +9,23 @@ const unsplash = createApi({
 
 
 
-function initPromise(search) {
+function initPromise(search, number) {
     return new Promise(function(res,rej) {
         const imageData = unsplash.search.getPhotos({
             query: search,
             page: 1,
-            perPage: 1,
+            perPage: number + 1,
           });
           res(imageData)
     })
 }
 
-async function fetchImage(search, number) {
-    const fetchedData = await initPromise(search)
+// Search: search term e.g. dinosaur
+// Index: Index of the photo, first photo on page is 0, 2nd is 1, etc.
+// This is so you actually get different images each time
+async function fetchImage(search, index) {
+    const fetchedData = await initPromise(search, index)
     const imageLink = fetchedData.response.results[number].urls.raw
 
     return(imageLink)
 }
-
-async function main() {
-    const imageLink = await fetchImage('pemis', 0)
-    console.log(imageLink)
-}
-
-main()
-
-
-
