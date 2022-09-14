@@ -1,7 +1,5 @@
 import { createApi } from 'unsplash-js';
 import nodeFetch from 'node-fetch';
-import fs from "fs"
-import { resolveObjectURL } from 'buffer';
 const unsplash = createApi({
   accessKey: 'zZMwU32bQREonhyoSwI58ji0C7wZesdbpTBURWoFqRw',
   fetch: nodeFetch,
