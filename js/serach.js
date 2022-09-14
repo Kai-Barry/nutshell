@@ -3,16 +3,23 @@ function runListener() {
     input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             var text = document.getElementById("search-element").value;
-            serachFlager(text)
+            alert(serachFlager(text))
 
         }
     });
 }
 
-
 function serachFlager(text) {
-    var badwordsArray = require('badwords/array');
-    const map1 = badwordsArray.map(x=> x === text)
-    .reduce((truth, a) => truth || a)
-    alert(map1)
+    // var badwordsArray = require('badwords/array');
+    const badwordsArray = ["arse", "arsehead", "arsehole", "ass", "bastard", "bitch", "bloody", "bollocks", "brotherfucker", "cock", "crap", "cunt", "dick", "dickhead", "dyke", "dyke", "fuck", "fatherfucker", "shit", "kike", "piss", "prick", "pussy", "sisterfucker", "slut", "spaz", "twat", "wanker"]
+    var listOfWords = text.split(" ")
+    let a = false
+    for (let i = 0; i < listOfWords.length; i++) {
+        const map1 = badwordsArray.map(x=> x === listOfWords[i])
+        .reduce((truth, a) => truth || a)
+        if (map1) {
+            a = true
+        }
+    }
+    return a
 }
