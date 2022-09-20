@@ -5,46 +5,78 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
         <script src="js/serach.js"></script>
     </head>
     <body>
+        <div id="grad1"></div>
         <nav class="sticky-bar">
             <div id ="hamburger">
-
             </div>
-            <div id ="nav-bar">
+            <div class="nav-bar">
                 <div id="nav-logo">
-                    <img id="nav-logo" src="images/logo.png" alt="Navigation logo">
+                    <img id="nav-logo-1" src="images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
+                    <img id="nav-logo-2" src="images/Logo 03- 600 x 600 px.png" alt="Navigation logo">
                 </div>
                 <ul class="navigation-bar">
                     <li>
-                        <a href="index.html">Search</a>
+                        <div class="nav-button">
+                            <a href="index.html">Search</a>
+                        </div>
                     </li>
                     <li>
-                        <a href="translate.html">Summariser</a>
+                        <div class="nav-button">
+                            <a href="translate.html">Summariser</a>
+                        </div>
                     </li>
-                </ul> 
+                </ul>
             </div>
         </nav>
         <div class="one">
-            <!-- <img id="placeholder-background" src="images/placeholder.jpg" alt="Navigation logo"> -->
+            <h1 id="title">Let your curiosity drive you!</h1>
             <div class="search">
-                <img src="images/logo-2.png" alt="logo">
                 <div class="search-bar">
                     <div class="magnifind">
-                        <img id="magnifind-img" src="images/magnigying-glass.png" alt="magnifind">
+                        <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <input id="search-element" type="text" placeholder="Search..">
+                        <input id="search-element" type="text" placeholder="... what do you want to know?" onkeydown="myfunction(event)">
                         <script>runListener()</script>
                     </div>
                 </div>
             </div>
         </div> 
         <div class="two">
-            <p>results</p>
-            <p id="demo"></p>
+            <p>Recommend</p>
+            <div class="recommendation">
+                <div class="reco-page">
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most recent</p>
+                        </div>
+                        <div class="reco-box">
+                            <img src="Images/placeholder.jpg">
+                            <div class="box-page-title">
+                                <p>title1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most viewed</p>
+                        </div>
+                        <div class="reco-box">
+                            <img src="Images/placeholder.jpg">
+                            <div class="box-page-title">
+                                <p>title2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pick-for-me">
+                    <p>Pick a topic for me</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -5,59 +5,101 @@
 }
 
 body {
-	font-family: 'Kalam', cursive;
+	font-family: 'Comfortaa', cursive;
 	overflow-x: hidden;
-	background-color: white;
+	/* background-image: linear-gradient(3E9551, 1B5528); */
 }
 
 ul {
 	list-style-type: none;
 }
 
+/*Background*/
+#grad1 {
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    /* background-color: red; For browsers that do not support gradients */
+    background: #3E9551;
+    background: -webkit-linear-gradient(#648880, #1B5528);
+    background:    -moz-linear-gradient(#648880, #1B5528);
+    background:         linear-gradient(#648880, #1B5528);
+}
+
 /*Nav Bar*/
 .nav-bar {
 	position: fixed;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     top: 0;
+    height: 100px;
     z-index: 12;
     color: white;
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
+}
+
+.centre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .navigation-bar {
     float: right;
-    margin: 28px;
     width: 50%;
+    margin: 20px;
     display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 30px;
+}
+
+.nav-button {
+    display: flex;
+    justify-content: center;
+    background: #C9864E;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.nav-button a {
+    margin: 15px;
 }
 
 .navigation-bar a:link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navigation-bar a:link,.navigation-bar a:visited {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .navigation-bar a:hover {
-	color: red;
+	color: #71481f;
 	text-decoration: none;
 	transition: color, background-color;
 	transition-duration: 0.3s;
 }
 
- #nav-logo {
-     position: absolute;
-     left: 16px;
-     width: 100px;
+ /* #nav-logo {
+    position: absolute;
+    left: 16px;
+     
+ } */
+
+ #nav-logo-1 {
+    width: 100px;
  }
 
+ #nav-logo-2 {
+    width: 300px;
+    top: 30px;
+ }
  /* Main screen*/
  .one {
     flex: 1;
@@ -78,12 +120,21 @@ ul {
     height: calc(100% - 560px);
  }
 
+ /* Title*/
+ #title {
+    margin-top: 140px;
+    margin-bottom: 35px;
+    font-size: 50px;
+    color: white;
+ }
+
  /* Serach Bar*/
 .search {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .search img {
     width: 20%;
     object-fit: contain;
@@ -98,7 +149,7 @@ ul {
     border: 1px solid #dfe1e5;
     background: white;
     box-shadow: none;
-    border-radius: 24px;
+    border-radius: 35px;
 }
 .magnifind {
     display: flex;
@@ -110,7 +161,8 @@ ul {
 }
 
 .magnifind img {
-    width: 100%;
+    width: 120%;
+    margin-right: 30px;
 }
 
 .search-input {
@@ -118,23 +170,99 @@ ul {
     align-items: center;
 }
  .search-input input[type=text] {
+    font-family: 'Comfortaa', cursive;
     background-color: transparent;
     border: none;
     outline: none;
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    height: 34px;
-    width: 500px;
+    height: 50px;
+    width: 700px;
     flex: 100%;
-    font-size: 24px;
+    font-size: 30px;
  }
 
  .search ::placeholder { 
     color: lightslategray;
     opacity: 1; 
 }
-/* translater*/
+
+/* Recommendation box*/
+.recommendation {
+    margin: 50px;
+    background: white;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.reco-page {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.reco-box-section {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box-title {
+    display: flex;
+    justify-content: center;
+}
+
+.box-title p {
+    color: black;
+    font-size: 40px;
+}
+
+.reco-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #0A6027;
+    box-shadow: none;
+    border-radius: 40px;
+}
+
+.reco-box img {
+    margin: 50px;
+    width: 300px;
+}
+
+.box-page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.box-page-title p {
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.pick-for-me {
+    margin: 35px;
+    z-index: 3;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    background: #3E9551;
+    box-shadow: none;
+    border-radius: 100px;
+}
+
+.pick-for-me p {
+    margin: 20px;
+    font-size: 50px;
+    color:white;
+}
+
+/* Translater*/
 .translater-box {
     display: flex;
     flex:1;
@@ -179,24 +307,6 @@ ul {
     filter: brightness(500%);
     z-index: -1;
  }
-
-
- /*generic styling*/
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: 'Kalam', cursive;
-	overflow-x: hidden;
-	background-color: white;
-}
-
-ul {
-	list-style-type: none;
-}
-
 
 /*Info page*/
  .Text {
