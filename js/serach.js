@@ -6,12 +6,7 @@ function runListener() {
             if (serachFlager(text)==true) {
                 alert("Profanity found.")
             } else {
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", genPage.php, true);
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.send(JSON.stringify({
-                    page: text
-                }));
+                window.location.replace("/genPage.php?page=" + text);
             }
 
         }
