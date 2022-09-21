@@ -39,7 +39,7 @@ ul {
     height: 100px;
     z-index: 12;
     color: white;
-    background-color: white;
+    background-color: #FFFDF6;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
 }
 
@@ -172,7 +172,7 @@ ul {
     z-index: 3;
     height: 100px;
     border: 1px solid #dfe1e5;
-    background: white;
+    background: #FFFDF6;
     box-shadow: none;
     border-radius: 35px;
 }
@@ -216,7 +216,7 @@ ul {
 /* Recommendation box*/
 .recommendation {
     margin: 50px;
-    background: white;
+    background: #FFFDF6;
     box-shadow: none;
     border-radius: 40px;
 }
@@ -284,20 +284,30 @@ ul {
 .pick-for-me p {
     margin: 20px;
     font-size: 50px;
-    color:white;
+    color: white;
 }
 
 /* Translater*/
-.translater-box {
+.summariser-result {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:100px;
+}
+
+.translater-box {
     flex:1;
     z-index: 3;
     height: 100px;
     border: 7px solid #875930;
-    background: white;
+    background: #FFFDF6;
     box-shadow: none;
     border-radius: 20px;
+    min-width: 770px;
+    min-height: 250px;
+    margin:2px;
 }
+
 .translater-box textarea {
     margin: 10px;
     direction: ltr;
@@ -307,6 +317,23 @@ ul {
     font-size: 23px;
     min-width: 770px;
     min-height: 250px;
+}
+
+.translate-text-box {
+    flex:1;
+    z-index: 3;
+    height: 100px;
+    margin: 20px;
+    border: 7px solid #875930;
+    background: #FFFDF6;
+    box-shadow: none;
+    border-radius: 20px;
+    min-height: 250px;
+    margin:2px;
+}
+.translate-text-box p {
+    font-size: 20px;
+    margin: 20px;
 }
 
 .summarise-button {
@@ -345,7 +372,7 @@ ul {
     float: left;
     width: 50%;
     height: 100%;
- }
+ }  
  
  #placeholder-background {
     position: absolute;
@@ -357,6 +384,40 @@ ul {
     z-index: -1;
  }
 
+ .centre-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ /* foooooter*/
+ .footer {
+    display: flex;
+    background-color: #FFFDF6;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-list {
+    float: right;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.footer-list img {
+    width: 50px;
+}
+ 
+#everything {
+    width: 100%;
+    height: 100%;
+}
 /*Info page*/
  .Text {
     position: absolute;
