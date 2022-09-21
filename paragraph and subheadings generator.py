@@ -3,7 +3,8 @@ import openai
 openai.api_key = "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"
 
 topic = 'Chicken'
-paragraphAmount = 4
+paragraphAmount = 5 
+# Includes intro paragraph
 
 def extract(aiContent):
     return str(aiContent["choices"][0]["text"])
@@ -13,7 +14,7 @@ def createWiki(topic, paragraphAmount):
     # Create subheadings
     subheadings = openai.Completion.create(
       model="text-davinci-002",
-      prompt=f"Give {paragraphAmount} one to two word subheadings, in numbered dot points, that would be found in a wikipedia page about {topic}.",
+      prompt=f"Give {paragraphAmount} subheadings, in numbered dot points, that would be found in an informative article about {topic}. Make the first subheading an introduction to the topic.",
       temperature=0,
       max_tokens=300,
       top_p=1,
@@ -25,7 +26,6 @@ def createWiki(topic, paragraphAmount):
 
     subheadings = subheadings.split("\n")
     subheadings = [e[3:] for e in subheadings]
-    subheadings.insert(0, 'Introduction')
 
     while "" in subheadings:
         subheadings.remove("")
@@ -33,7 +33,7 @@ def createWiki(topic, paragraphAmount):
     # Create paragraphs for the 5 subheadings
     paragraphs = []
     for subheading in subheadings:
-        paragraphPrompt = f"We are writing an article. The article will contain several sections. The article topic is {topic}. Only one section needs to be created.\n\nThis is for an article targeted at elementary school aged children. The article should be informative, accurate and relate directly to {topic}. The purpose of the article is to educate children on the topic of {topic}. The format of the section of the article that needs to be written should be several sentences in the form of dot points.\n\nCreate dot points for the section {subheading}:",
+        paragraphPrompt = f"Create a single paragraph for an informative article. The overall topic of the article is {topic}. The subtopic for the paragraph to create is {subheading}.\n\nThe purpose of the article is to educate elementary school students. The paragraph needs to be understandable, informative and accurate. Attempt to completely cover all aspects of the subtopic, while being easy to follow. Focus on more generally accepted information. increase the length of the paragraph by elaborating on related topics.",
         paragraph = openai.Completion.create(
           model="text-davinci-002",
           prompt=paragraphPrompt,
