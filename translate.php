@@ -9,9 +9,22 @@
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
     <div class="one">
+        <div class="title">
+            <div>
+                <h1>Summariser</h1>
+            </div>
+            <div>
+                <p>Need help understanding a paragraph you've found?</p>
+            </div>
+        </div>
         <div class="translater-box">
-            <textarea name="Summariser" placeholder ="Enter some text to be summarised." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
-	    </div>
+            <textarea name="Summariser" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
+        </div>
+        <div class="summarise-button-box">
+            <div class="summarise-button">
+                <p>Summarise!</p>
+            </div>
+        </div>
     </div>
     <?php echo $footerFile;?>
 </body>
