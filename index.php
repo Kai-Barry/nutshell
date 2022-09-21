@@ -8,24 +8,53 @@
     <script src="js/serach.js"></script>
 	<title>Search<?php
 		echo $headerFile; ?>
+        <div id="grad1"></div>
 <!-- Set up template html code here-->
         <div class="one">
+            <h1 id="title">Let your curiosity drive you!</h1>
             <div class="search">
-                <img src="Images/logo-2.png" alt="logo">
                 <div class="search-bar">
                     <div class="magnifind">
                         <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <input id="search-element" type="text" placeholder="Search.." onkeydown="myfunction(event)">
+                        <input id="search-element" type="text" placeholder="... what do you want to know?" onkeydown="myfunction(event)">
                         <script>runListener()</script>
                     </div>
                 </div>
             </div>
         </div> 
         <div class="two">
-            <p>results</p>
-            <p id="demo"></p>
+            <p>Recommend</p>
+            <div class="recommendation">
+                <div class="reco-page">
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most recent</p>
+                        </div>
+                        <div class="reco-box">
+                            <img src="Images/placeholder.jpg">
+                            <div class="box-page-title">
+                                <p>title1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most viewed</p>
+                        </div>
+                        <div class="reco-box">
+                            <img src="Images/placeholder.jpg">
+                            <div class="box-page-title">
+                                <p>title2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pick-for-me">
+                    <p>Pick a topic for me</p>
+                </div>
+            </div>
         </div>
         <?php echo $footerFile;?>
     </body>
