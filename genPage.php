@@ -1,7 +1,7 @@
 <?php
 	$page = $_GET["page"];
-	$command = escapeshellcmd('/var/www/html/genPage.sh ' . $page);
-	$output = shell_exec($command .  " 2>&1 &");
+	$command = escapeshellcmd('/var/www/html/genPage.sh \"' . $page .  "\" 2>&1 &");
+	$output = shell_exec($command);
 	echo $output;
 	if ($output=="Success") {
 		//echo "passed";
