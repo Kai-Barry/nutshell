@@ -1,9 +1,7 @@
 <?php
 	$page = $_GET["page"];
-	$command = escapeshellcmd('python3.10 /var/www/html/genPages.py');
-	$output = shell_exec($command);
-	/*echo $output;*/
-
+	$command = escapeshellcmd('/var/www/html/genPage.sh ' . $page);
+	$output = ($command .  " 2>&1 &");
     header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/info.php?page=' . $page);
 	exit();
 ?>

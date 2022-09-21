@@ -40,7 +40,6 @@ while True:
 	target_chars = max_chars
 
 	if not os.path.exists("/var/www/html/pages/"+subject+".data"):
-		page = open("/var/www/html/pages/"+subject+".data", "w")
 
 		"""print ("prompt_size1: " + str(len(prompt1)))
 		print ("prompt_size_tokens1: " + str(len(prompt1) / token_size))
@@ -101,6 +100,7 @@ while True:
 			"\n#Summarised New Article Created By GPT3\n#\======/\n" + summarised_new_article + \
 			"\n#Summarised Article From Wikipedia\n#\======/\n" + summarised_article
 		#print (new_text)
+		page = open("/var/www/html/pages/"+subject+".data", "w")
 		page.write(new_text)
 		page.close()
 	else:

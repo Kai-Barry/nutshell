@@ -8,4 +8,5 @@ rm main.zip
 ls -la
 mv nutshell-main/* .
 rm -r nutshell-main
+mv old/genPage.sh .
 chmod +x updateSite.sh
