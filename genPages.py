@@ -48,7 +48,7 @@ while True:
 		#create wikipedia article from scratch
 		response = openai.Completion.create(
 			model="text-davinci-002",
-			prompt=prompt1 + subject,
+			prompt=prompt1 + subject + ".\n",
 			temperature=0.7,
 			max_tokens=tokens1,
 			top_p=1,
@@ -66,7 +66,7 @@ while True:
 		#Summarised created wikipedia article from scratch
 		response2 = openai.Completion.create(
 			model="text-davinci-002",
-			prompt=prompt2 + new_article.replace("\n", " ") + "\n",
+			prompt=prompt2 + new_article.replace("\n", " ") + ".\n",
 			temperature=0.7,
 			max_tokens=tokens2,
 			top_p=1,
@@ -83,7 +83,7 @@ while True:
 		#Summarised wikipedia article
 		response3 = openai.Completion.create(
 			model="text-davinci-002",
-			prompt=prompt2 + input_text.replace("\n", " ") + "\n",
+			prompt=prompt2 + input_text.replace("\n", " ") + ".\n",
 			temperature=0.7,
 			max_tokens=tokens3,
 			top_p=1,
