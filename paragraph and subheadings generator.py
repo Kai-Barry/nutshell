@@ -14,7 +14,7 @@ def createWiki(topic, paragraphAmount):
     # Create subheadings
     subheadings = openai.Completion.create(
       model="text-davinci-002",
-      prompt=f"Give {paragraphAmount} subheadings, in numbered dot points, that would be found in an informative article about {topic}. The first subheading must be introdution.",
+      prompt=f"Give {paragraphAmount} subheadings, in numbered dot points, that would be found in an informative article about {topic}. Make the first subheading an introduction to the topic.",
       temperature=0,
       max_tokens=300,
       top_p=1,
