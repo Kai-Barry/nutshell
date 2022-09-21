@@ -10,5 +10,6 @@ mv nutshell-main/* .
 rm -r nutshell-main
 mv old/genPage.sh .
 chmod +x updateSite.sh
-sudo chown -R www-data .
 chmod -R g+w .
+#Line below must be last
+sudo chown -R www-data .
