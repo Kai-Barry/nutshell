@@ -3,7 +3,16 @@ function runListener() {
     input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             var text = document.getElementById("search-element").value;
-            alert(serachFlager(text))
+            if (serachFlager(text)==true) {
+                alert("Profanity found.")
+            } else {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", genPage.php, true);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.send(JSON.stringify({
+                    page: text
+                }));
+            }
 
         }
     });
