@@ -17,15 +17,20 @@
                 <p>Need help understanding a paragraph you've found?</p>
             </div>
         </div>
-        <div class="translater-box">
-            <textarea name="Summariser" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
-        </div>
-        <div class="summarise-button-box">
-            <div class="summarise-button">
-                <p>Summarise!</p>
+        <div class="summariser-result">
+                <div class="translater-box">
+                    <textarea name="Summariser" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
+                </div>
+                <div class="translate-text-box">
+                    <p>text text, text text text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, text</p>
+                </div>
+            </div>
+            <div class="summarise-button-box">
+                <div class="summarise-button">
+                    <p>Summarise!</p>
+                </div>
             </div>
         </div>
-    </div>
     <?php echo $footerFile;?>
 </body>
 </html>
