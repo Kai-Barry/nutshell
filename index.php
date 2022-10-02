@@ -8,7 +8,6 @@
     <script src="js/serach.js"></script>
 	<title>Search<?php
 		echo $headerFile; ?>
-        <div id="grad1"></div>
 <!-- Set up template html code here-->
         <div class="one">
             <h1 id="title">Let your curiosity drive you!</h1>
