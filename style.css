@@ -394,7 +394,7 @@ ul {
  .footer {
     display: flex;
     background-color: #FFFDF6;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
