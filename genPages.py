@@ -25,7 +25,6 @@ def createWiki(topic, paragraphAmount):
 	# test = 'test'
     
 	if not isValid(topic):
-		print(isValid(topic))
 		print("Page invalid or inappropriate")
 	#Check page exists
 	elif not os.path.exists("/var/www/html/pages/" + topic + ".data"):
