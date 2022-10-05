@@ -26,32 +26,32 @@
         <div class="two">
             <div class="recommendation">
                 <div class="reco-page">
-                    <a href="random.php">
-                        <div class="reco-box-section">
-                            <div class="box-title">
-                                <p>Most recent</p>
-                            </div>
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most recent</p>
+                        </div>
+                        <a href="random.php">
                             <div class="reco-box">
                                 <img src="Images/placeholder.jpg">
                                 <div class="box-page-title">
                                     <p>title1</p>
                                 </div>
                             </div>
+                        </a>
+                    </div>
+                    <div class="reco-box-section">
+                        <div class="box-title">
+                            <p>Most viewed</p>
                         </div>
-                    </a>
-                    <a href="random.php">
-                        <div class="reco-box-section">
-                            <div class="box-title">
-                                <p>Most viewed</p>
-                            </div>
+                        <a href="random.php">
                             <div class="reco-box">
                                 <img src="Images/placeholder.jpg">
                                 <div class="box-page-title">
                                     <p>title2</p>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="pick-for-me">
                     <a href="random.php">
