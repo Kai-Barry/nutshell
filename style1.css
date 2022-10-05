@@ -317,7 +317,9 @@ ul {
 }
 
 .reco-box img {
-    margin: 50px;
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     width: 300px;
 }
 
