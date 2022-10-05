@@ -53,11 +53,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="pick-for-me">
-                    <a href="random.php">
+                <a href="random.php">
+                    <div class="pick-for-me">
                         <p>Pick a topic for me</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
         <?php echo $footerFile;?>
