@@ -4,12 +4,9 @@
 
 	$text = "Your translated text will appear here.";
 	if(isset($_POST['SubmitButton'])){ //check if form was submitted
-	  $input = $_POST['inputText']; //get input text
-	  
-		$page = $_GET["page"];
-		$command = escapeshellcmd('/var/www/html/summarise.sh "' . $page .  '" 2>&1 &');
+		$input = $_POST['inputText']; //get input text
+		$command = escapeshellcmd('/var/www/html/summarise.sh "' . $input .  '" 2>&1 &');
 		$output = shell_exec($command);
-		echo $output;
 		if (strpos($output, "An error occured processing that") == false) {
 			$text = $output;
 		}
