@@ -1,6 +1,6 @@
 <?php
 	if (!file_exists("./pages/" . $page  . ".data")) {
-		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/info.php?page=' . $page);
+		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
 		exit();
 	}
 	$page = $_GET["page"];
