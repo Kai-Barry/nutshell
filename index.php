@@ -26,28 +26,32 @@
         <div class="two">
             <div class="recommendation">
                 <div class="reco-page">
-                    <div class="reco-box-section">
-                        <div class="box-title">
-                            <p>Most recent</p>
-                        </div>
-                        <div class="reco-box">
-                            <img src="Images/placeholder.jpg">
-                            <div class="box-page-title">
-                                <p>title1</p>
+                    <a href="random.php">
+                        <div class="reco-box-section">
+                            <div class="box-title">
+                                <p>Most recent</p>
+                            </div>
+                            <div class="reco-box">
+                                <img src="Images/placeholder.jpg">
+                                <div class="box-page-title">
+                                    <p>title1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="reco-box-section">
-                        <div class="box-title">
-                            <p>Most viewed</p>
-                        </div>
-                        <div class="reco-box">
-                            <img src="Images/placeholder.jpg">
-                            <div class="box-page-title">
-                                <p>title2</p>
+                    </a>
+                    <a href="random.php">
+                        <div class="reco-box-section">
+                            <div class="box-title">
+                                <p>Most viewed</p>
+                            </div>
+                            <div class="reco-box">
+                                <img src="Images/placeholder.jpg">
+                                <div class="box-page-title">
+                                    <p>title2</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="pick-for-me">
                     <a href="random.php">
