@@ -67,11 +67,11 @@ ul {
     box-shadow: none;
     border-radius: 20px;
 }
-.nav-button a {
+.nav-button p {
     margin: 15px;
 }
 
-.navigation-bar a:link {
+.navigation-bar p:link {
     text-decoration: none;
     color: white;
 }
@@ -81,7 +81,7 @@ ul {
 	color: white;
 }
 
-.navigation-bar a:hover {
+.navigation-bar p:hover {
 	color: #71481f;
 	text-decoration: none;
 	transition: color, background-color;
