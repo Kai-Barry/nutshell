@@ -87,6 +87,13 @@ ul {
 	transition: color, background-color;
 	transition-duration: 0.3s;
 }
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
+}
 
 #nav-logo-1 {
     width: 100px;
