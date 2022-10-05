@@ -29,7 +29,8 @@
 	$title = $data[0][0];
 	$header = $data[0][1];
 	$wikiURL = $data[0][2];
-	$body = $data[1];
+	$paras = explode("\=====/", $data);
+	//$body = $data[1];
 	/*$j = 0;
 	foreach ($data as &$value) {
 		//echo $value;
@@ -53,9 +54,26 @@
 <h1><?php echo $header;?></h1>
 <h2>An Article created by GPT3</h2>
 <?php
-foreach ($data[1] as &$line) {
+foreach ($para[1] as &$line) {
     echo $line . "\n";
 }
+echo "1";
+foreach ($para[2] as &$line) {
+    echo $line . "\n";
+}
+echo "2";
+foreach ($para[3] as &$line) {
+    echo $line . "\n";
+}
+echo "3";
+foreach ($para[4] as &$line) {
+    echo $line . "\n";
+}
+echo "4";
+foreach ($para[5] as &$line) {
+    echo $line . "\n";
+}
+echo "5";
 unset($line);
 echo $footerFile;?>
 </body>
