@@ -6,8 +6,9 @@
 <html>
     <head>
     <!--insert header code here-->
-	<title><!--Page title the php will append the site name after--><?php
+	    <title><!--Page title the php will append the site name after--><?php
 		echo $headerFile; ?>
-    <!--insert body code here-->
+        <!--insert body code here-->
+        <?php echo $footerFile;?>
     </body>
 </html>
