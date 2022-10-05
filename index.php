@@ -24,7 +24,6 @@
             </div>
         </div> 
         <div class="two">
-            <p>Recommend</p>
             <div class="recommendation">
                 <div class="reco-page">
                     <div class="reco-box-section">
