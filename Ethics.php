@@ -7,11 +7,8 @@
     <head>
 	<title>Ethics<?php
 		echo $headerFile; ?>
-        <div class="EthosTitle">
-            <h1 id="title">Our Ethos</h1>
-        </div>
         <div class="EthicsTitle">
-            <h1 id="title">About Us</h1>
+            <h1 id="title">Ethics</h1>
         </div>
         <div class="EthicsBox">
             <div class="EthicsMessage">
