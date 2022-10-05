@@ -313,6 +313,7 @@ ul {
     background: #3E9551;
     box-shadow: none;
     border-radius: 40px;
+    align-items: center;
 }
 
 .reco-box img {
@@ -326,9 +327,9 @@ ul {
 }
 
 .box-page-title p {
-    margin: 10px;
+    margin: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-decoration: none;
 }
 
