@@ -18,7 +18,7 @@ def isValid(topic):
 	frequency_penalty=0,
 	presence_penalty=0
 	)
-	return ''.join(ch for ch in extract(valid) if ch.isalnum())
+	return int(''.join(ch for ch in extract(valid) if ch.isalnum()))
 
 def createWiki(topic, paragraphAmount):
 
