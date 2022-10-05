@@ -184,6 +184,15 @@ ul {
     .title {
         height: 0;
         width: 0;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 0px;
+    }
+    .title h1 {
+        font-size: 0px;
+    }
+    .title p {
+        font-size: 0px;
     }
 }
 
@@ -407,6 +416,12 @@ ul {
 .summarise-button-box {
     display: flex;
     justify-content: center;
+}
+/* Summariser Responsive layout*/
+@media screen and (max-width: 1500px) {
+    .summariser-result {
+        flex-direction: column;
+    }
 }
 
 /* Other*/ 
