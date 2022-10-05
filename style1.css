@@ -133,12 +133,28 @@ ul {
     height: calc(100% - 560px);
  }
 
- /* Title index page*/
- #title {
+ /* Main Screen Responsive layout*/
+ @media screen and (max-width: 1500px) {
+    .one {
+        margin-top: 60px;
+    }
+}
+/* Title index page*/
+#title {
     margin-bottom: 35px;
     font-size: 50px;
     color: white;
  }
+
+ /* Title Responsive layout*/
+@media screen and (max-width: 1500px) {
+    #title {
+        margin-bottom: 0px;
+        font-size: 0px;
+        height: 0;
+        width: 0;
+    }
+}
 
 /* Title summariser*/
 .title {
@@ -153,15 +169,23 @@ ul {
     justify-content: space-evenly;
 }
 
- .title h1 {
+.title h1 {
     font-size: 50px;
     color: white;
- }
+}
 
- .title p {
+.title p {
     font-size: 30px;
     color: white;
- }
+}
+
+/* Summariser Responsive layout*/
+@media screen and (max-width: 1500px) {
+    .title {
+        height: 0;
+        width: 0;
+    }
+}
 
  /* Serach Bar*/
 .search {
@@ -221,6 +245,13 @@ ul {
  .search ::placeholder { 
     color: lightslategray;
     opacity: 1; 
+}
+
+/* Search bar Responsive layout*/
+@media screen and (max-width: 1500px) {
+    .search {
+        width: 80%;
+    }
 }
 
 /* Recommendation box*/
@@ -295,6 +326,13 @@ ul {
     margin: 20px;
     font-size: 50px;
     color: white;
+}
+
+/* Recomendation Responsive layout*/
+@media screen and (max-width: 1500px) {
+    .reco-page {
+        flex-direction: column;
+    }
 }
 
 /* Translater*/
@@ -424,6 +462,26 @@ ul {
     width: 50px;
 }
  
+/* Footer Responsive layout*/
+@media screen and (max-width: 1500px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-list {
+        flex-direction: column;
+    }
+
+    .footer-list li {
+        margin: 5px;
+    }
+
+    .footer-list img {
+        width: 0px;
+    }
+}
+
+
 #everything {
     width: 100%;
     height: 100%;
