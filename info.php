@@ -13,6 +13,9 @@
 			if ($line[0] == '#') {
 				unset($value[$i]);
 			}
+			else if ($line[0] == '***') {
+				$value[$i] = "<p3>" . substr($value[$i], 1) . "</p3>";
+			}
 			$i++;
 		}
 		$value = array_filter(array_values($value));
@@ -43,33 +46,11 @@
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
 <h1><?php echo $header;?></h1>
-<h2>This page contains 3 summaries:</h2>
-<p>"New Article Created By GPT3" is generated from the knowledge of GPT3 alone,
-<br>
-"Summarised New Article" is then a summary of the article targeted at middle school students.
-<br>
-"Summarised Article From Wikipedia" is GPT3 summarising the contents of the wikipedia page found <a href="<?php echo $wikiURL;?>">here</a>.</p>
-<h3>New Article Created By GPT3</h3>
-<p><?php
+<?php
 foreach ($data[1] as &$line) {
     echo $line;
 }
 unset($line);
-?></p>
-<h3>Summarised New Article Created By GPT3</h3>
-<p><?php
-foreach ($data[2] as &$line) {
-    echo $line;
-}
-unset($line);
-?></p>
-<h3>Summarised New Article From Wikipedia</h3>
-<p><?php
-foreach ($data[3] as &$line) {
-    echo $line;
-}
-unset($line);
-?></p>
-<?php echo $footerFile;?>
+echo $footerFile;?>
 </body>
 </html>
