@@ -50,7 +50,9 @@
                     </div>
                 </div>
                 <div class="pick-for-me">
-                    <p>Pick a topic for me</p>
+                    <a href="random.php">
+                        <p>Pick a topic for me</p>
+                    </a>
                 </div>
             </div>
         </div>
