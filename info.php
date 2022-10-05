@@ -29,7 +29,7 @@
 	$title = $data[0][0];
 	$header = $data[0][1];
 	$wikiURL = $data[0][2];
-	$paras = explode("\=====/", $data);
+	$paras = explode("\=====/", $data[1]);
 	//$body = $data[1];
 	/*$j = 0;
 	foreach ($data as &$value) {

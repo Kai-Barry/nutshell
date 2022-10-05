@@ -60,7 +60,7 @@ def createWiki(topic, paragraphAmount):
 			frequency_penalty=0,
 			presence_penalty=0
 			)
-			paragraphs.append("\n\=====/***" + subheading + "\n" + extract(paragraph))
+			paragraphs.append("\n\=====/\n***" + subheading + "\n" + extract(paragraph))
 
 		#Format file
 		new_text = "#Header Data\n#Title:\n" + topic + \
