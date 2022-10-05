@@ -1,4 +1,8 @@
 <?php
+	if (!file_exists("./pages/" . $page  . ".data")) {
+		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/info.php?page=' . $page);
+		exit();
+	}
 	$page = $_GET["page"];
 	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
