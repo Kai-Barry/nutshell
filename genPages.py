@@ -8,14 +8,31 @@ paragraphAmount = 5
 def extract(aiContent):
 	return str(aiContent["choices"][0]["text"])
 
+def isValid(topic):
+	valid = openai.Completion.create(
+	model="text-davinci-002",
+	prompt=f"Respond with 1 if yes and 0 if no. Is {topic} a topic thats valid for an article and not NSFW?",
+	temperature=0,
+	max_tokens=300,
+	top_p=1,
+	frequency_penalty=0,
+	presence_penalty=0
+	)
+	return ''.join(ch for ch in extract(valid) if ch.isalnum())
+
 def createWiki(topic, paragraphAmount):
 
+	# test = 'test'
+    
+	if not isValid(topic):
+		print(isValid(topic))
+		print("Page invalid or inappropriate")
 	#Check page exists
-	if not os.path.exists("/var/www/html/pages/" + topic + ".data"):
+	elif not os.path.exists("/var/www/html/pages/" + topic + ".data"):
 		# Create subheadings
 		subheadings = openai.Completion.create(
 		model="text-davinci-002",
-		prompt=f"Give {paragraphAmount} subheadings, in numbered dot points, that would be found in an informative article about {topic}. Make the first subheading an introduction to the topic.",
+		prompt=f"Give {paragraphAmount} one-word subheadings, in numbered dot points, that would be found in an informative article about {topic}. Make the first subheading an introduction to the topic.",
 		temperature=0,
 		max_tokens=300,
 		top_p=1,
