@@ -1,36 +1,51 @@
 <?php
 	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
+
+	$text = "Your translated text will appear here.";
+	if(isset($_POST['SubmitButton'])){ //check if form was submitted
+	  $input = $_POST['inputText']; //get input text
+	  
+		$page = $_GET["page"];
+		$command = escapeshellcmd('/var/www/html/summarise.sh "' . $page .  '" 2>&1 &');
+		$output = shell_exec($command);
+		echo $output;
+		if (strpos($output, "An error occured processing that") == false) {
+			$text = $output;
+		}
+	}	
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 	<title>Summariser<?php
 		echo $headerFile; ?>
-<!-- Set up template html code here-->
-    <div class="one">
-        <div class="title">
-            <div>
-                <h1>Summariser</h1>
-            </div>
-            <div>
-                <p>Need help understanding a paragraph you've found?</p>
-            </div>
-        </div>
-        <div class="summariser-result">
-                <div class="translater-box">
-                    <textarea name="Summariser" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
-                </div>
-                <div class="translate-text-box">
-                    <p>text text, text text text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, texttext text, text</p>
-                </div>
-            </div>
-            <div class="summarise-button-box">
-                <div class="summarise-button">
-                    <p>Summarise!</p>
-                </div>
-            </div>
-        </div>
-    <?php echo $footerFile;?>
+	<div class="one">
+		<div class="title">
+			<div>
+				<h1>Summariser</h1>
+			</div>
+			<div>
+				<p>Need help understanding a paragraph you've found?</p>
+			</div>
+		</div>
+		<form action = "" method = "post">
+			<div class="summariser-result">
+				<div class="translater-box">
+					<textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
+				</div>
+				<div class="translate-text-box">
+					<p><?php echo $text;?></p>
+				</div>
+			</div>
+			<div class="summarise-button-box">
+				<div class="summarise-button">
+					<p>Summarise!</p>
+					<input type="submit" name="SubmitButton"/>
+				</div>
+			</div>
+		</form>
+	</div>
+	<?php echo $footerFile;?>
 </body>
 </html>

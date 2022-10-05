@@ -9,6 +9,7 @@ ls -la
 mv nutshell-main/* .
 rm -r nutshell-main
 mv old/genPage.sh .
+mv old/summarise.sh .
 chmod +x updateSite.sh
 chmod -R g+w .
 #Line below must be last
