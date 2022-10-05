@@ -487,6 +487,11 @@ ul {
     font-size: 30px;
 }
 
+.footer-list li {
+    display: flex;
+    align-items: center;
+}
+
 .footer-list img {
     width: 50px;
 }
