@@ -801,6 +801,8 @@ ul {
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
  }
 
  .EthosMessage h4 {
@@ -827,6 +829,8 @@ ul {
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .AboutMessage h4 {
@@ -853,6 +857,8 @@ ul {
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .EthicsMessage h4 {
