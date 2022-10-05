@@ -476,6 +476,23 @@ ul {
 .footer-list img {
     width: 50px;
 }
+
+.footer-list a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-list a:link,.footer-list a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.footer-list a:hover {
+	color: #71481f;
+	text-decoration: none;
+	transition: color, background-color;
+	transition-duration: 0.3s;
+}
  
 /* Footer Responsive layout*/
 @media screen and (max-width: 1500px) {
