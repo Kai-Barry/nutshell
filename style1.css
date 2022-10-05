@@ -488,7 +488,7 @@ ul {
 }
 
 .footer-list a:hover {
-	color: #71481f;
+	color: #cd863f;
 	text-decoration: none;
 	transition: color, background-color;
 	transition-duration: 0.3s;
