@@ -548,9 +548,13 @@ ul {
     background-color:#C9864E;
     box-shadow: none;
     border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
  .sub2 {
@@ -558,9 +562,13 @@ ul {
     background-color:#875930;
     box-shadow: none;
     border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
  .sub3 {
@@ -568,19 +576,27 @@ ul {
     background-color:#6F442A;
     box-shadow: none;
     border-radius: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
  .sub4 {
     background-size: 100px;
     background-color:#5D3525;
     box-shadow: none;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 30px;
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
  .jumpto a {
@@ -619,6 +635,9 @@ ul {
     background-color: #FFFDF6;
     border-radius: 20px;
     width: 70vw;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #875930;
  }
 
  .article img{
@@ -626,33 +645,41 @@ ul {
  }
 
  .artHead {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: flex;
  }
 
  .artSub1 {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: flex;
  }
 
  .artSub2 {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: flex;
  }
 
  .artSub3 {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: flex;
  }
 
  .artSub4 {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     display: flex;
  }
 
  .wantMore {
     padding: 10px;
     background-color: #FFFDF6;
+    border-width: 3px;
+    border-color: #C9864E;
+    border-style: solid;
     border-radius: 20px;
     width: 15vw;
  }
@@ -665,3 +692,63 @@ ul {
     width: 220px;
  }
 
+ hr {
+    border-top: 3px solid #875930;
+ }
+
+ .EthosTitle {
+    display: flex;
+    padding-top: 3vh;
+    padding-left: 40vw;
+ }
+
+ .EthosBox {
+    padding-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+ }
+
+ .EthosMessage {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #FFFDF6;
+    border-radius: 20px;
+ }
+
+ .AboutTitle {
+    display: flex;
+    padding-top: 3vh;
+    padding-left: 40vw;
+ }
+
+ .AboutBox {
+    padding-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+ }
+
+ .AboutMessage {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #FFFDF6;
+    border-radius: 20px;
+ }
+
+ .EthicsTitle {
+    display: flex;
+    padding-top: 3vh;
+    padding-left: 40vw;
+ }
+
+ .EthicsBox {
+    padding-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+ }
+
+ .EthicsMessage {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #FFFDF6;
+    border-radius: 20px;
+ }
