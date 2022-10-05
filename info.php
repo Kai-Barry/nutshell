@@ -13,8 +13,8 @@
 			if ($line[0] == '#') {
 				unset($value[$i]);
 			}
-			else if ($line[0] == '***') {
-				$value[$i] = "<p3>" . substr($value[$i], 1) . "</p3>";
+			else if (substr($line, 0, 3) == '***') {
+				$value[$i] = "</p><h3>" . substr($value[$i], 3) . "</h3><p>";
 			}
 			$i++;
 		}
@@ -46,9 +46,10 @@
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
 <h1><?php echo $header;?></h1>
+<h2>An Article created by GPT3</h2>
 <?php
 foreach ($data[1] as &$line) {
-    echo $line;
+    echo $line . "\n";
 }
 unset($line);
 echo $footerFile;?>
