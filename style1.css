@@ -785,6 +785,7 @@ ul {
     display: flex;
     padding-top: 3vh;
     padding-left: 40vw;
+    margin-top: 150px;
  }
 
  .EthosBox {
@@ -792,21 +793,25 @@ ul {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 30px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
  }
 
  .EthosMessage {
-    margin: 20px;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
  }
 
+ .EthosMessage h4 {
+    margin: 20px
+}   
+
  .AboutTitle {
     display: flex;
     padding-top: 3vh;
     padding-left: 40vw;
+    margin-top: 150px;
  }
 
  .AboutBox {
@@ -814,35 +819,42 @@ ul {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 30px;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
  }
 
- .AboutMessage {
-    margin: 20px;
+.AboutMessage {
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
- }
+}
 
- .EthicsTitle {
+.AboutMessage h4 {
+    margin: 20px
+}   
+
+.EthicsTitle {
     display: flex;
     padding-top: 3vh;
     padding-left: 40vw;
- }
+    margin-top: 150px;
+}
 
- .EthicsBox {
+.EthicsBox {
     padding-bottom: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 30px;
-    margin-bottom: 300px;
- }
+    margin-bottom: 150px;
+}
 
- .EthicsMessage {
-    margin: 20px;
+.EthicsMessage {
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
     border-radius: 20px;
- }
+}
+
+.EthicsMessage h4 {
+    margin: 20px
+}   
