@@ -791,9 +791,12 @@ ul {
     padding-bottom: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 30px;
+    margin-bottom: 300px;
  }
 
  .EthosMessage {
+    margin: 20px;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
@@ -810,9 +813,12 @@ ul {
     padding-bottom: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 30px;
+    margin-bottom: 300px;
  }
 
  .AboutMessage {
+    margin: 20px;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
@@ -829,9 +835,12 @@ ul {
     padding-bottom: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 30px;
+    margin-bottom: 300px;
  }
 
  .EthicsMessage {
+    margin: 20px;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #FFFDF6;
