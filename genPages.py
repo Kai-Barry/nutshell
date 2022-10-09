@@ -23,6 +23,7 @@ def isValid(topic):
 	return False
 
 def topicFormatter(topic):
+	topic = topic.replace("\n", "")
 	newTopic = openai.Completion.create(
 	model="text-davinci-002",
 	prompt=f"Fix the spelling of the following text. If the text is plural, make it singular. Capitalize it as you would an article heading.\n\n{topic}\n",
