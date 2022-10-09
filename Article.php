@@ -29,7 +29,7 @@ unset($value);
 $title = $data[0][0];
 $header = $data[0][1];
 $body = $data[1];
-$images = preg_split("\n", $data[2]);
+$images = $data[2];
 /*$j = 0;
 foreach ($data as &$value) {
 		//echo $value;
