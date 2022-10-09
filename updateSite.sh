@@ -14,5 +14,6 @@ mv old/pages/*.data pages/
 mv old/dict.json .
 chmod +x updateSite.sh
 chmod -R g+w .
+sudo chgrp -R sysadmin .
 #Line below must be last
 sudo chown -R www-data .
