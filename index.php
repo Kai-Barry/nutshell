@@ -104,6 +104,11 @@
                         <p>Pick a topic for me</p>
                     </div>
                 </a>
+                <a href="list.php">
+                    <div class="pick-for-me">
+                        <p>View all topics</p>
+                    </div>
+                </a>
             </div>
         </div>
         <?php echo $footerFile;?>
