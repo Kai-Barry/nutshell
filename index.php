@@ -33,13 +33,13 @@
 
     $file = file_get_contents($recent, FILE_USE_INCLUDE_PATH);
     $recent = substr($recent, 6, strlen($recent)-strlen("pages/.data"));
-    $file = preg_split("/\r\n|\n|\r/", $file);
-    $recentTitle = $file[2];
+    $recentTitle = preg_split("/\r\n|\n|\r/", $file)[2];
+    $recentImage = $preg_split("\n", explode("\======/", $file)[2])[1];
     
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
-    $file = preg_split("/\r\n|\n|\r/", $file);
-    $popularTitle = $file[2];
+    $popularTitle = preg_split("/\r\n|\n|\r/", $file)[2];
+    $popularImage = $preg_split("\n", explode("\======/", $file)[2])[1];
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,7 +78,7 @@
                         </div>
                         <a href="Article.php?page=<?php echo $recent;?>">
                             <div class="reco-box">
-                                <img src="images/placeholder.jpg">
+                                <img src="<?php echo $recentImage;?>">
                                 <div class="box-page-title">
                                     <p><?php echo $recentTitle;?></p>
                                 </div>
@@ -91,7 +91,7 @@
                         </div>
                         <a href="Article.php?page=<?php echo $popular;?>">
                             <div class="reco-box">
-                                <img src="images/placeholder.jpg">
+                                <img src="<?php echo $popularImage;?>">
                                 <div class="box-page-title">
                                     <p><?php echo $popularTitle;?></p>
                                 </div>

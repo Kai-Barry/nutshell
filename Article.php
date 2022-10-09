@@ -213,13 +213,13 @@ $orientation = "landscape";
                     foreach ($display as &$subject) {
                         $fileData = file_get_contents($files[$subject], FILE_USE_INCLUDE_PATH);
                         $fileName = substr($files[$subject], 6, strlen($files[$subject])-strlen("pages/.data"));
-                        $fileData = preg_split("/\r\n|\n|\r/", $fileData);
-                        $fileTitle = $fileData[2];
+                        $fileTitle = $preg_split("/\r\n|\n|\r/", $fileData)[2];
+                        $image = $preg_split("\n", explode("\======/", $data)[2])[1];
 
                         echo '
                         <a href="Article.php?page=' . $fileName . '">
                             <center class="relate">
-                                <img src="images/placeholder.jpg">
+                                <img src="' . $image . '">
                                 <h2>' . $fileTitle . '</h2>
                             </center>
                         </a>';
