@@ -74,6 +74,10 @@ for ($x = 0; $x <= 5; $x++) {
 		unset($para);
 		//echo "\nlooped";
 }
+
+$files = json_decode(file_get_contents('dict.json'), true);
+$files["pages/" . $page  . ".data"] += 1;
+file_put_contents("dict.json",json_encode($dict));
 ?>
 <!DOCTYPE html>
 <html>
