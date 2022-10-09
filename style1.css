@@ -257,7 +257,8 @@ ul {
     word-wrap: break-word;
     display: flex;
     min-height: 50px;
-    height: 100px;
+    line-height: 50px;
+    height: 150px;
     width: 700px;
     flex: 100%;
     font-size: 30px;
