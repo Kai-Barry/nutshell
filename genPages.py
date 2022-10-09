@@ -39,7 +39,7 @@ def createImages(topic, paragraphAmount):
 	params = {
 		"q": topic,
 		"tbm": "isch",
-		&tbs="iar:w",
+		"tbs": "iar:w",
 		"api_key": os.getenv("SERPAPI_KEY"),
 		"safe": "active"
 	}
