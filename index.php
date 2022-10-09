@@ -9,10 +9,23 @@
     $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
     $file = preg_split("/\r\n|\n|\r/", $file);
     $recentTitle = $file[2];
-    $file = array_rand($files);
-    $popular = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
+
+
     
-    $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
+
+    $files = json_decode(file_get_contents('dict.json'), true);
+    $popular = "";
+    foreach ($files as $key => $value) {
+        if ($popular == "") {
+            $popular = $key;
+        }
+        else if ($value > $files[$key]) {
+            $popular = $key;
+        }
+    }
+    
+    $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
+    $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
     $file = preg_split("/\r\n|\n|\r/", $file);
     $popularTitle = $file[2];
 ?>

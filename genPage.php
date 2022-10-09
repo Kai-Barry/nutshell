@@ -11,7 +11,7 @@
 			$files["pages/" . $page  . ".data"] = 0;
 			file_put_contents("dict.json",json_encode($files));
 		}
-		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/info.php?page=' . $page);
+		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/Article.php?page=' . $page);
 	}
 	exit();
 ?>
