@@ -75,7 +75,7 @@ $page = 1;
 $per_page = 5;
 $orientation = "landscape";
 // $testimage = 'https://images.unsplash.com/photo-1606856110002-d0991ce78250?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80';
-// $photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
+$photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
 ?>
 <!DOCTYPE html>
 <html>
