@@ -17,7 +17,7 @@
                         <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <input id="search-element" type="text" placeholder="... what do you want to know?" onkeydown="myfunction(event)">
+                        <input id="search-element" type="text" placeholder="... what topic do you want to know about?" onkeydown="myfunction(event)">
                         <script>runListener()</script>
                     </div>
                 </div>
