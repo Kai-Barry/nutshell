@@ -1,8 +1,8 @@
 function runListener() {
     var input = document.getElementById("search-element");
-    input.addEventListener("keypress", function(event) {
+    input.addEventListener("keyup", function(event) {
         if (event.key === "Enter") {
-            document.getElementById("search-element").value = document.getElementById("search-element").value.replace("\n", "");
+            document.getElementById("search-element").value = document.getElementById("search-element").value.replace(/[\r\n]/gm, '');
             var text = document.getElementById("search-element").value;
             if (serachFlager(text)==true) {
                 alert("Profanity found.")
