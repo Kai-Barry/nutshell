@@ -1,4 +1,4 @@
-import openai, os, sys, re
+import openai, os, sys
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -76,13 +76,14 @@ def createWiki(topic, paragraphAmount):
 			frequency_penalty=0,
 			presence_penalty=0
 			)
-			paragraphs.append("\n\=====/\n***" + subheading + "\n" + re.sub(r'\n\s*\n', '\n\n', extract(paragraph).lstrip()))
+			paragraphs.append("\n\=====/\n***" + subheading + extract(paragraph))
 
 		#Format file
 		new_text = "#Header Data\n#Title:\n" + topic + \
 				"\n#Heading\n" + topic + \
 				"\n#Article Created By GPT3\n#\======/"
 		for paragraph in paragraphs:
+			paragraph.replace("\n\n", "\n")
 			new_text += paragraph
 		new_text += "\n"
 		
