@@ -1,4 +1,3 @@
-from copyreg import constructor
 import openai, os, sys
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
