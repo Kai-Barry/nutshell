@@ -3,6 +3,8 @@ function runListener() {
     input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             document.getElementById("search-element").value = document.getElementById("search-element").value.replace(/[\r\n]/gm, '');
+            document.getElementById("search-element").style.height = "5px";
+            document.getElementById("search-element").style.height = (document.getElementById("search-element").scrollHeight)+"px";
             var text = document.getElementById("search-element").value;
             if (serachFlager(text)==true) {
                 alert("Profanity found.")
