@@ -214,7 +214,7 @@ $orientation = "landscape";
                         $fileData = file_get_contents($files[$subject], FILE_USE_INCLUDE_PATH);
                         $fileName = substr($files[$subject], 6, strlen($files[$subject])-strlen("pages/.data"));
                         $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
-                        $image = preg_split("\n", explode("\======/", $data)[2])[1];
+                        $image = explode("\n", explode("\======/", $fileData)[2])[1];
 
                         echo '
                         <a href="Article.php?page=' . $fileName . '">
