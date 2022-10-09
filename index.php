@@ -34,12 +34,12 @@
     $file = file_get_contents($recent, FILE_USE_INCLUDE_PATH);
     $recent = substr($recent, 6, strlen($recent)-strlen("pages/.data"));
     $recentTitle = preg_split("/\r\n|\n|\r/", $file)[2];
-    $recentImage = $preg_split("\n", explode("\======/", $file)[2])[1];
+    $recentImage = preg_split("\n", explode("\======/", $file)[2])[1];
     
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
     $popularTitle = preg_split("/\r\n|\n|\r/", $file)[2];
-    $popularImage = $preg_split("\n", explode("\======/", $file)[2])[1];
+    $popularImage = preg_split("\n", explode("\======/", $file)[2])[1];
 ?>
 <!DOCTYPE html>
 <html>
