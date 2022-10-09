@@ -10,6 +10,7 @@ mv nutshell-main/* .
 rm -r nutshell-main
 mv old/genPage.sh .
 mv old/summarise.sh .
+mv old/pages/*.data pages/
 chmod +x updateSite.sh
 chmod -R g+w .
 #Line below must be last
