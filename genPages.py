@@ -17,7 +17,7 @@ def isValid(topic):
 	top_p=1,
 	frequency_penalty=0,
 	presence_penalty=0
-	)).lower()
+	)).lower().replace("\n", "")
 	if valid[:2] == 'ye':
 		return True
 	return False
