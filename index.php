@@ -2,6 +2,19 @@
 	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 
+    $latest_ctime = 0;
+    $recent = '';
+    $files = glob($dir . 'pages/*.data');
+    foreach($files as $file)
+    {
+            if (is_file($file) && filectime($file) > $latest_ctime)
+            {
+                    $latest_ctime = filectime($file);
+                    $recent = $file;
+            }
+    }
+
+
     $files = json_decode(file_get_contents('dict.json'), true);
     $popular = "";
     $recent = "";
