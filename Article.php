@@ -202,7 +202,7 @@ $orientation = "landscape";
                     if ($target < 7) {
                         $display = range(0, $target - 1);
                     }
-                    while (count($display) < $target)) {
+                    while (count($display) < $target) {
                         $file = array_rand($files);
                         if (!in_array($file, $display) {
                             $display[] = $file;
