@@ -92,7 +92,7 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px;
+    margin-left: 40px;
 }
 
 #nav-logo-1 {
