@@ -64,7 +64,7 @@
                         <div class="box-title">
                             <p>Most recent</p>
                         </div>
-                        <a href="info.php?page=<?php echo $recent;?>">
+                        <a href="Article.php?page=<?php echo $recent;?>">
                             <div class="reco-box">
                                 <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
@@ -77,7 +77,7 @@
                         <div class="box-title">
                             <p>Most viewed</p>
                         </div>
-                        <a href="info.php?page=<?php echo $popular;?>">
+                        <a href="Article.php?page=<?php echo $popular;?>">
                             <div class="reco-box">
                                 <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
