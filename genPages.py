@@ -11,7 +11,7 @@ def extract(aiContent):
 def isValid(topic):
 	valid = extract(openai.Completion.create(
 	model="text-davinci-002",
-	prompt=f"Respond with yes or no. Is {topic} a topic thats valid for an article and not NSFW?",
+	prompt=f"Respond with yes or no. Is {topic} a topic thats valid for an article and safe for children to learn about?",
 	temperature=0,
 	max_tokens=300,
 	top_p=1,
