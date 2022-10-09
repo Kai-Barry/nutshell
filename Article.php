@@ -191,18 +191,39 @@ $orientation = "landscape";
             <div class="wantMore">
                 <h2>Want More?</h2>
                 <div class="moreArt">
-                    <div class="relate1">
-                        <img src="images/placeholder.jpg">
-                        <h2>Art1</h2>
-                    </div>
-                    <div class="relate2">
-                        <img src="images/placeholder.jpg">
-                        <h2>Art2</h2>
-                    </div>
-                    <div class="relate3">
-                        <img src="images/placeholder.jpg">
-                        <h2>Art3</h2>
-                    </div>               
+                    <?php
+                    
+                    $files = glob($dir . 'pages/*.data');
+                    $target = count($files);
+                    if ($target > 7) {
+                        $target = 7;
+                    }
+                    $display = [];
+                    if ($target < 7) {
+                        $display = range(0, $target - 1);
+                    }
+                    while (count($display) < $target)) {
+                        $file = array_rand($files);
+                        if (!in_array($file, $display) {
+                            $display[] = $file;
+                        }
+                    }
+
+                    foreach ($display as &$subject) {
+                        $fileData = file_get_contents($files[$subject], FILE_USE_INCLUDE_PATH);
+                        $fileName = substr($files[$subject], 6, strlen($files[$subject])-strlen("pages/.data"));
+                        $fileData = preg_split("/\r\n|\n|\r/", $fileData);
+                        $fileTitle = $fileData[2];
+
+                        echo '
+                        <a href="Article.php?page=' . $fileName . '">
+                            <center class="relate">
+                                <img src="images/placeholder.jpg">
+                                <h2>' . $fileTitle . '</h2>
+                            </center>
+                        </a>';
+                    }
+                    ?>      
                 </div>
             </div>
         </div>
