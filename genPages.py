@@ -1,4 +1,4 @@
-import openai, os, sys
+import openai, os, sys, re
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -76,7 +76,7 @@ def createWiki(topic, paragraphAmount):
 			frequency_penalty=0,
 			presence_penalty=0
 			)
-			paragraphs.append("\n\=====/\n***" + subheading + "\n" + extract(paragraph))
+			paragraphs.append("\n\=====/\n***" + subheading + "\n" + re.sub(r'\n\s*\n', '\n\n', extract(paragraph).lstrip()))
 
 		#Format file
 		new_text = "#Header Data\n#Title:\n" + topic + \
