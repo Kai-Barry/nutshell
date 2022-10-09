@@ -18,9 +18,9 @@ def isValid(topic):
 	frequency_penalty=0,
 	presence_penalty=0
 	)).lower()
-	if valid[:2] == 'no':
-		return False
-	return True
+	if valid[:2] == 'ye':
+		return True
+	return False
 
 def topicFormatter(topic):
 	newTopic = openai.Completion.create(
