@@ -17,17 +17,12 @@
 
     $files = json_decode(file_get_contents('dict.json'), true);
     $popular = "";
-    $recent = "";
     foreach ($files as $key => $value) {
         if ($popular == "") {
             $popular = $key;
-            $recent = $key;
         }
         if ($value > $files[$popular]) {
             $popular = $key;
-        }
-        if ($value < $files[$recent]) {
-            $recent = $key;
         }
     }
 
