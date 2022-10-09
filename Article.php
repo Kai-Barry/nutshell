@@ -204,7 +204,7 @@ $orientation = "landscape";
                     }
                     while (count($display) < $target) {
                         $file = array_rand($files);
-                        if (!in_array($file, $display) {
+                        if (!in_array($file, $display)) {
                             $display[] = $file;
                         }
                     }
