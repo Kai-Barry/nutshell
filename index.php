@@ -7,38 +7,14 @@
     $recent = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
     
     $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
-    $data = explode("\======/", $file);
-    foreach ($data as &$value) {
-            $value = preg_split("/\r\n|\n|\r/", $value);
-            $i = 0;
-            foreach ($value as &$line) {
-                    if ($line[0] == '#') {
-                            unset($value[$i]);
-                    }
-                    $i++;
-            }
-            $value = array_filter(array_values($value));
-    }
-    unset($value);
-    $recentTitle = $data[0][0];
+    $file = preg_split("/\r\n|\n|\r/", $file);
+    $recentTitle = $file[2];
     $file = array_rand($files);
     $popular = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
     
     $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
-    $data = explode("\======/", $file);
-    foreach ($data as &$value) {
-            $value = preg_split("/\r\n|\n|\r/", $value);
-            $i = 0;
-            foreach ($value as &$line) {
-                    if ($line[0] == '#') {
-                            unset($value[$i]);
-                    }
-                    $i++;
-            }
-            $value = array_filter(array_values($value));
-    }
-    unset($value);
-    $popularTitle = $data[0][0];
+    $file = preg_split("/\r\n|\n|\r/", $file);
+    $popularTitle = $file[2];
 ?>
 <!DOCTYPE html>
 <html>
