@@ -19,7 +19,7 @@ foreach ($data as &$value) {
 						unset($value[$i]);
 				}
 				else if (substr($line, 0, 3) == '***') {
-						$value[$i] = "</p><h3>" . substr($value[$i], 3) . "</h3><p>";
+						$value[$i] =substr($value[$i], 3);
 				}
 				$i++;
 		}
