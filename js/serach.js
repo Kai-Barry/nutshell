@@ -1,6 +1,6 @@
 function runListener() {
     var input = document.getElementById("search-element");
-    input.addEventListener("keyup", function(event) {
+    input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             document.getElementById("search-element").value = document.getElementById("search-element").value.replace(/[\r\n]/gm, '');
             var text = document.getElementById("search-element").value;

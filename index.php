@@ -7,6 +7,7 @@
     <head>
     <script>
         function auto_grow(element) {
+            element.value = element.value.replace(/[\r\n]/gm, '');
             element.style.height = "5px";
             element.style.height = (element.scrollHeight)+"px";
         }
