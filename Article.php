@@ -1,5 +1,10 @@
 <?php
-// composer require unsplash/unsplash
+$page = $_GET["page"];
+if (!file_exists("/var/www/html/pages/" . $page  . ".data")) {
+		echo "error: /var/www/html/pages/" . $page  . ".data";
+		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
+		exit();
+}
 $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 $file = file_get_contents("./pages/" . $page  . ".data", FILE_USE_INCLUDE_PATH);
