@@ -39,9 +39,7 @@ def createImages(topic, paragraphAmount):
 	params = {
 		"q": topic,
 		"tbm": "isch",
-		"api_key": "a1f0b96d76a0809f86c5b329dedda1b8b11869c0ac148fd67f085fa48861c021",
-		# "api_key": "2f3b3a177216bcf79ad515111a7c60a8db9971bfe71e670a31f5614923a0bfae",
-		# "api_key": "51db6ed21e1bdb577f0d4f696df60d26fdd35a595031daa5516b9acffe62b290",
+		"api_key": os.getenv("SERPAPI_KEY"),
 		"safe": "active"
 	}
 
@@ -110,7 +108,7 @@ def createWiki(topic, paragraphAmount):
 			new_text += paragraph
 		new_text += "\n\======/"
 		for image in images:
-			new_text += ("\n\=====/\n" + image)
+			new_text += ("\n" + image)
 		
 		#Save file
 		f = open("/var/www/html/pages/" + topic.lower() + ".data", "w")

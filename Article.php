@@ -29,6 +29,7 @@ unset($value);
 $title = $data[0][0];
 $header = $data[0][1];
 $body = $data[1];
+$images = preg_split("\n", $data[2]);
 /*$j = 0;
 foreach ($data as &$value) {
 		//echo $value;
@@ -136,7 +137,7 @@ $orientation = "landscape";
                         <p><?php echo $paragraphs[1];?></p>
                     </div>
                     <div class="artHeadimg">
-                        <img src='images/placeholder.jpg'>
+                        <img src='<?php echo $images[1]?>'>
                     </div>
                 </div>
                 <br>
@@ -144,7 +145,7 @@ $orientation = "landscape";
                 <br>
                 <div class="artSub1">
                     <div class="sub1img">
-                        <img src="images/placeholder.jpg">
+                        <img src="<?php echo $images[2]?>">
                     </div>
                     <div class="sub1txt">
                         <h3 id="Sub1"><?php echo $headings[2];?></h3>
@@ -160,7 +161,7 @@ $orientation = "landscape";
                         <p><?php echo $paragraphs[3];?></p>
                     </div>
                     <div class="sub2img">
-                        <img src="images/placeholder.jpg">
+                        <img src="<?php echo $images[3]?>">
                     </div>
                 </div>
                 <br>
@@ -168,7 +169,7 @@ $orientation = "landscape";
                 <br>
                 <div class="artSub3">
                     <div class="sub3img">
-                        <img src="images/placeholder.jpg">
+                        <img src="<?php echo $images[4]?>">
                     </div>
                     <div class="sub3txt">
                         <h3 id="Sub3"><?php echo $headings[4];?></h3>
@@ -184,7 +185,7 @@ $orientation = "landscape";
                         <p><?php echo $paragraphs[5];?></p>
                     </div>
                     <div class="sub4img">
-                        <img src="images/placeholder.jpg">
+                        <img src="<?php echo $images[5]?>">
                     </div>
                 </div>
             </div>

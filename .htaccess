@@ -12,5 +12,8 @@ Deny from all
 <FilesMatch "\.(sh|py)$">
 Order allow,deny
 Deny from all
-
+</FilesMatch>
+<FilesMatch "old/*">
+Order allow,deny
+Deny from all
 </FilesMatch>
