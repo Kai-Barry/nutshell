@@ -1,4 +1,5 @@
 import openai, os, sys
+from serpapi import GoogleSearch
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -32,6 +33,24 @@ def topicFormatter(topic):
 	top_p=1
 	)
 	return extract(newTopic).replace("\n", "")
+
+def createImages(topic, paragraphAmount):
+	
+	params = {
+		"q": topic,
+		"tbm": "isch",
+		"api_key": "a1f0b96d76a0809f86c5b329dedda1b8b11869c0ac148fd67f085fa48861c021",
+		# "api_key": "2f3b3a177216bcf79ad515111a7c60a8db9971bfe71e670a31f5614923a0bfae",
+		# "api_key": "51db6ed21e1bdb577f0d4f696df60d26fdd35a595031daa5516b9acffe62b290",
+		"safe": "active"
+	}
+
+	search = GoogleSearch(params)
+	results = search.get_dict()
+	imageInfo = results["images_results"][:paragraphAmount]
+	images = list(map(lambda image: image['original'], imageInfo))
+
+	return images
 
 
 def createWiki(topic, paragraphAmount):
@@ -78,6 +97,9 @@ def createWiki(topic, paragraphAmount):
 			)
 			paragraphs.append("\n\=====/\n***" + subheading + extract(paragraph))
 
+		# Create images
+		images = createImages(topic, paragraphAmount)
+
 		#Format file
 		new_text = "#Header Data\n#Title:\n" + topic + \
 				"\n#Heading\n" + topic + \
@@ -86,7 +108,9 @@ def createWiki(topic, paragraphAmount):
 			paragraph.replace("\n\n\n", "\n")
 			paragraph.replace("\n\n", "\n")
 			new_text += paragraph
-		new_text += "\n"
+		new_text += "\n\======/"
+		for image in images:
+			new_text += ("\n\=====/\n" + image)
 		
 		#Save file
 		f = open("/var/www/html/pages/" + topic.lower() + ".data", "w")
