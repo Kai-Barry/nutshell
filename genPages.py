@@ -91,9 +91,9 @@ def createWiki(topic, paragraphAmount):
 		f = open("/var/www/html/pages/" + topic.lower() + ".data", "w")
 		f.write(new_text)
 		f.close()
-		print ("Success")
+		print ("Success: " + topic.lower())
 	else:
-		print("Page exists")
+		print("Page exists: " + topic.lower())
 
 
 if len(sys.argv) == 2:
