@@ -116,7 +116,7 @@ $photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
                 <br>
                 <div class="artSub1">
                     <div class="sub1img">
-                        <img src=<?php echo $photos[0];?>>
+                        <img src="Images/placeholder.jpg">
                     </div>
                     <div class="sub1txt">
                         <h3 id="Sub1">Sub1</h3>
