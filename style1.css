@@ -256,7 +256,7 @@ ul {
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    height: 50px;
+    min-height: 50px;
     width: 700px;
     flex: 100%;
     font-size: 30px;
