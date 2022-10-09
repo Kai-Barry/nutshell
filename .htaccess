@@ -4,7 +4,7 @@ Options -Indexes
 Order allow,deny
 Deny from all
 </Files>
-<Files initDictionary.php>
+<Files "initDictionary.php">
 Order allow,deny
 Deny from all
 </Files>
