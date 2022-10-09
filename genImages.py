@@ -22,6 +22,6 @@ def createImages(topic):
 
 
 if len(sys.argv) == 2:
-	createImages(sys.argv[1], amount)
+	createImages(sys.argv[1])
 else:
 	print("Bad args")
