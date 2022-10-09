@@ -4,7 +4,7 @@
 
     $files = glob($dir . 'pages/*.data');
     $file = array_rand($files);
-    $recent = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data")));
+    $recent = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
     
     $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
     $data = explode("\======/", $file);
