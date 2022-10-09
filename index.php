@@ -1,6 +1,44 @@
 <?php
 	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
+
+    $files = glob($dir . 'pages/*.data');
+    $file = array_rand($files);
+    $recent = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data")));
+    
+    $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
+    $data = explode("\======/", $file);
+    foreach ($data as &$value) {
+            $value = preg_split("/\r\n|\n|\r/", $value);
+            $i = 0;
+            foreach ($value as &$line) {
+                    if ($line[0] == '#') {
+                            unset($value[$i]);
+                    }
+                    $i++;
+            }
+            $value = array_filter(array_values($value));
+    }
+    unset($value);
+    $recentTitle = $data[0][0];
+    $file = array_rand($files);
+    $popular = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
+    
+    $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
+    $data = explode("\======/", $file);
+    foreach ($data as &$value) {
+            $value = preg_split("/\r\n|\n|\r/", $value);
+            $i = 0;
+            foreach ($value as &$line) {
+                    if ($line[0] == '#') {
+                            unset($value[$i]);
+                    }
+                    $i++;
+            }
+            $value = array_filter(array_values($value));
+    }
+    unset($value);
+    $popularTitle = $data[0][0];
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,11 +75,11 @@
                         <div class="box-title">
                             <p>Most recent</p>
                         </div>
-                        <a href="random.php">
+                        <a href="info.php?page=<?php echo $recent;?>">
                             <div class="reco-box">
                                 <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
-                                    <p>title1</p>
+                                    <p><?php echo $recentTitle;?></p>
                                 </div>
                             </div>
                         </a>
@@ -50,11 +88,11 @@
                         <div class="box-title">
                             <p>Most viewed</p>
                         </div>
-                        <a href="random.php">
+                        <a href="info.php?page=<?php echo $popular;?>">
                             <div class="reco-box">
                                 <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
-                                    <p>title2</p>
+                                    <p><?php echo $popularTitle;?></p>
                                 </div>
                             </div>
                         </a>

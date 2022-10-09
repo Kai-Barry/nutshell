@@ -86,9 +86,9 @@ for ($x = 0; $x <= 5; $x++) {
 <h2>An Article created by GPT3</h2>
 <?php
 //Isolate headings
-foreach ($paras as $para) {
+/*foreach ($paras as $para) {
 		echo explode("\n",$para)[0];
-}
+}*/
 
 /*//Isolate paras
 foreach ($paras as $para) {
