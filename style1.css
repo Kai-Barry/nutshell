@@ -261,6 +261,7 @@ ul {
     flex: 100%;
     font-size: 30px;
     resize: none;
+    overflow:hidden;
  }
 
  .search ::placeholder { 
