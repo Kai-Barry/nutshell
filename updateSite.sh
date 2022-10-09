@@ -11,6 +11,7 @@ rm -r nutshell-main
 mv old/genPage.sh .
 mv old/summarise.sh .
 mv old/pages/*.data pages/
+mv old/dict.json .
 chmod +x updateSite.sh
 chmod -R g+w .
 #Line below must be last

@@ -4,6 +4,10 @@ Options -Indexes
 Order allow,deny
 Deny from all
 </Files>
+<Files initDictionary.php>
+Order allow,deny
+Deny from all
+</Files>
 
 <FilesMatch "\.(sh|py)$">
 Order allow,deny
