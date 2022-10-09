@@ -1,7 +1,6 @@
-from copyreg import constructor
 import openai, os, sys
 
-openai.api_key = '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'
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 paragraphAmount = 5
 # Includes intro paragraph
