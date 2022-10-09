@@ -1,4 +1,5 @@
 <?php
+composer require unsplash/unsplash
 $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 $file = file_get_contents("./pages/" . $page  . ".data", FILE_USE_INCLUDE_PATH);
@@ -68,6 +69,13 @@ for ($x = 0; $x <= 5; $x++) {
 		unset($para);
 		//echo "\nlooped";
 }
+
+// $search = 'dinosaur';
+// $page = 1;
+// $per_page = 5;
+// $orientation = 'landscape';
+
+// $photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
 ?>
 <!DOCTYPE html>
 <html>
