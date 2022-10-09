@@ -70,12 +70,12 @@ for ($x = 0; $x <= 5; $x++) {
 		//echo "\nlooped";
 }
 
-$search = 'dinosaur';
-$page = 1;
-$per_page = 5;
-$orientation = 'landscape';
+// $search = 'dinosaur';
+// $page = 1;
+// $per_page = 5;
+// $orientation = 'landscape';
 
-$photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
+// $photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
 ?>
 <!DOCTYPE html>
 <html>
