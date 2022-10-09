@@ -76,7 +76,7 @@ for ($x = 0; $x <= 5; $x++) {
 }
 
 $headings = [];
-$i = 1;
+$i = 0;
 //Isolate headings
 foreach ($paras as $para) {
     $headings[$i] = explode("\n",$para)[0];
@@ -85,7 +85,7 @@ foreach ($paras as $para) {
 
 //Isolate paras
 $paragraphs = [];
-$i = 1;
+$i = 0;
 //Isolate headings
 foreach ($paras as $para) {
     $paragraphs[$i] = explode("\n",$para)[1];
@@ -128,7 +128,7 @@ $orientation = "landscape";
                 <div class="artHead">
                     <div class="artHeadtxt">
                         <h1><?php echo $header;?></h1>
-                        <p><?php echo $paragraphs[1];?></p>
+                        <p><?php echo $paragraphs[2];?></p>
                     </div>
                     <div class="artHeadimg">
                         <img src='images/placeholder.jpg'>
@@ -143,7 +143,7 @@ $orientation = "landscape";
                     </div>
                     <div class="sub1txt">
                         <h3 id="Sub1"><?php echo $headings[2];?></h3>
-                        <p><?php echo $paragraphs[2];?></p>
+                        <p><?php echo $paragraphs[3];?></p>
                     </div>
                 </div>
                 <br>
@@ -152,7 +152,7 @@ $orientation = "landscape";
                 <div class="artSub2">
                     <div class="sub2txt">
                         <h3 id="Sub2"><?php echo $headings[3];?></h3>
-                        <p><?php echo $paragraphs[3];?></p>
+                        <p><?php echo $paragraphs[4];?></p>
                     </div>
                     <div class="sub2img">
                         <img src="images/placeholder.jpg">
@@ -167,7 +167,7 @@ $orientation = "landscape";
                     </div>
                     <div class="sub3txt">
                         <h3 id="Sub3"><?php echo $headings[4];?></h3>
-                        <p><?php echo $paragraphs[4];?></p>
+                        <p><?php echo $paragraphs[5];?></p>
                     </div>
                 </div>
                 <br>
@@ -176,7 +176,7 @@ $orientation = "landscape";
                 <div class="artSub4">
                     <div class="sub4txt">
                         <h3 id="Sub4"><?php echo $headings[5];?></h3>
-                        <p><?php echo $paragraphs[5];?></p>
+                        <p><?php echo $paragraphs[6];?></p>
                     </div>
                     <div class="sub4img">
                         <img src="images/placeholder.jpg">
