@@ -2,27 +2,26 @@
 	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 
-    $files = glob($dir . 'pages/*.data');
-    $file = array_rand($files);
-    $recent = substr($files[$file], 6, strlen($files[$file])-strlen("pages/.data"));
-    
-    $file = file_get_contents($files[$file], FILE_USE_INCLUDE_PATH);
-    $file = preg_split("/\r\n|\n|\r/", $file);
-    $recentTitle = $file[2];
-
-
-    
-
     $files = json_decode(file_get_contents('dict.json'), true);
     $popular = "";
+    $recent = "";
     foreach ($files as $key => $value) {
         if ($popular == "") {
             $popular = $key;
+            $recent = $key;
         }
-        else if ($value > $files[$key]) {
+        if ($value > $files[$popular]) {
             $popular = $key;
         }
+        if ($value < $files[$recent]) {
+            $recent = $key;
+        }
     }
+
+    $file = file_get_contents($recent, FILE_USE_INCLUDE_PATH);
+    $recent = substr($recent, 6, strlen($recent)-strlen("pages/.data"));
+    $file = preg_split("/\r\n|\n|\r/", $file);
+    $recentTitle = $file[2];
     
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
