@@ -26,7 +26,7 @@
                                 ~ The In a Nutshell Team
                     </h4>
                 <div class="image">
-                    <img id="nav-logo-1" src="Images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
+                    <img id="nav-logo-1" src="images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@
             <div class="search">
                 <div class="search-bar">
                     <div class="magnifind">
-                        <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
+                        <img id="magnifind-img" src="images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
                         <textarea id="search-element" placeholder="... what topic do you want to know about? (e.g. Dinosaur, Squirrel, Dihydrogen Monoxide)" oninput="auto_grow(this)"></textarea>
@@ -39,7 +39,7 @@
                         </div>
                         <a href="random.php">
                             <div class="reco-box">
-                                <img src="Images/placeholder.jpg">
+                                <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
                                     <p>title1</p>
                                 </div>
@@ -52,7 +52,7 @@
                         </div>
                         <a href="random.php">
                             <div class="reco-box">
-                                <img src="Images/placeholder.jpg">
+                                <img src="images/placeholder.jpg">
                                 <div class="box-page-title">
                                     <p>title2</p>
                                 </div>
