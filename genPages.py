@@ -83,8 +83,7 @@ def createWiki(topic, paragraphAmount):
 				"\n#Heading\n" + topic + \
 				"\n#Article Created By GPT3\n#\======/"
 		for paragraph in paragraphs:
-			while "\n\n" in paragraph:
-				paragraph.replace("\n\n", "\n")
+				paragraph.replace("\n\n\n", "\n")
 			new_text += paragraph
 		new_text += "\n"
 		
