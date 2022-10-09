@@ -17,7 +17,7 @@
                         <img id="magnifind-img" src="Images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <input id="search-element" type="text" placeholder="... what topic do you want to know about? (e.g. Dinosaur, Squirrel, Dihydrogen Monoxide)" onkeydown="myfunction(event)">
+                        <textarea id="search-element" placeholder="... what topic do you want to know about? (e.g. Dinosaur, Squirrel, Dihydrogen Monoxide)" rows="2" onkeydown="myfunction(event)">
                         <script>runListener()</script>
                     </div>
                 </div>

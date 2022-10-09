@@ -248,7 +248,7 @@ ul {
     display: flex;
     align-items: center;
 }
- .search-input input[type=text] {
+ #search-element {
     font-family: 'Comfortaa', cursive;
     background-color: transparent;
     border: none;
@@ -260,6 +260,7 @@ ul {
     width: 700px;
     flex: 100%;
     font-size: 30px;
+    resize: none;
  }
 
  .search ::placeholder { 
