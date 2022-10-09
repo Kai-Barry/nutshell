@@ -1,5 +1,4 @@
 <?php
-composer require unsplash/unsplash
 $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 $file = file_get_contents("./pages/" . $page  . ".data", FILE_USE_INCLUDE_PATH);
@@ -69,13 +68,6 @@ for ($x = 0; $x <= 5; $x++) {
 		unset($para);
 		//echo "\nlooped";
 }
-
-$search = $title;
-$page = 1;
-$per_page = 5;
-$orientation = 'landscape';
-
-$photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
 ?>
 <!DOCTYPE html>
 <html>
@@ -116,7 +108,7 @@ $photos = Unsplash\Search::photos($search, $page, $per_page, $orientation);
                 <br>
                 <div class="artSub1">
                     <div class="sub1img">
-                        <img src=<?php echo $photos[0];?>>
+                        <img src="Images/placeholder.jpg">
                     </div>
                     <div class="sub1txt">
                         <h3 id="Sub1">Sub1</h3>
