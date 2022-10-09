@@ -22,6 +22,8 @@ def createImages(topic):
 
 
 if len(sys.argv) == 2:
-	createImages(sys.argv[1])
+	print("\======/")
+	for image in createImages(sys.argv[1]):
+		print (image)
 else:
 	print("Bad args")

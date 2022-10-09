@@ -109,6 +109,7 @@ def createWiki(topic, paragraphAmount):
 		new_text += "\n\======/"
 		for image in images:
 			new_text += ("\n" + image)
+		new_text += "\n"
 		
 		#Save file
 		f = open("/var/www/html/pages/" + topic.lower() + ".data", "w")
