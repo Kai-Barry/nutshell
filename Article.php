@@ -74,7 +74,7 @@ $headings = [];
 $i = 0;
 //Isolate headings
 foreach ($paras as $para) {
-    $headings[$i] = explode("\n",$para)[0]
+    $headings[$i] = explode("\n",$para)[0];
     $i++;
 }
 
@@ -83,7 +83,7 @@ $paragraphs = [];
 $i = 0;
 //Isolate headings
 foreach ($paras as $para) {
-    $paragraphs[$i] = explode("\n",$para)[1]
+    $paragraphs[$i] = explode("\n",$para)[1];
     $i++;
 }
 
