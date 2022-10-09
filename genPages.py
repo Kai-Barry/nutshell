@@ -1,6 +1,7 @@
+from copyreg import constructor
 import openai, os, sys
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = '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'
 
 paragraphAmount = 5
 # Includes intro paragraph
@@ -9,25 +10,42 @@ def extract(aiContent):
 	return str(aiContent["choices"][0]["text"])
 
 def isValid(topic):
-	valid = openai.Completion.create(
+	valid = extract(openai.Completion.create(
 	model="text-davinci-002",
-	prompt=f"Respond with 1 if yes and 0 if no. Is {topic} a topic thats valid for an article and not NSFW?",
+	prompt=f"Respond with yes or no. Is {topic} a topic thats valid for an article and not NSFW?",
 	temperature=0,
 	max_tokens=300,
 	top_p=1,
 	frequency_penalty=0,
 	presence_penalty=0
+	)).lower()
+	if valid[:2] == 'no':
+		return False
+	return True
+
+def topicFormatter(topic):
+	newTopic = openai.Completion.create(
+	model="text-davinci-002",
+	prompt=f"Fix the spelling of the following text. If the text is plural, make it singular. Capitalize it as you would an article heading.\n\n{topic}\n",
+	temperature=0,
+	max_tokens=256,
+	top_p=1,
+	frequency_penalty=0,
+	presence_penalty=0
 	)
-	return int(''.join(ch for ch in extract(valid) if ch.isalnum()))
+	return extract(newTopic).replace("\n", "")
+
 
 def createWiki(topic, paragraphAmount):
 
 	# test = 'test'
-    
+
+	topic = topicFormatter(topic)
+	
 	if not isValid(topic):
 		print("Page invalid or inappropriate")
 	#Check page exists
-	elif not os.path.exists("/var/www/html/pages/" + topic + ".data"):
+	elif not os.path.exists("/var/www/html/pages/" + topic.lower() + ".data"):
 		# Create subheadings
 		subheadings = openai.Completion.create(
 		model="text-davinci-002",
@@ -71,7 +89,7 @@ def createWiki(topic, paragraphAmount):
 		new_text += "\n"
 		
 		#Save file
-		f = open("/var/www/html/pages/" + topic + ".data", "w")
+		f = open("/var/www/html/pages/" + topic.lower() + ".data", "w")
 		f.write(new_text)
 		f.close()
 		print ("Success")
