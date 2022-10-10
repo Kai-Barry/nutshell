@@ -13,5 +13,5 @@ do
                 1) export SERPAPI_KEY=2f3b3a177216bcf79ad515111a7c60a8db9971bfe71e670a31f5614923a0bfae && echo 2;;
                 2) export SERPAPI_KEY=51db6ed21e1bdb577f0d4f696df60d26fdd35a595031daa5516b9acffe62b290 && echo 3;;
         esac
-        python3.10 genPages.py $var
+        python3.10 genPages.py "$var"
 done
