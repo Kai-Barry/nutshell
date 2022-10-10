@@ -40,6 +40,7 @@ def createImages(topic, paragraphAmount):
 		"q": topic,
 		"tbm": "isch",
 		"tbs": "iar:w",
+		"gl": "au",
 		"api_key": os.getenv("SERPAPI_KEY"),
 		"safe": "active"
 	}
