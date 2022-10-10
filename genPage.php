@@ -14,8 +14,8 @@
                 }*/
                 header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/Article.php?page=' . $page);
         }
-        /*else {
+        else {
                 header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/OhNoPage.php');
-        }*/
+        }
         exit();
 ?>
