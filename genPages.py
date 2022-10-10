@@ -39,7 +39,7 @@ def createImages(topic, paragraphAmount):
 	params = {
 		"q": topic,
 		"tbm": "isch",
-		"tbs": "iar:w",
+		"tbs": "iar:w%2Cil:cl",
 		"location": "Australia",
  		"google_domain": "google.com.au",
 		"hl": "en",
