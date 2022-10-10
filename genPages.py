@@ -40,6 +40,9 @@ def createImages(topic, paragraphAmount):
 		"q": topic,
 		"tbm": "isch",
 		"tbs": "iar:w",
+		"location": "Australia",
+ 		"google_domain": "google.com.au",
+		"hl": "en",
 		"gl": "au",
 		"api_key": os.getenv("SERPAPI_KEY"),
 		"safe": "active"
