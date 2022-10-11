@@ -11,7 +11,7 @@ $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
             <div class="wantMore" style="width:80%; float:left; margin-left:10%">
                 <h2>Below are all our pages:</h2>
                 <?php
-                $files = glob($dir . 'pages/*.data');
+                $files = glob('pages/*.data');
                 foreach ($files as &$file) {
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
