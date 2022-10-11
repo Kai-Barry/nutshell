@@ -27,21 +27,18 @@ if (isset($_GET["display"])) {
                 $maxPage = ceil(count($files) / $display);
                 if ($maxPage > 1) {
                     $maxReached = 0;
-                    for ($i = 1; $i < $maxPage; $i++) {
+                    for ($i = 1; $i < $maxPage && $i <= $endSpacing + 1; $i++) {
                         if ($page == $i) {
                             echo $i . ' ';
                         } else {
                             echo '<a href="/list.php?display=' . $display . '&page=' . $i . '">' . $i . '</a> ';
                         }
                         $maxReached = $i;
-                        if ($i == $endSpacing + 1) {
-                            break;
-                        }
                     }
                     if ($maxPage > ($endSpacing + $middleSpacing)*2+3 && $page > $endSpacing + $middleSpacing + 2) {
                         echo "... ";
                     }
-                    for ($i = $page - $middleSpacing; $i < $maxPage; $i++) {
+                    for ($i = $page - $middleSpacing; $i < $maxPage && $i <= $page + $middleSpacing; $i++) {
                         if ($maxReached >= $i) {
                             continue;
                         }
@@ -51,9 +48,6 @@ if (isset($_GET["display"])) {
                             echo '<a href="/list.php?display=' . $display . '&page=' . $i . '">' . $i . '</a> ';
                         }
                         $maxReached = $i;
-                        if ($i == $page + $middleSpacing) {
-                            break;
-                        }
                     }
                     if ($maxPage > ($endSpacing + $middleSpacing)*2+3 && $page < $maxPage - ($endSpacing + $middleSpacing + 1)) {
                         echo "... ";
@@ -75,7 +69,15 @@ if (isset($_GET["display"])) {
                         echo '<a href="/list.php?display=' . $display . '&page=' . $maxPage . '">' . $maxPage . '</a>';
                     }
                     echo '></h2>';
-                }
+                }?>
+                <h2>
+                        Display <a href="/list.php?display=4">4</a>
+                        <a href="/list.php?display=12">12</a>
+                        <a href="/list.php?display=20">20</a>
+                        <a href="/list.php?display=40">40</a>
+                        <a href="/list.php?display=100">100</a> pages at once.
+                </h2>
+                <?php
                 for ($i = (($page - 1) * $display); $i < ($page * $display) && $i < count($files); $i++) {
                     $file = $files[$i];
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
@@ -100,4 +102,3 @@ if (isset($_GET["display"])) {
         <?php echo $footerFile;?>
     </body>
 </html>
-
