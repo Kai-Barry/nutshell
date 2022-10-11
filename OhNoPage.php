@@ -13,7 +13,7 @@
                         <h1>Oh No!</h1>
                     </div>
                 </div>
-                <img id="squirrel" src="images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
+                <img id="squirrel" src="/images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
             </div>
             <div class="no-column">
                 <div class="no-box">
@@ -21,7 +21,7 @@
                         It looks like we’ve found a tough nut and can’t break into it. Maybe try to look for something else?
                     </p>
                 </div>
-                <img id="acorn" src="images/Logo 02- 600 x 600 px.png">
+                <img id="acorn" src="/images/Logo 02- 600 x 600 px.png">
             </div>
         </div>
         <?php echo $footerFile;?>

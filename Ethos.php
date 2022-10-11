@@ -18,7 +18,7 @@
                 <h4>We want you to be able to find what you’re looking for with ease and learn more about the world in a way you can understand. </h4>
                 </h4>
                 <div class="image">
-                    <img id="nav-logo-1" src="images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
+                    <img id="nav-logo-1" src="/images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
                 </div>
             </div>
         </div>

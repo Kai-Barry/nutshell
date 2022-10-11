@@ -46,7 +46,7 @@
             element.style.height = (element.scrollHeight)+"px";
         }
     </script>
-    <script src="js/serach.js"></script>
+    <script src="/js/serach.js"></script>
 	<title>Search<?php
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
@@ -55,7 +55,7 @@
             <div class="search">
                 <div class="search-bar">
                     <div class="magnifind">
-                        <img id="magnifind-img" src="images/magnigying-glass.png" alt="magnifind">
+                        <img id="magnifind-img" src="/images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
                         <textarea id="search-element" placeholder="Discover something new! e.g. Dinosaur" oninput="auto_grow(this)"></textarea>
