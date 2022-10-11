@@ -35,7 +35,7 @@ if (isset($_GET["display"])) {
                         }
                         $maxReached = $i;
                     }
-                    if ($maxPage > ($endSpacing + $middleSpacing)*2+3 && $page > $endSpacing + $middleSpacing + 2) {
+                    if ($page > $endSpacing + $middleSpacing + 2) {
                         echo "... ";
                     }
                     for ($i = $page - $middleSpacing; $i < $maxPage && $i <= $page + $middleSpacing; $i++) {
@@ -49,7 +49,7 @@ if (isset($_GET["display"])) {
                         }
                         $maxReached = $i;
                     }
-                    if ($maxPage > ($endSpacing + $middleSpacing)*2+3 && $page < $maxPage - ($endSpacing + $middleSpacing + 1)) {
+                    if ($page < $maxPage - ($endSpacing + $middleSpacing + 1)) {
                         echo "... ";
                     }
                     for ($i = $maxPage - $endSpacing; $i < $maxPage; $i++) {
