@@ -94,9 +94,9 @@ foreach ($paras as $para) {
 }
 
 
-$files = json_decode(file_get_contents('dict.json'), true);
+$files = json_decode(file_get_contents('stats/dict.json'), true);
 $files["pages/" . $page  . ".data"] += 1;
-file_put_contents("dict.json",json_encode($files));
+file_put_contents("stats/dict.json",json_encode($files));
 ?>
 <!DOCTYPE html>
 <html>
@@ -186,7 +186,7 @@ file_put_contents("dict.json",json_encode($files));
                 <div class="moreArt">
                     <?php
                     
-                    $files = glob($dir . 'pages/*.data');
+                    $files = glob('pages/*.data');
                     $target = count($files);
                     if ($target > 7) {
                         $target = 7;

@@ -4,7 +4,7 @@
 
     $latest_ctime = 0;
     $recent = '';
-    $files = glob($dir . 'pages/*.data');
+    $files = glob('pages/*.data');
     foreach($files as $file)
     {
             if (is_file($file) && filectime($file) > $latest_ctime)
@@ -15,7 +15,7 @@
     }
 
 
-    $files = json_decode(file_get_contents('dict.json'), true);
+    $files = json_decode(file_get_contents('stats/dict.json'), true);
     $popular = "";
     foreach ($files as $key => $value) {
         if ($popular == "") {

@@ -75,9 +75,9 @@ for ($x = 0; $x <= 5; $x++) {
 		//echo "\nlooped";
 }
 
-$files = json_decode(file_get_contents('dict.json'), true);
+$files = json_decode(file_get_contents('stats/dict.json'), true);
 $files["pages/" . $page  . ".data"] += 1;
-file_put_contents("dict.json",json_encode($files));
+file_put_contents("stats/dict.json",json_encode($files));
 ?>
 <!DOCTYPE html>
 <html>
