@@ -11,7 +11,7 @@ rm -r nutshell-main
 mv old/genPage.sh .
 mv old/summarise.sh .
 mv old/pages/*.data pages/
-mv old/stats .
+mv old/stats/*.json ./stats/
 chmod +x updateSite.sh
 chmod -R g+w .
 sudo chgrp -R sysadmin .
