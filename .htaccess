@@ -4,12 +4,8 @@ Options -Indexes
 Order allow,deny
 Deny from all
 </Files>
-<Files "initDictionary.php">
-Order allow,deny
-Deny from all
-</Files>
 
-<FilesMatch "\.(sh|py)$">
+<FilesMatch "\.(sh|py|old|html)$">
 Order allow,deny
 Deny from all
 </FilesMatch>
@@ -17,3 +13,31 @@ Deny from all
 Order allow,deny
 Deny from all
 </FilesMatch>
+<FilesMatch "stats/*">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+/etc/nginx/sites-enabled/http-site
+
+# nginx configuration by winginx.com
+
+autoindex off;
+
+location ~ .htaccess {
+    return 404;
+}
+
+location ~ \.(sh|py|old|html|json)$ {
+    return 404;
+}
+
+location ~ old/* {
+    return 404;
+}
+
+location ~ stats/* {
+    return 404;
+}
+
+error_page   404 403  /OhNoPage.php;
