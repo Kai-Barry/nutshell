@@ -829,7 +829,7 @@ ul {
  .EthosTitle {
     display: flex;
     padding-left: 40vw;
-    margin-top: 150px;
+    /* margin-top: 150px; */
  }
 
  .EthosBox {
@@ -856,7 +856,7 @@ ul {
  .AboutTitle {
     display: flex;
     padding-left: 40vw;
-    margin-top: 150px;
+    /* margin-top: 150px; */
  }
 
  .AboutBox {
@@ -883,7 +883,7 @@ ul {
 .EthicsTitle {
     display: flex;
     padding-left: 40vw;
-    margin-top: 150px;
+    /* margin-top: 150px; */
 }
 
 .EthicsBox {
