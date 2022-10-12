@@ -1,18 +1,24 @@
-import requests
-from bs4 import BeautifulSoup
-import json
+def createImages(topic, subheadings):
 
-def createImages(topic):
-    
-    formattedTopic = topic.replace(" ", "+")
-    USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:65.0) Gecko/20100101 Firefox/65.0"
-    header = {"user-agent": USER_AGENT}
-    URL = f"https://bing.com/images/search?q={formattedTopic}&qft=+filterui:aspect-wide&safeSearch=strict"
-    page = requests.get(URL, headers=header)
-    soup = BeautifulSoup(page.content, "html.parser")
-    images = soup.find_all('div', class_='imgpt')
+    searchFormat = lambda search : search.replace(" ", "+")
+    URL = lambda search : f"https://bing.com/images/search?q={search}&qft=+filterui:aspect-wide+filterui:licenseType-Any&safeSearch=strict"
+
+    headers = {
+    "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582"
+	}
     result = []
-    for image in images[:5]:
-        result.append(json.loads(image.a['m'])['murl'])
+    
+    for i, subheading in enumerate(subheadings):
+        query = f"{topic} {subheading}" if i != 0 else topic
+        searchURL = URL(searchFormat(query))
+        page = requests.get(searchURL, headers=headers)
+        soup = BeautifulSoup(page.content, "html.parser")
+        images = soup.find_all('img', class_='mimg')
+        j = 0
+        image = images[j]['src']
+        while image in result and j < 8:
+            j += 1
+            image = images[j]['src']
+        result.append(image)
     return result
-
