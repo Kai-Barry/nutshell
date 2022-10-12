@@ -95,6 +95,12 @@ if (isset($_GET["display"])) {
                         </a>
                     </div>';
                 }
+                if ($page > 1) {
+                    echo '<div class="pick-for-me" style="float:left"><a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><p>Previous Page</p></a></div>';
+                }
+                if ($page < $maxPage) {
+                    echo '<div class="pick-for-me" style="float:right"><a style="text-decoration:none" href="/list.php?display=' . $display . '&page=' . ($page + 1) . '"><p>Next Page</p></a></div>';
+                }
                 ?>
             </div>
         </div>
