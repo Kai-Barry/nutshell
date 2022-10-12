@@ -28,7 +28,7 @@ def topicFormatter(topic):
 	newTopic = openai.Edit.create(
 	model="text-davinci-edit-001",
 	input=topic,
-	instruction="1. Fix the spelling\n2. Capitalize in the style of a title\n3. Make the text singular, not plural",
+	instruction="1. Fix the spelling (English)\n2. Capitalize in the style of a title\n3. Make the text singular, not plural",
 	temperature=0,
 	top_p=1
 	)
