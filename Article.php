@@ -1,5 +1,5 @@
 <?php
-$page = $_GET["page"];
+$page = strtolower($_GET["page"]);
 if (!file_exists("/var/www/html/pages/" . $page  . ".data")) {
 		echo "error: /var/www/html/pages/" . $page  . ".data";
 		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
