@@ -786,6 +786,17 @@ ul {
 
  .moreArt h2:link{
     text-decoration: none;
+    color: black;
+ }
+
+ .moreArt h2:visited{
+    text-decoration: none;
+    color: black;
+ }
+
+ .moreArt h2:hover{
+    text-decoration: none;
+    color: #875930;
  }
 
  hr {
