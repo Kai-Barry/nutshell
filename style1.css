@@ -784,7 +784,7 @@ ul {
     width: 220px;
  }
 
- .moreArt {
+ .moreArt h2:link{
     text-decoration: none;
  }
 
