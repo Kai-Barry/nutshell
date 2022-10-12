@@ -828,7 +828,6 @@ ul {
 
  .EthosTitle {
     display: flex;
-    padding-top: 3vh;
     padding-left: 40vw;
     margin-top: 150px;
  }
@@ -856,7 +855,6 @@ ul {
 
  .AboutTitle {
     display: flex;
-    padding-top: 3vh;
     padding-left: 40vw;
     margin-top: 150px;
  }
@@ -884,7 +882,6 @@ ul {
 
 .EthicsTitle {
     display: flex;
-    padding-top: 3vh;
     padding-left: 40vw;
     margin-top: 150px;
 }
