@@ -45,7 +45,7 @@
             if (element.value.includes("\n") || element.value.includes("\r")) {
                 element.value = element.value.replace(/[\r\n]/gm, '');
                 if (element.value.length > 0) {
-                    window.location.href = "/genPage.php?page=" + text;
+                    window.location.href = "/genPage.php?page=" + element.value;
                 }
             }
             element.style.height = "5px";
@@ -64,7 +64,6 @@
                     </div>
                     <div class="search-input">
                         <textarea id="search-element" placeholder="Discover something new! e.g. Dinosaur" oninput="auto_grow(this)"></textarea>
-                        <script>runListener()</script>
                     </div>
                 </div>
             </div>
