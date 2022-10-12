@@ -733,6 +733,7 @@ ul {
     border-width: 3px;
     border-style: solid;
     border-color: #875930;
+    margin-bottom: 30px;
  }
 
  .article img{
@@ -779,6 +780,7 @@ ul {
     border-style: solid;
     border-radius: 20px;
     width: 15vw;
+    margin-bottom: 30px;
  }
 
  .wantMore h2 {

@@ -8,7 +8,7 @@
 	<title>Ethos<?php
 		echo $headerFile; ?>
         <div class="EthosTitle">
-            <h1 id="title">Our Ethos</h1>
+            <h1>Our Ethos</h1>
         </div>
         <div class="EthosBox">
             <div class="EthosMessage">

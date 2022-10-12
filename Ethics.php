@@ -8,7 +8,7 @@
 	<title>Ethics<?php
 		echo $headerFile; ?>
         <div class="EthicsTitle">
-            <h1 id="title">Ethics</h1>
+            <h1>Ethics</h1>
         </div>
         <div class="EthicsBox">
             <div class="EthicsMessage">
