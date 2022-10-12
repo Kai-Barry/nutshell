@@ -1,5 +1,6 @@
 import openai, os, sys
-from serpapi import GoogleSearch
+import requests
+from bs4 import BeautifulSoup
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -34,26 +35,30 @@ def topicFormatter(topic):
 	)
 	return extract(newTopic).replace("\n", "")
 
-def createImages(topic, paragraphAmount):
-	
-	params = {
-		"q": topic,
-		"tbm": "isch",
-		"tbs": "iar:w%2Cil:cl",
-		"location": "Australia",
- 		"google_domain": "google.com.au",
-		"hl": "en",
-		"gl": "au",
-		"api_key": os.getenv("SERPAPI_KEY"),
-		"safe": "active"
+def createImages(topic, subheadings):
+
+    searchFormat = lambda search : search.replace(" ", "+")
+    URL = lambda search : f"https://bing.com/images/search?q={search}&qft=+filterui:aspect-wide+filterui:licenseType-Any&safeSearch=strict"
+
+    headers = {
+    "User-Agent":
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.19582"
 	}
-
-	search = GoogleSearch(params)
-	results = search.get_dict()
-	imageInfo = results["images_results"][:paragraphAmount]
-	images = list(map(lambda image: image['original'], imageInfo))
-
-	return images
+    result = []
+    
+    for i, subheading in enumerate(subheadings):
+        query = f"{topic} {subheading}" if i != 0 else topic
+        searchURL = URL(searchFormat(query))
+        page = requests.get(searchURL, headers=headers)
+        soup = BeautifulSoup(page.content, "html.parser")
+        images = soup.find_all('img', class_='mimg')
+        j = 0
+        image = images[j]['src']
+        while image in result and j < 8:
+            j += 1
+            image = images[j]['src']
+        result.append(image)
+    return result
 
 
 def createWiki(topic, paragraphAmount):
