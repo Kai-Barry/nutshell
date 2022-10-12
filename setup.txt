@@ -1,0 +1,24 @@
+/etc/nginx/sites-enabled/http-site
+
+autoindex off;
+
+location ~ .htaccess {
+    return 404;
+}
+
+location ~ \.(sh|py|old|html|json|txt)$ {
+    return 404;
+}
+
+location ~ old/* {
+    return 404;
+}
+
+location ~ stats/* {
+    return 404;
+}
+
+error_page   404 403  /OhNoPage.php;
+
+sudo crontab -e
+50 23 * * * cd /var/www/html && php stats/compareDictionary.php
