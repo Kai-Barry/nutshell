@@ -7,6 +7,11 @@
 a {
     text-decoration: none;
 }
+a:hover {
+	color: #71481f;
+	transition: color, background-color;
+	transition-duration: 0.3s;
+}
 
 @font-face {
     font-family: 'MyWebFont';
