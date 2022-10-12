@@ -799,6 +799,21 @@ ul {
     color: #875930;
  }
 
+ .moreArt a:link{
+    text-decoration: none;
+    color: black;
+ }
+
+ .moreArt a:visited{
+    text-decoration: none;
+    color: black;
+ }
+
+ .moreArt a:hover{
+    text-decoration: none;
+    color: #875930;
+ }
+
  hr {
     border-top: 3px solid #875930;
  }
