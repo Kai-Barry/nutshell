@@ -30,7 +30,7 @@
     $recent = substr($recent, 6, strlen($recent)-strlen("pages/.data"));
     $recentTitle = preg_split("/\r\n|\n|\r/", $file)[2];
     $recentImage = explode("\n", explode("\======/", $file)[2])[1];
-    
+
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
     $popularTitle = preg_split("/\r\n|\n|\r/", $file)[2];
@@ -41,12 +41,17 @@
     <head>
     <script>
         function auto_grow(element) {
-            element.value = element.value.replace(/[\r\n]/gm, '');
+            //element.value = element.value.replace(/[\r\n]/gm, '');
+            if (element.value.includes("\n") || element.value.includes("\r")) {
+                element.value = element.value.replace(/[\r\n]/gm, '');
+                if (element.value.length > 0) {
+                    window.location.href = "/genPage.php?page=" + text;
+                }
+            }
             element.style.height = "5px";
             element.style.height = (element.scrollHeight)+"px";
         }
     </script>
-    <script src="/js/serach.js"></script>
 	<title>Search<?php
 		echo $headerFile; ?>
 <!-- Set up template html code here-->
@@ -63,7 +68,7 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
         <div class="two">
             <div class="recommendation">
                 <div class="reco-page">
