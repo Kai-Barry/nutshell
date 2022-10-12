@@ -774,6 +774,7 @@ ul {
     border-style: solid;
     border-radius: 20px;
     width: 15vw;
+    text-decoration: none;
  }
 
  .wantMore h2 {
