@@ -774,7 +774,6 @@ ul {
     border-style: solid;
     border-radius: 20px;
     width: 15vw;
-    text-decoration: none;
  }
 
  .wantMore h2 {
@@ -783,6 +782,10 @@ ul {
 
  .wantMore img{
     width: 220px;
+ }
+
+ .moreArt {
+    text-decoration: none;
  }
 
  hr {
