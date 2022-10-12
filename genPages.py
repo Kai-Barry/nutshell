@@ -106,7 +106,7 @@ def createWiki(topic, paragraphAmount):
 			paragraphs.append("\n\=====/\n***" + subheading + extract(paragraph))
 
 		# Create images
-		images = createImages(topic, paragraphAmount)
+		images = createImages(topic, subheadings)
 
 		#Format file
 		new_text = "#Header Data\n#Title:\n" + topic + \
