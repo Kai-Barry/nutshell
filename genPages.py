@@ -46,17 +46,17 @@ def createImages(topic, subheadings):
 	}
     result = []
     
-    for i, subheading in enumerate(subheadings):
-        query = f"{topic} {subheading}" if i != 0 else topic
+    for subheading in subheadings:
+        query = f"{topic} {subheading}" if subheading not in ['Introduction', 'Conclusion'] else topic
         searchURL = URL(searchFormat(query))
         page = requests.get(searchURL, headers=headers)
         soup = BeautifulSoup(page.content, "html.parser")
         images = soup.find_all('img', class_='mimg')
-        j = 0
-        image = images[j]['src']
-        while image in result and j < 8:
-            j += 1
-            image = images[j]['src']
+        i = 0
+        image = images[i]['src']
+        while image in result and i < 8:
+            i += 1
+            image = images[i]['src']
         result.append(image)
     return result
 
