@@ -106,6 +106,9 @@ if (isset($_GET["display"])) {
                     if ($i % 2 == 1) {
                         echo '</div>';
                     }
+                    if ($i % 4 == 3) {
+                        echo '</div>';
+                    }
                     $i += 1;
                 }
                 if ($i % 2 != 0) {
