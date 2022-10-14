@@ -66,7 +66,7 @@ ul {
 .navigation-bar {
     float: right;
     width: 50%;
-    margin: 20px;
+    margin: auto 20px;
     display: flex;
     flex-direction: row;
 	flex-wrap: wrap;
@@ -121,7 +121,8 @@ ul {
 /* Nav bar Responsive layout*/
 @media screen and (max-width: 1500px) {
     .navigation-bar {
-        flex-direction: column;
+        width: 80%;
+        display: block;
     }
     .nav-bar {
         flex-direction: column;
@@ -130,6 +131,42 @@ ul {
     }
     .nav-button {
        margin: 10px;
+       display: block;
+       width: auto;
+    }
+    .navigation-bar li {
+       margin: 10px;
+       display: block;
+       float: left;
+       width: 40%;
+    }
+    .navigation-bar * {
+       font-size: 10vw;
+       text-align: center;
+    }
+}
+/* Nav bar Responsive layout*/
+@media screen and (max-width: 1000px) {
+    .navigation-bar {
+        width: 100%;
+        display: flex;
+    }
+    .nav-button {
+       margin: 10px;
+       display: flex;
+       width: 100%
+    }
+    .navigation-bar li {
+       margin: 10px;
+       display: flex;
+       width: 100%;
+    }
+    .navigation-bar li a {
+       width: 100%;
+    }
+    .navigation-bar * {
+       font-size: 4vw;
+       text-align: center;
     }
 }
 
@@ -706,7 +743,6 @@ ul {
  .jumpto a {
     text-align: center;
     color: white;
-    font-size: 1.5vw;
  }
 
  .jumpto a:link {
@@ -741,7 +777,7 @@ ul {
     float:left;
  }
 
- @media screen and (max-width: 850px) {
+ @media screen and (max-width: 1400px) {
     .textPlus {
         margin:  0px;
     }
@@ -765,7 +801,7 @@ ul {
  }
 
 
- @media screen and (max-width: 650px) {
+ @media screen and (max-width: 1000px) {
     .articleContainer img{
         clear: both;
         float: none !important;
@@ -795,34 +831,56 @@ ul {
         float: none !important;
         width: 100% !important;
     }
+    * {
+        font-size: 6vw;
+    }
+    .article *{
+        font-size: 6vw;
+    }
+    .jumpto {
+        display: block;
+        text-align: center;
+    }
+    .sub1 {
+        margin-bottom: 20px;
+    }
+    .sub2 {
+        margin-bottom: 20px;
+    }
+    .sub3 {
+        margin-bottom: 20px;
+    }
+    .sub4 {
+        margin-bottom: 20px;
+    }
+    #nav-logo-1 {
+        width: 200px;
+    }
+    
+    #nav-logo-2 {
+        width: 600px;
+        top: 30px;
+    }
  }
 
  .articleContainer img{
     width: 45%;
-    margin-left: 1vw;
-    margin-right: 1vw;
     float: left;
  }
 
  .articleContainer p{
     width: 45%;
-    margin-left: 1vw;
-    margin-right: 1vw;
     text-align: justify;
     float: left;
  }
 
  .articleContainer h3{
     width: 45%;
-    margin-left: 1vw;
-    margin-right: 1vw;
     float: left;
  }
 
  .articleContainer h1{
     width: 45%;
-    margin-left: 1vw;
-    margin-right: 1vw;
     float: left;
  }
 

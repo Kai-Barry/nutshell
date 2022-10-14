@@ -107,18 +107,26 @@ file_put_contents("stats/dict.json",json_encode($files));
 		        echo $headerFile; ?>
         <div class="jumptomenu">
             <div class="jumpto">
-                <div class="sub1">
-                    <a href="#Sub1" id="subOne"><?php echo $headings[2];?></a>
-                </div>
-                <div class="sub2">
-                    <a href="#Sub2" id="subTwo"><?php echo $headings[3];?></a>
-                </div>
-                <div class="sub3">
-                    <a href="#Sub3" id="subThree"><?php echo $headings[4];?></a>
-                </div>
-                <div class="sub4">
-                    <a href="#Sub4" id="subFour"><?php echo $headings[5];?></a>
-                </div>
+                <a href="#Sub1" id="subOne">
+                    <div class="sub1">
+                        <?php echo $headings[2];?>
+                    </div>
+                </a>
+                <a href="#Sub2" id="subTwo">
+                    <div class="sub2">
+                        <?php echo $headings[3];?>
+                    </div>
+                </a>
+                <a href="#Sub3" id="subThree">
+                    <div class="sub3">
+                        <?php echo $headings[4];?>
+                    </div>
+                </a>
+                <a href="#Sub4" id="subFour">
+                    <div class="sub4">
+                    <?php echo $headings[5];?></a>
+                    </div>
+                </a>
             </div>
         </div>
         <center class="textPlus">
@@ -154,7 +162,6 @@ file_put_contents("stats/dict.json",json_encode($files));
                 </div>
                 <div class="spacer"></div>
             </div>
-            <br>
             <div class="wantMore">
                 <h2>Want More?</h2>
                 <div class="moreArt">
