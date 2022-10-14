@@ -64,7 +64,7 @@
                         <img id="magnifind-img" src="/images/magnigying-glass.png" alt="magnifind">
                     </div>
                     <div class="search-input">
-                        <textarea id="search-element" placeholder="Discover something new! e.g. Dinosaur" oninput="auto_grow(this)"></textarea>
+                        <textarea id="search-element" placeholder="Discover something new! e.g. Dinosaur" oninput="auto_grow(this)" onresize="auto_grow(this)"></textarea>
                     </div>
                 </div>
             </div>

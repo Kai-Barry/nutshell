@@ -288,7 +288,7 @@ ul {
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    height: 57px;
+    height: 50px;
     width: 100%;
     flex: 100%;
     font-size: 2vw;
@@ -301,6 +301,9 @@ ul {
  @media screen and (max-width: 1500px) {
     #search-element {
         font-size: 3vw;
+    }
+    .search-bar {
+        width:100%
     }
 }
 
