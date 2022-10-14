@@ -237,10 +237,11 @@ ul {
 }
 
  /* Search Bar*/
-.search {
+ .search {
     flex-direction: column;
     align-items: center;
-    width:50%
+    width: 80%;
+    display: flex;
 }
 
 .search img {
@@ -258,6 +259,7 @@ ul {
     background: #FFFDF6;
     box-shadow: none;
     border-radius: 35px;
+    width: 80%;
 }
 .magnifind {
     display: flex;
@@ -286,14 +288,14 @@ ul {
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    min-height: 50px;
     line-height: 50px;
-    height: 50px;
+    height: auto;
     width: 100%;
     flex: 100%;
     font-size: 2vw;
     resize: none;
-    overflow:hidden;
+    overflow:
+    hidden;
  }
 
  
