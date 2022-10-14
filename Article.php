@@ -169,11 +169,11 @@ file_put_contents("stats/dict.json",json_encode($files));
                     
                     $files = glob('pages/*.data');
                     $target = count($files);
-                    if ($target > 7) {
-                        $target = 7;
+                    if ($target > 8) {
+                        $target = 8;
                     }
                     $display = [];
-                    if ($target < 7) {
+                    if ($target < 8) {
                         $display = range(0, $target - 1);
                     }
                     while (count($display) < $target) {
