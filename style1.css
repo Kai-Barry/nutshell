@@ -232,7 +232,6 @@ ul {
 
  /* Search Bar*/
 .search {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -307,6 +306,7 @@ ul {
     background: #FFFDF6;
     box-shadow: none;
     border-radius: 40px;
+    width:80%
 }
 
 .reco-page {
@@ -347,7 +347,7 @@ ul {
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 25px;
-    width: 300px;
+    width: 80%;
 }
 
 .box-page-title {
