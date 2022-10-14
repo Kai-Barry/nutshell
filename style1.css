@@ -735,13 +735,11 @@ ul {
  }
 
 .textPlus {
-    width: 100%;
     margin-left: 5vw;
     margin-right: 5vw;
 }
 
  .article {
-    margin-right: 2vw;
     padding: 10px;
     background-color: #FFFDF6;
     border-radius: 20px;
@@ -749,7 +747,6 @@ ul {
     border-width: 3px;
     border-style: solid;
     border-color: #875930;
-    margin-bottom: 30px;
     float:left;
  }
 
@@ -794,8 +791,7 @@ ul {
     border-color: #C9864E;
     border-style: solid;
     border-radius: 20px;
-    width: 25%;
-    margin-bottom: 30px;
+    width: 20%;
     float:right;
  }
 
