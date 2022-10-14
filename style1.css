@@ -72,7 +72,6 @@ ul {
     flex-direction: row;
 	flex-wrap: wrap;
     justify-content: space-evenly;
-    font-size: 30px;
 }
 
 .nav-button {
@@ -202,21 +201,11 @@ ul {
     }
 }
 /* Title index page*/
-#title {
+.title {
     margin-bottom: 35px;
     font-size: 50px;
     color: white;
  }
-
- /* Title Responsive layout*/
-@media screen and (max-width: 1500px) {
-    #title {
-        margin-bottom: 0px;
-        font-size: 0px;
-        height: 0;
-        width: 0;
-    }
-}
 
 /* Title summariser*/
 .title {
@@ -232,30 +221,13 @@ ul {
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 4vw;
     color: white;
 }
 
 .title p {
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
-}
-
-/* Summariser Responsive layout*/
-@media screen and (max-width: 1500px) {
-    .title {
-        height: 0;
-        width: 0;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        font-size: 0px;
-    }
-    .title h1 {
-        font-size: 0px;
-    }
-    .title p {
-        font-size: 0px;
-    }
 }
 
  /* Search Bar*/
@@ -973,12 +945,6 @@ ul {
     width: 100%;
  }
 
- .EthosTitle {
-    display: flex;
-    padding-left: 40vw;
-    margin-top: 20px;
- }
-
  .EthosBox {
     padding-bottom: 5vh;
     margin-left: 10vw;
@@ -1000,12 +966,6 @@ ul {
     margin: 20px
 }
 
- .AboutTitle {
-    display: flex;
-    padding-left: 40vw;
-    margin-top: 20px;
- }
-
  .AboutBox {
     padding-bottom: 5vh;
     margin-left: 10vw;
@@ -1025,12 +985,6 @@ ul {
 
 .AboutMessage h4 {
     margin: 20px
-}
-
-.EthicsTitle {
-    display: flex;
-    padding-left: 40vw;
-    margin-top: 20px;
 }
 
 .EthicsBox {

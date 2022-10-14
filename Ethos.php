@@ -7,9 +7,7 @@
     <head>
 	<title>Ethos<?php
 		echo $headerFile; ?>
-        <div class="EthosTitle">
-            <h1>Our Ethos</h1>
-        </div>
+        <h1 class="title">Our Ethos</h1>
         <div class="EthosBox">
             <div class="EthosMessage">
                 <h4>Sometimes you just want to be able to find a simple explanation of a topic without having to search through pages of information. In a Nutshell, is the simple solution to this problem. </h4>
