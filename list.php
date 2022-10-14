@@ -95,7 +95,7 @@ if (isset($_GET["display"])) {
                         echo '<div class="spacer" style=" width:50%; clear: none; float:' . $direction . '">';
                     }
                     echo '
-                    <div style="float:left; width:50%; min-height:350px">
+                    <div style="float:left; width:50%;">
                         <a href="Article.php?page=' . $fileName . '">
                             <center class="relate">
                                 <img style="width:80%"src="' . $image . '">
