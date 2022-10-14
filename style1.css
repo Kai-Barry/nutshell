@@ -862,10 +862,10 @@ ul {
         width: 600px;
         top: 30px;
     }
-    .wantMore spacer {
-        float: none;
-        clear: both;
-        width: 100%;
+    .wantMore .spacer {
+        float: none !important;
+        clear: both !important;
+        width: 100% !important;
     }
  }
 
