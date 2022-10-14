@@ -36,9 +36,11 @@
 				</div>
 			</div>
 			<div class="summarise-button-box">
-				<button type="submit" class="summarise-button">
-					<p>Summarise!</p>
-				</button>
+				<a>
+					<button type="submit" class="summarise-button">
+						<p>Summarise!</p>
+					</button>
+				</a>
 			</div>
 		</form>
 	</div>
