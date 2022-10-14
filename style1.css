@@ -269,6 +269,7 @@ ul {
 .search-input {
     display: flex;
     align-items: center;
+    width:100%
 }
  #search-element {
     font-family: 'MyWebFont', cursive;
@@ -281,12 +282,19 @@ ul {
     min-height: 50px;
     line-height: 50px;
     height: 50px;
-    width: 700px;
+    width: 100%;
     flex: 100%;
-    font-size: 30px;
+    font-size: 1.5vw;
     resize: none;
     overflow:hidden;
  }
+
+ 
+ @media screen and (max-width: 1500px) {
+    #search-element {
+        font-size: 3vw;
+    }
+}
 
  .search ::placeholder {
     color: lightslategray;
