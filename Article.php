@@ -123,62 +123,42 @@ file_put_contents("stats/dict.json",json_encode($files));
         </div>
         <div class="textPlus">
             <div class="article">
-                <div class="artHead">
-                    <div class="artHeadtxt">
-                        <h1><?php echo $header;?></h1>
-                        <p><?php echo $paragraphs[1];?></p>
-                    </div>
-                    <div class="artHeadimg">
-                        <img src='<?php echo $images[1]?>'>
-                    </div>
+                <div class="articleContainer">
+                    <h1><?php echo $header;?></h1>
+                    <img style="float:right" src='<?php echo $images[1]?>'>
+                    <p><?php echo $paragraphs[1];?></p>
                 </div>
                 <br>
                 <hr>
                 <br>
-                <div class="artSub1">
-                    <div class="sub1img">
-                        <img src="<?php echo $images[2]?>">
-                    </div>
-                    <div class="sub1txt">
-                        <h3 id="Sub1"><?php echo $headings[2];?></h3>
-                        <p><?php echo $paragraphs[2];?></p>
-                    </div>
+                <div class="articleContainer">
+                    <h3 style="float:right" id="Sub1"><?php echo $headings[2];?></h3>
+                    <img src="<?php echo $images[2]?>">
+                    <p style="float:right"><?php echo $paragraphs[2];?></p>
                 </div>
                 <br>
                 <hr>
                 <br>
-                <div class="artSub2">
-                    <div class="sub2txt">
-                        <h3 id="Sub2"><?php echo $headings[3];?></h3>
-                        <p><?php echo $paragraphs[3];?></p>
-                    </div>
-                    <div class="sub2img">
-                        <img src="<?php echo $images[3]?>">
-                    </div>
+                <div class="articleContainer">
+                    <h3 id="Sub2"><?php echo $headings[3];?></h3>
+                    <img style="float:right" src="<?php echo $images[3]?>">
+                    <p><?php echo $paragraphs[3];?></p>
                 </div>
                 <br>
                 <hr>
                 <br>
-                <div class="artSub3">
-                    <div class="sub3img">
-                        <img src="<?php echo $images[4]?>">
-                    </div>
-                    <div class="sub3txt">
-                        <h3 id="Sub3"><?php echo $headings[4];?></h3>
-                        <p><?php echo $paragraphs[4];?></p>
-                    </div>
+                <div class="articleContainer">
+                    <h3 style="float:right" id="Sub3"><?php echo $headings[4];?></h3>
+                    <img src="<?php echo $images[4]?>">
+                    <p style="float:right"><?php echo $paragraphs[4];?></p>
                 </div>
                 <br>
                 <hr>
                 <br>
-                <div class="artSub4">
-                    <div class="sub4txt">
-                        <h3 id="Sub4"><?php echo $headings[5];?></h3>
-                        <p><?php echo $paragraphs[5];?></p>
-                    </div>
-                    <div class="sub4img">
-                        <img src="<?php echo $images[5]?>">
-                    </div>
+                <div class="articleContainer">
+                    <h3 id="Sub4"><?php echo $headings[5];?></h3>
+                    <img style="float:right" src="<?php echo $images[5]?>">
+                    <p><?php echo $paragraphs[5];?></p>
                 </div>
             </div>
             <div class="wantMore">

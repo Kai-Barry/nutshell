@@ -664,6 +664,8 @@ ul {
     border-width: 2px;
     border-style: solid;
     padding: 10px;
+    float: left;
+    width: 50%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
@@ -676,6 +678,8 @@ ul {
     border-width: 2px;
     border-style: solid;
     padding: 10px;
+    float: right;
+    width: 50%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
@@ -688,6 +692,8 @@ ul {
     border-width: 2px;
     border-style: solid;
     padding: 10px;
+    float: left;
+    width: 50%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
@@ -700,6 +706,8 @@ ul {
     border-style: solid;
     border-radius: 30px;
     padding: 10px;
+    float: right;
+    width: 50%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
 
@@ -728,7 +736,6 @@ ul {
 
 .textPlus {
     width: 100%;
-    display: flex;
     margin-left: 5vw;
     margin-right: 5vw;
 }
@@ -746,39 +753,30 @@ ul {
  }
 
  .article img{
-    width: 300px;
+    width: 45%;
     margin-left: 1vw;
     margin-right: 1vw;
+    float: left;
  }
 
- .artHead {
-    margin: 1%;
-    width: 98%;
-    display: flex;
+ .article p{
+    width: 45%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-align: justify;
+    float: left;
  }
 
- .artSub1 {
-    margin: 1%;
-    width: 98%;
-    display: flex;
+ .article h3{
+    width: 45%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    float: left;
  }
 
- .artSub2 {
+ .articleContainer {
     margin: 1%;
     width: 98%;
-    display: flex;
- }
-
- .artSub3 {
-    margin: 1%;
-    width: 98%;
-    display: flex;
- }
-
- .artSub4 {
-    margin: 1%;
-    width: 98%;
-    display: flex;
  }
 
  .wantMore {
@@ -798,7 +796,7 @@ ul {
  }
 
  .wantMore img{
-    width: 220px;
+    width: 100%;
  }
 
  .moreArt h2:link{
