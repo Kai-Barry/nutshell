@@ -206,6 +206,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                 </div>
             </div>
         </center>
+        <div class="spacer"></div>
         <br>
         <!--insert body code here-->
         <?php echo $footerFile;?>
