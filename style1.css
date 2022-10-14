@@ -440,6 +440,7 @@ ul {
     border-radius: 20px;
     min-width: 70%;
     margin:2px;
+    height: auto;
 }
 
 .translater-box textarea {
@@ -464,6 +465,7 @@ ul {
     box-shadow: none;
     border-radius: 20px;
     margin:2px;
+    height: auto;
 }
 .translate-text-box p {
     font-size: 20px;
