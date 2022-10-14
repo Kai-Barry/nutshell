@@ -201,8 +201,8 @@ file_put_contents("stats/dict.json",json_encode($files));
                     if ($i % 2 == 0) {
                         echo '</div>';
                     }
-                    $i += 1;
-                    ?>      
+                    ?>
+                    <div class="spacer"></div>
                 </div>
             </div>
         </center>
