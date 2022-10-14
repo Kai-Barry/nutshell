@@ -768,7 +768,7 @@ ul {
  }
 
  
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 650px) {
 
     .articleContainer img{
        float: none;
