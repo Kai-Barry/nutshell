@@ -205,7 +205,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                         }
                         $i += 1;
                     }
-                    if ($i % 2 == 0) {
+                    if ($i % 2 == 1) {
                         echo '</div>';
                     }
                     ?>
