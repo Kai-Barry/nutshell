@@ -7,7 +7,9 @@
     <head>
 	<title>Ethics<?php
 		echo $headerFile; ?>
-        <h1 class="title">Ethics</h1>
+        <center>
+            <h1 class="title">Ethics</h1>
+        </center>
         <div class="EthicsBox">
             <div class="EthicsMessage">
                 <h4>At In a Nutshell, ethical considerations are of high importance to ensure the safest experience for our users. As an educational tool, it is vital that In a Nutshell is ethically appropriate for children and their personal and school research. 
