@@ -160,6 +160,8 @@ file_put_contents("stats/dict.json",json_encode($files));
                     <img style="float:right" src="<?php echo $images[5]?>">
                     <p><?php echo $paragraphs[5];?></p>
                 </div>
+                <div>
+                </div>
             </div>
             <div class="wantMore">
                 <h2>Want More?</h2>
@@ -182,12 +184,16 @@ file_put_contents("stats/dict.json",json_encode($files));
                         }
                     }
 
+                    $i = 0;
                     foreach ($display as &$subject) {
                         $fileData = file_get_contents($files[$subject], FILE_USE_INCLUDE_PATH);
                         $fileName = substr($files[$subject], 6, strlen($files[$subject])-strlen("pages/.data"));
                         $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
                         $image = explode("\n", explode("\======/", $fileData)[2])[1];
 
+                        if ($i % 2 == 0) {
+                            echo '<div>';
+                        }
                         echo '
                         <a href="Article.php?page=' . $fileName . '">
                             <center class="relate">
@@ -195,6 +201,10 @@ file_put_contents("stats/dict.json",json_encode($files));
                                 <h2>' . $fileTitle . '</h2>
                             </center>
                         </a>';
+                        if ($i % 2 == 1) {
+                            echo '</div>';
+                        }
+                        $i += 1;
                     }
                     ?>      
                 </div>
