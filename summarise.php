@@ -26,7 +26,7 @@
 				<p>Need help understanding a paragraph you've found?</p>
 			</div>
 		</div>
-		<form action = "" method = "post">
+		<form action = "" method = "post" style="width:100%">
 			<div class="summariser-result">
 				<div class="translater-box">
 					<textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
