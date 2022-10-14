@@ -443,13 +443,14 @@ ul {
 }
 
 .translater-box textarea {
-    margin: 10px;
+    padding: 10px;
     direction: ltr;
     background-color: transparent;
     border: none;
     outline: none;
     font-size: 23px;
-    min-width: 70%;
+    width: 100%;
+    resize: vertical;
 }
 
 .translate-text-box {
