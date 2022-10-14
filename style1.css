@@ -753,12 +753,12 @@ ul {
  @media screen and (max-width: 850px) {
 
     .article {
-       float: none;
-       width: 100%;
+        clear: both;
+        width: 100%;
     }
    
     .wantMore {
-        float: none;
+        clear: both;
         width: 100%;
     }
     .moreArt a {
