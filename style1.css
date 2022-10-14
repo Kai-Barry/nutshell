@@ -285,7 +285,7 @@ ul {
     height: 50px;
     width: 100%;
     flex: 100%;
-    font-size: 1.5vw;
+    font-size: 2vw;
     resize: none;
     overflow:hidden;
  }
@@ -339,7 +339,7 @@ ul {
 
 .box-title p {
     color: black;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 .reco-box {
@@ -367,8 +367,19 @@ ul {
 .box-page-title p {
     margin: 25px;
     color: white;
-    font-size: 30px;
+    font-size: 3vw;
     text-decoration: none;
+}
+
+@media screen  {
+    
+    .box-page-title p {
+        font-size: 5vw;
+    }
+    .box-title p {
+        color: black;
+        font-size: 6vw;
+    }
 }
 
 .pick-for-me {
@@ -431,7 +442,6 @@ ul {
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 23px;
     width: 100%;
     resize: vertical;
 }
@@ -449,7 +459,6 @@ ul {
     height: auto;
 }
 .translate-text-box p {
-    font-size: 20px;
     margin: 20px;
 }
 
