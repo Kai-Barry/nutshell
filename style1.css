@@ -754,15 +754,21 @@ ul {
 
     .article {
        float: none;
+       width: 100%;
     }
    
     .wantMore {
         float: none;
+        width: 100%;
+    }
+    .moreArt a {
+        float: left;
+        width: 50%;
     }
  }
 
  
- @media screen and (max-width: 750px) {
+ @media screen and (max-width: 480px) {
 
     .articleContainer img{
        float: none;
@@ -778,6 +784,10 @@ ul {
    
     .articleContainer h1{
         float: none;
+    }
+    .moreArt a {
+        float: none;
+        width: 100%;
     }
  }
 
