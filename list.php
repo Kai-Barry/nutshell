@@ -89,6 +89,7 @@ if (isset($_GET["display"])) {
                     $direction = "right";
                     if ($i % 4 == 0) {
                         $direction = "left";
+                        echo '<div class="spacer">';
                     }
                     if ($i % 2 == 0) {
                         echo '<div class="spacer" style=" width:50%; clear: none; float:' . $direction . '">';
@@ -107,7 +108,10 @@ if (isset($_GET["display"])) {
                     }
                     $i += 1;
                 }
-                if ($i % 2 == 1) {
+                if ($i % 2 != 0) {
+                    echo '</div>';
+                }
+                if ($i % 4 != 0) {
                     echo '</div>';
                 }
                 if ($page > 1) {
