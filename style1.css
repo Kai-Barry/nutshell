@@ -752,14 +752,14 @@ ul {
     margin-bottom: 30px;
  }
 
- .article img{
+ .articleContainer img{
     width: 45%;
     margin-left: 1vw;
     margin-right: 1vw;
     float: left;
  }
 
- .article p{
+ .articleContainer p{
     width: 45%;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -767,7 +767,7 @@ ul {
     float: left;
  }
 
- .article h3{
+ .articleContainer h3{
     width: 45%;
     margin-left: 1vw;
     margin-right: 1vw;
