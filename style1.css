@@ -96,7 +96,7 @@ ul {
 	color: white;
 }
 
-.navigation-bar p:hover, .navigation-bar:hover p {
+.nav-button p:hover, .nav-button:hover p {
 	color: #71481f;
 	text-decoration: none;
 	transition: color, background-color;
