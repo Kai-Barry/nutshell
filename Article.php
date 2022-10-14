@@ -128,40 +128,31 @@ file_put_contents("stats/dict.json",json_encode($files));
                     <img style="float:right" src='<?php echo $images[1]?>'>
                     <p><?php echo $paragraphs[1];?></p>
                 </div>
-                <br>
                 <hr>
-                <br>
                 <div class="articleContainer">
                     <h3 style="float:right" id="Sub1"><?php echo $headings[2];?></h3>
                     <img src="<?php echo $images[2]?>">
                     <p style="float:right"><?php echo $paragraphs[2];?></p>
                 </div>
-                <br>
                 <hr>
-                <br>
                 <div class="articleContainer">
                     <h3 id="Sub2"><?php echo $headings[3];?></h3>
                     <img style="float:right" src="<?php echo $images[3]?>">
                     <p><?php echo $paragraphs[3];?></p>
                 </div>
-                <br>
                 <hr>
-                <br>
                 <div class="articleContainer">
                     <h3 style="float:right" id="Sub3"><?php echo $headings[4];?></h3>
                     <img src="<?php echo $images[4]?>">
                     <p style="float:right"><?php echo $paragraphs[4];?></p>
                 </div>
-                <br>
                 <hr>
-                <br>
                 <div class="articleContainer">
                     <h3 id="Sub4"><?php echo $headings[5];?></h3>
                     <img style="float:right" src="<?php echo $images[5]?>">
                     <p><?php echo $paragraphs[5];?></p>
                 </div>
-                <div>
-                </div>
+                <div class="spacer"></div>
             </div>
             <div class="wantMore">
                 <h2>Want More?</h2>
@@ -192,7 +183,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                         $image = explode("\n", explode("\======/", $fileData)[2])[1];
 
                         if ($i % 2 == 0) {
-                            echo '<div>';
+                            echo '<div class="spacer">';
                         }
                         echo '
                         <a href="Article.php?page=' . $fileName . '">

@@ -882,6 +882,10 @@ ul {
     color: #875930;
  }
 
+ .spacer {
+     clear:both;
+ }
+
  hr {
     border-top: 3px solid #875930;
     width: 100%;
