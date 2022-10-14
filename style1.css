@@ -377,7 +377,7 @@ ul {
     text-decoration: none;
 }
 
-@media screen  {
+@media screen  and (max-width: 1500px){
     
     .box-page-title p {
         font-size: 5vw;
