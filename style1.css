@@ -847,6 +847,9 @@ ul {
         width: 100% !important;
     }
     * {
+        font-size: 4vw;
+    }
+    .article * {
         font-size: 6vw;
     }
     .jumpto {
