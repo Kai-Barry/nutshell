@@ -734,9 +734,12 @@ ul {
     transition-duration: 00.3s;
  }
 
+.textPlus {
+    margin:  0px 5vw;
+}
+
  .article {
     padding: 10px;
-    margin:  0px 5vw;
     background-color: #FFFDF6;
     border-radius: 20px;
     width: 70%;
@@ -747,18 +750,22 @@ ul {
  }
 
  @media screen and (max-width: 850px) {
+    .textPlus {
+        margin:  0px;
+    }
 
     .article {
         clear: both;
         float: none;
-        width: 100%;
+        width: 90% !important;
     }
 
     .wantMore {
         clear: both;
         float: none;
-        width: 100% !important;
+        width: 90% !important;
     }
+
     .moreArt a {
         float: left;
         width: 50%;
@@ -767,11 +774,10 @@ ul {
 
 
  @media screen and (max-width: 650px) {
-
     .articleContainer img{
         clear: both;
         float: none;
-        width: 100%;
+        width: 10s0%;
     }
 
     .articleContainer p{
@@ -835,7 +841,6 @@ ul {
  }
 
  .wantMore {
-    margin:  0px 5vw;
     padding: 10px;
     background-color: #FFFDF6;
     border-width: 3px;

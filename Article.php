@@ -121,7 +121,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                 </div>
             </div>
         </div>
-        <div class="textPlus">
+        <center class="textPlus">
             <div class="article">
                 <div class="articleContainer">
                     <h1><?php echo $header;?></h1>
@@ -199,7 +199,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                     ?>      
                 </div>
             </div>
-        </div>
+        </center>
         <!--insert body code here-->
         <?php echo $footerFile;?>
     </body>
