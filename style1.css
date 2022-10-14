@@ -141,7 +141,7 @@ ul {
        width: 40%;
     }
     .navigation-bar * {
-       font-size: 10vw;
+       font-size: 4vw;
        text-align: center;
     }
 }
@@ -154,7 +154,6 @@ ul {
     .nav-button {
        margin: 10px;
        display: flex;
-       width: 100%
     }
     .navigation-bar li {
        margin: 10px;
@@ -856,7 +855,7 @@ ul {
     #nav-logo-1 {
         width: 200px;
     }
-    
+
     #nav-logo-2 {
         width: 600px;
         top: 30px;
