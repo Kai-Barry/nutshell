@@ -759,7 +759,7 @@ ul {
    
     .wantMore {
         clear: both;
-        width: 100%;
+        width: 100% !important;
     }
     .moreArt a {
         float: left;
