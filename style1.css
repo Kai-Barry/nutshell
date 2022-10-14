@@ -768,32 +768,32 @@ ul {
  @media screen and (max-width: 650px) {
     .articleContainer img{
         clear: both;
-        float: none;
-        width: 100%;
+        float: none !important;
+        width: 100% !important;
     }
 
     .articleContainer p{
         clear: both;
-        float: none;
-        width: 100%;
+        float: none !important;
+        width: 100% !important;
     }
 
     .articleContainer h3{
         clear: both;
-        float: none;
-        width: 100%;
+        float: none !important;
+        width: 100% !important;
     }
 
     .articleContainer h1{
         clear: both;
-        float: none;
-        width: 100%;
+        float: none !important;
+        width: 100% !important;
     }
 
     .moreArt a {
         clear: both;
-        float: none;
-        width: 100%;
+        float: none !important;
+        width: 100% !important;
     }
  }
 
