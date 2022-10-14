@@ -96,10 +96,9 @@ ul {
 	color: white;
 }
 
-.navigation-bar p:hover {
+.navigation-bar:hover {
 	color: #71481f;
 	text-decoration: none;
-	transition: color, background-color;
 	transition-duration: 0.3s;
 }
 .nav-logo {
@@ -408,9 +407,8 @@ ul {
     color: white;
     text-decoration: none;
 }
-.pick-for-me p:hover {
+.pick-for-me:hover {
     color: #71481f;
-    text-decoration: none;
     transition: color, background-color;
     transition-duration: 0.3s;
 }
@@ -490,9 +488,8 @@ ul {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.summarise-button p:hover {
+.summarise-button:hover {
     color: #71481f;
-    text-decoration: none;
     transition: color, background-color;
     transition-duration: 0.3s;
 }
