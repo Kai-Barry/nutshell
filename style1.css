@@ -774,6 +774,13 @@ ul {
     float: left;
  }
 
+ .articleContainer h1{
+    width: 45%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    float: left;
+ }
+
  .articleContainer {
     margin: 1%;
     width: 98%;
