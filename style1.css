@@ -778,7 +778,8 @@ ul {
     margin-bottom: 50px;
  }
 
- @media screen and (max-width: 1500px) {
+ /*footer resize*/
+ @media screen and (max-width: 1000px) {
     .textPlus {
         margin:  0px;
     }
