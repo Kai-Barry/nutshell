@@ -36,7 +36,7 @@
 				</div>
 			</div>
 			<div class="summarise-button-box">
-				<button type="submit" class="summarise-button">
+				<button type="submit" name="SubmitButton" class="summarise-button">
 					<p>Summarise!</p>
 				</button>
 			</div>
