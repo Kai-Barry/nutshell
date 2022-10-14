@@ -750,6 +750,25 @@ ul {
     float:left;
  }
 
+ @media screen and (max-width: 1500px) {
+
+    .articleContainer img{
+       float: none;
+    }
+   
+    .articleContainer p{
+        float: none;
+    }
+   
+    .articleContainer h3{
+        float: none;
+    }
+   
+    .articleContainer h1{
+        float: none;
+    }
+ }
+
  .articleContainer img{
     width: 45%;
     margin-left: 1vw;
@@ -782,7 +801,7 @@ ul {
  .articleContainer {
     margin: 1%;
     width: 98%;
-    clear: both;
+    clear:  both;
  }
 
  .wantMore {
