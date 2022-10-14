@@ -280,9 +280,9 @@ ul {
     overflow:hidden;
  }
 
- .search ::placeholder { 
+ .search ::placeholder {
     color: lightslategray;
-    opacity: 1; 
+    opacity: 1;
 }
 
 /* Search bar Responsive layout*/
@@ -459,7 +459,7 @@ ul {
     }
 }
 
-/* Other*/ 
+/* Other*/
  .right {
     float: right;
     width: 50%;
@@ -470,8 +470,8 @@ ul {
     float: left;
     width: 50%;
     height: 100%;
- }  
- 
+ }
+
  #placeholder-background {
     position: absolute;
     top: 0;
@@ -534,7 +534,7 @@ ul {
 	transition: color, background-color;
 	transition-duration: 0.3s;
 }
- 
+
 /* Footer Responsive layout*/
 @media screen and (max-width: 1500px) {
     .footer {
@@ -734,13 +734,9 @@ ul {
     transition-duration: 00.3s;
  }
 
-.textPlus {
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-
  .article {
     padding: 10px;
+    margin:  0px 5vw;
     background-color: #FFFDF6;
     border-radius: 20px;
     width: 70%;
@@ -757,7 +753,7 @@ ul {
         float: none;
         width: 100%;
     }
-   
+
     .wantMore {
         clear: both;
         float: none;
@@ -769,7 +765,7 @@ ul {
     }
  }
 
- 
+
  @media screen and (max-width: 650px) {
 
     .articleContainer img{
@@ -777,19 +773,19 @@ ul {
         float: none;
         width: 100%;
     }
-   
+
     .articleContainer p{
         clear: both;
         float: none;
         width: 100%;
     }
-   
+
     .articleContainer h3{
         clear: both;
         float: none;
         width: 100%;
     }
-   
+
     .articleContainer h1{
         clear: both;
         float: none;
@@ -839,6 +835,7 @@ ul {
  }
 
  .wantMore {
+    margin:  0px 5vw;
     padding: 10px;
     background-color: #FFFDF6;
     border-width: 3px;
@@ -917,7 +914,7 @@ ul {
 
  .EthosMessage h4 {
     margin: 20px
-}   
+}
 
  .AboutTitle {
     display: flex;
@@ -944,7 +941,7 @@ ul {
 
 .AboutMessage h4 {
     margin: 20px
-}   
+}
 
 .EthicsTitle {
     display: flex;
@@ -971,4 +968,4 @@ ul {
 
 .EthicsMessage h4 {
     margin: 20px
-}   
+}
