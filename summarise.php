@@ -30,9 +30,11 @@
 			<div class="summariser-result">
 				<div class="translater-box">
 					<textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
+					<div class="spacer"></div>
 				</div>
 				<div class="translate-text-box">
 					<p><?php echo $text;?></p>
+					<div class="spacer"></div>
 				</div>
 			</div>
 			<div class="summarise-button-box">

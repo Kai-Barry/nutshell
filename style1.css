@@ -443,7 +443,8 @@ ul {
 }
 
 .translater-box textarea {
-    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
     direction: ltr;
     background-color: transparent;
     border: none;
