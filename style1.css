@@ -864,26 +864,26 @@ ul {
  }
 
  .articleContainer img{
-    width: 45%;
+    width: 49%;
     float: left;
  }
 
  .articleContainer p{
-    width: 45%;
+    width: 49%;
     text-align: justify;
     float: left;
  }
 
  .articleContainer h3{
-    width: 45%;
+    width: 49%;
     float: left;
  }
 
  .articleContainer h1{
-    width: 45%;
+    width: 49%;
     float: left;
  }
-
+ 
  .articleContainer {
     margin: 1%;
     width: 98%;
