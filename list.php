@@ -91,7 +91,7 @@ if (isset($_GET["display"])) {
                         $direction = "left";
                     }
                     if ($i % 2 == 0) {
-                        echo '<div class="spacer" style=" width:50%; float:' . $direction . '">';
+                        echo '<div class="spacer" style=" width:50%; clear: none; float:' . $direction . '">';
                     }
                     echo '
                     <div style="float:left; width:50%; min-height:350px">
