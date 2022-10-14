@@ -288,7 +288,7 @@ ul {
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    height: 57;
+    height: 57px;
     width: 100%;
     flex: 100%;
     font-size: 2vw;
