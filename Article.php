@@ -154,6 +154,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                 </div>
                 <div class="spacer"></div>
             </div>
+            <br>
             <div class="wantMore">
                 <h2>Want More?</h2>
                 <div class="moreArt">
@@ -197,6 +198,10 @@ file_put_contents("stats/dict.json",json_encode($files));
                         }
                         $i += 1;
                     }
+                    if ($i % 2 == 0) {
+                        echo '</div>';
+                    }
+                    $i += 1;
                     ?>      
                 </div>
             </div>

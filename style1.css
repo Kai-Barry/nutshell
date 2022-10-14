@@ -887,6 +887,7 @@ ul {
  }
 
  hr {
+    border: 0px;
     border-top: 3px solid #875930;
     width: 100%;
  }
