@@ -17,7 +17,7 @@ if (isset($_GET["display"])) {
     <!--insert header code here-->
             <title>List<?php
                 echo $headerFile; ?>
-            <div class="wantMore" style="width:80%; float:left; margin-left:10% <?php // ; max-length:<?php echo (ceil(((count($files) - ($display * ($page - 1))) % 20) / 4) * 350) + 66;
+            <div class="wantMore" style="width:80% !important; float:left !important; margin-left:10% !important <?php // ; max-length:<?php echo (ceil(((count($files) - ($display * ($page - 1))) % 20) / 4) * 350) + 66;
             ?>">
                 <h2>Below are all our pages:</h2>
                 <?php
@@ -102,6 +102,7 @@ if (isset($_GET["display"])) {
                     echo '<div class="pick-for-me" style="float:right"><a style="text-decoration:none" href="/list.php?display=' . $display . '&page=' . ($page + 1) . '"><p>Next Page</p></a></div>';
                 }
                 ?>
+                <div class="spacer"></div>
             </div>
         </div>
         <!--insert body code here-->
