@@ -86,11 +86,15 @@ if (isset($_GET["display"])) {
                     $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
                     $image = explode("\n", explode("\======/", $fileData)[2])[1];
                     
+                    $direction = "right";
+                    if ($i % 4 == 0) {
+                        $direction = "left";
+                    }
                     if ($i % 2 == 0) {
-                        echo '<div class="spacer">';
+                        echo '<div class="spacer" style=" width:50%; float:' . $direction . '">';
                     }
                     echo '
-                    <div style="float:left; width:25%; min-height:350px">
+                    <div style="float:left; width:50%; min-height:350px">
                         <a href="Article.php?page=' . $fileName . '">
                             <center class="relate">
                                 <img style="width:80%"src="' . $image . '">

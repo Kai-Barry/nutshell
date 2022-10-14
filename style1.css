@@ -862,6 +862,11 @@ ul {
         width: 600px;
         top: 30px;
     }
+    .wantMore spacer {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
  }
 
  .articleContainer img{
