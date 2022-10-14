@@ -771,19 +771,19 @@ ul {
  @media screen and (max-width: 650px) {
 
     .articleContainer img{
-       float: none;
+        clear: both;
     }
    
     .articleContainer p{
-        float: none;
+        clear: both;
     }
    
     .articleContainer h3{
-        float: none;
+        clear: both;
     }
    
     .articleContainer h1{
-        float: none;
+        clear: both;
     }
     .moreArt a {
         float: none;
