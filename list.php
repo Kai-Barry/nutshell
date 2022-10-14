@@ -79,8 +79,8 @@ if (isset($_GET["display"])) {
                 </h2>
                 <?php
                 $i = 0;
-                for ($i = (($page - 1) * $display); $i < ($page * $display) && $i < count($files); $i++) {
-                    $file = $files[$i];
+                for ($index = (($page - 1) * $display); $index < ($page * $display) && $index < count($files); $index++) {
+                    $file = $files[$index];
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
                     $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
