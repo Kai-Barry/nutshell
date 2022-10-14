@@ -408,6 +408,12 @@ ul {
     color: white;
     text-decoration: none;
 }
+.pick-for-me p:hover {
+    color: #71481f;
+    text-decoration: none;
+    transition: color, background-color;
+    transition-duration: 0.3s;
+}
 
 /* Recomendation Responsive layout*/
 @media screen and (max-width: 1500px) {
@@ -484,7 +490,12 @@ ul {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
+.summarise-button p:hover {
+    color: #71481f;
+    text-decoration: none;
+    transition: color, background-color;
+    transition-duration: 0.3s;
+}
 .summarise-button-box {
     display: flex;
     justify-content: center;
