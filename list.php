@@ -111,10 +111,10 @@ if (isset($_GET["display"])) {
                     }
                     $i += 1;
                 }
-                if ($i % 2 != 1) {
+                if ($i % 2 != 0) {
                     echo '</div>';
                 }
-                if ($i % 4 != 3) {
+                if ($i % 4 != 0) {
                     echo '</div>';
                 }
                 if ($page > 1) {
