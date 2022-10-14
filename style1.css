@@ -750,7 +750,19 @@ ul {
     float:left;
  }
 
- @media screen and (max-width: 1500px) {
+ @media screen and (max-width: 850px) {
+
+    .article {
+       float: none;
+    }
+   
+    .wantMore {
+        float: none;
+    }
+ }
+
+ 
+ @media screen and (max-width: 750px) {
 
     .articleContainer img{
        float: none;
