@@ -78,13 +78,17 @@ if (isset($_GET["display"])) {
                         <a href="/list.php?display=100">100</a> pages at once.
                 </h2>
                 <?php
+                $i = 0;
                 for ($i = (($page - 1) * $display); $i < ($page * $display) && $i < count($files); $i++) {
                     $file = $files[$i];
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
                     $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
                     $image = explode("\n", explode("\======/", $fileData)[2])[1];
-
+                    
+                    if ($i % 2 == 0) {
+                        echo '<div class="spacer">';
+                    }
                     echo '
                     <div style="float:left; width:25%; min-height:350px">
                         <a href="Article.php?page=' . $fileName . '">
@@ -94,6 +98,13 @@ if (isset($_GET["display"])) {
                             </center>
                         </a>
                     </div>';
+                    if ($i % 2 == 1) {
+                        echo '</div>';
+                    }
+                    $i += 1;
+                }
+                if ($i % 2 == 0) {
+                    echo '</div>';
                 }
                 if ($page > 1) {
                     echo '<div class="pick-for-me" style="float:left"><a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><p>Previous Page</p></a></div>';
