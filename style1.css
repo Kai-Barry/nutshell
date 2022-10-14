@@ -754,11 +754,13 @@ ul {
 
     .article {
         clear: both;
+        float: none;
         width: 100%;
     }
    
     .wantMore {
         clear: both;
+        float: none;
         width: 100% !important;
     }
     .moreArt a {
@@ -772,20 +774,30 @@ ul {
 
     .articleContainer img{
         clear: both;
+        float: none;
+        width: 100%;
     }
    
     .articleContainer p{
         clear: both;
+        float: none;
+        width: 100%;
     }
    
     .articleContainer h3{
         clear: both;
+        float: none;
+        width: 100%;
     }
    
     .articleContainer h1{
         clear: both;
+        float: none;
+        width: 100%;
     }
+
     .moreArt a {
+        clear: both;
         float: none;
         width: 100%;
     }
