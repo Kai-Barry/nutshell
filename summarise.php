@@ -3,14 +3,14 @@
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 
 	$text = "Your translated text will appear here.";
-	if(isset($_POST['SubmitButton'])){ //check if form was submitted
+	if(strlen($_POST['inputText']) > 0){ //check if form was submitted
 		$input = $_POST['inputText']; //get input text
 		$command = escapeshellcmd('/var/www/html/summarise.sh "' . $input .  '" 2>&1 &');
 		$output = shell_exec($command);
 		if (strpos($output, "An error occured processing that") == false) {
 			$text = $output;
 		}
-	}	
+	}
 ?>
 <!DOCTYPE html>
 <html>
