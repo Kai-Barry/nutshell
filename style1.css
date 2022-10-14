@@ -224,10 +224,16 @@ ul {
     font-size: 4vw;
     color: white;
 }
+/* Main Screen Responsive layout*/
+@media screen and (max-width: 1500px) {
+   .title h1 {
+    font-size: 6vw;
+   }
+}
 
 .title p {
-    font-size: 2vw;
     color: white;
+    text-align: center
 }
 
  /* Search Bar*/
