@@ -782,6 +782,7 @@ ul {
  .articleContainer {
     margin: 1%;
     width: 98%;
+    clear: both;
  }
 
  .wantMore {
