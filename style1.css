@@ -756,13 +756,13 @@ ul {
 
     .article {
         clear: both;
-        float: none;
+        float: none !important;
         width: 90% !important;
     }
 
     .wantMore {
         clear: both;
-        float: none;
+        float: none !important;
         width: 90% !important;
     }
 
