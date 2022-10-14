@@ -775,6 +775,7 @@ ul {
     border-style: solid;
     border-color: #875930;
     float:left;
+    margin-bottom: 50px;
  }
 
  @media screen and (max-width: 1500px) {
@@ -883,7 +884,7 @@ ul {
     width: 49%;
     float: left;
  }
- 
+
  .articleContainer {
     margin: 1%;
     width: 98%;
@@ -899,6 +900,7 @@ ul {
     border-radius: 20px;
     width: 20%;
     float:right;
+    margin-bottom: 50px;
  }
 
  .wantMore h2 {
