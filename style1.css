@@ -553,7 +553,7 @@ ul {
 .footer-list {
     float: right;
     width: 100%;
-    margin: 20px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
