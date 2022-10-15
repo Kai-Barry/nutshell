@@ -117,6 +117,7 @@ if (isset($_GET["display"])) {
                 if ($i % 4 != 0) {
                     echo '</div>';
                 }
+                echo '<div class="spacer"></div>'
                 if ($page > 1) {
                     echo '<div class="pick-for-me" style="float:left"><a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><p>Previous Page</p></a></div>';
                 }
