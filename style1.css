@@ -406,6 +406,14 @@ ul {
     text-decoration: none;
 }
 
+/*reize on list.php*/
+@media screen and (max-width: 1500px) {
+    .wantMore .pick-for-me {
+        float: none;
+        clear:both;
+    }
+}
+
 .pick-for-me p {
     margin: 20px;
     font-size: 50px;
