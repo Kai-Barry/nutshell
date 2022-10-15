@@ -202,18 +202,14 @@ ul {
 }
 /* Title index page*/
 .title {
-    margin-bottom: 35px;
     font-size: 50px;
     color: white;
- }
-
-/* Title summariser*/
-.title {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 50px;
     margin-top: 40px;
+    text-align: center;
 }
 .title div {
     display: flex;
@@ -288,7 +284,8 @@ ul {
     color: rgba(0,0,0,.67);
     word-wrap: break-word;
     display: flex;
-    height: 50px;
+    height: 3vw;
+    line-height: 2vw;
     width: 100%;
     flex: 100%;
     font-size: 2vw;
@@ -300,7 +297,9 @@ ul {
  
  @media screen and (max-width: 1500px) {
     #search-element {
-        font-size: 3vw;
+        font-size: 6vw;
+        height: 13vw;
+        line-height: 6vw;
     }
     .search-bar {
         width:100%
