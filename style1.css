@@ -409,7 +409,7 @@ ul {
 /*reize on list.php*/
 @media screen and (max-width: 1500px) {
     .wantMore .pick-for-me {
-        float: none;
+        float: none !important;
         clear:both;
     }
 }
