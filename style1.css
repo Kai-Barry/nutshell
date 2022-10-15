@@ -260,7 +260,7 @@ ul {
 .magnifind {
     display: flex;
     align-items: center;
-    width: 30px;
+    width: 3vw;
     padding-right: 13px;
     margin-top: -5px;
     padding: 5px 8px 0 14px
@@ -304,6 +304,8 @@ ul {
     .search-bar {
         width:100%
     }
+    .magnifind {
+        width: 6vw;
 }
 
  .search ::placeholder {
