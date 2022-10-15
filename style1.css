@@ -274,7 +274,7 @@ ul {
 .search-input {
     display: flex;
     align-items: center;
-    width:100%
+    width:100%;
 }
  #search-element {
     font-family: 'MyWebFont', cursive;
@@ -306,6 +306,7 @@ ul {
     }
     .magnifind {
         width: 6vw;
+    }
 }
 
  .search ::placeholder {
