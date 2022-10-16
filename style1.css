@@ -488,6 +488,7 @@ ul {
     outline: none;
     width: 100%;
     resize: vertical;
+    min-height: 125px;
 }
 
 .translate-text-box {
