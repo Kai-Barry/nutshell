@@ -236,7 +236,7 @@ ul {
  .search {
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 60%;
     display: flex;
 }
 
@@ -319,6 +319,9 @@ ul {
     .search {
         width: 80%;
     }
+    .recommendation {
+        width: 80%;
+    }
 }
 
 /* Recommendation box*/
@@ -327,7 +330,7 @@ ul {
     background: #FFFDF6;
     box-shadow: none;
     border-radius: 40px;
-    width:80%
+    width:60%
 }
 
 .reco-page {
@@ -351,7 +354,7 @@ ul {
 
 .box-title p {
     color: black;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .reco-box {
