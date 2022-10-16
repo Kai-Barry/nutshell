@@ -175,7 +175,6 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 140px;
     height: 600px;
     width: 100%;
     height: calc(100% - 560px);
