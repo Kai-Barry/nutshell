@@ -71,7 +71,7 @@
         </div>
         <div class="two">
             <div class="between-two-ferns">
-                <img src="Images/Tree.png">
+                <img src="/images/Tree.png">
                 <div class="recommendation">
                     <div class="reco-page">
                         <div class="reco-box-section">
@@ -112,7 +112,7 @@
                         </div>
                     </a>
                 </div>
-                <img src="Images/Tree.png">
+                <img src="/images/Tree.png">
             </div>
         </div>
         <?php echo $footerFile;?>
