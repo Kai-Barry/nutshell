@@ -13,7 +13,7 @@
                         <h1>Oh No!</h1>
                     </div>
                 </div>
-                <img id="squirrel" src="/images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
+                <img id="squirrel" src="/images/oh no squirrel.png" alt="Oh no squirrel">
             </div>
             <div class="no-column">
                 <div class="no-box">
