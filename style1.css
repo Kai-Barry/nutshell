@@ -329,9 +329,16 @@ ul {
     justify-content: space-evenly;
     width: 100%;
 }
-.between-two-ferns img{
+.between-two-ferns img {
     width: 17vw;
     height: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .between-two-ferns img {
+        width: 0;
+        height: 0;
+    }
 }
 
 /* Recommendation box*/
