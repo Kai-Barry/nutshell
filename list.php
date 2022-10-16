@@ -119,10 +119,10 @@ if (isset($_GET["display"])) {
                 }
                 echo '<div class="spacer"></div>';
                 if ($page > 1) {
-                    echo '<div class="pick-for-me" style="float:left"><a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><p>Previous Page</p></a></div>';
+                    echo '<a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><div class="pick-for-me" style="float:left"><p>Previous Page</p></div></a>';
                 }
                 if ($page < $maxPage) {
-                    echo '<div class="pick-for-me" style="float:right"><a style="text-decoration:none" href="/list.php?display=' . $display . '&page=' . ($page + 1) . '"><p>Next Page</p></a></div>';
+                    echo '<a style="text-decoration:none" href="/list.php?display=' . $display . '&page=' . ($page + 1) . '"><div class="pick-for-me" style="float:right"><p>Next Page</p></div></a>';
                 }
                 ?>
                 <div class="spacer"></div>
