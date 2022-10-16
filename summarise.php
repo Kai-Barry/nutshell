@@ -26,23 +26,25 @@
 				<p>Need help understanding a paragraph you've found?</p>
 			</div>
 		</div>
-		<form action = "" method = "post" style="width:100%">
-			<div class="summariser-result">
-				<div class="translater-box">
-					<textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
-					<div class="spacer"></div>
+		<div class="summarising-area">
+			<form action = "" method = "post" style="width:100%">
+				<div class="summariser-result">
+					<div class="translater-box">
+						<textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..." autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
+						<div class="spacer"></div>
+					</div>
+					<div class="translate-text-box">
+						<p><?php echo $text;?></p>
+						<div class="spacer"></div>
+					</div>
 				</div>
-				<div class="translate-text-box">
-					<p><?php echo $text;?></p>
-					<div class="spacer"></div>
+				<div class="summarise-button-box">
+					<button type="submit" name="SubmitButton" class="summarise-button">
+						<p>Summarise!</p>
+					</button>
 				</div>
-			</div>
-			<div class="summarise-button-box">
-				<button type="submit" name="SubmitButton" class="summarise-button">
-					<p>Summarise!</p>
-				</button>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 	<?php echo $footerFile;?>
 </body>

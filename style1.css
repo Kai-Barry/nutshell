@@ -455,6 +455,10 @@ ul {
 }
 
 /* Translater*/
+.summarising-area {
+    margin-bottom: 10vh;
+}
+
 .summariser-result {
     display: flex;
     flex-direction: row;
@@ -516,6 +520,7 @@ ul {
 
 .summarise-button p {
     font-size: 32px;
+    font-family: 'MyWebFont';
     color:white;
     margin-left: 25px;
     margin-right: 25px;
