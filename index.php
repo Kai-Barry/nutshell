@@ -70,45 +70,49 @@
             </div>
         </div>
         <div class="two">
-            <div class="recommendation">
-                <div class="reco-page">
-                    <div class="reco-box-section">
-                        <div class="box-title">
-                            <p>Most recent</p>
-                        </div>
-                        <a href="Article.php?page=<?php echo $recent;?>">
-                            <div class="reco-box">
-                                <img src="<?php echo $recentImage;?>">
-                                <div class="box-page-title">
-                                    <p><?php echo $recentTitle;?></p>
-                                </div>
+            <div class="between-two-ferns">
+                <img src="Images/Tree.png">
+                <div class="recommendation">
+                    <div class="reco-page">
+                        <div class="reco-box-section">
+                            <div class="box-title">
+                                <p>Most recent</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="reco-box-section">
-                        <div class="box-title">
-                            <p>Most viewed</p>
-                        </div>
-                        <a href="Article.php?page=<?php echo $popular;?>">
-                            <div class="reco-box">
-                                <img src="<?php echo $popularImage;?>">
-                                <div class="box-page-title">
-                                    <p><?php echo $popularTitle;?></p>
+                            <a href="Article.php?page=<?php echo $recent;?>">
+                                <div class="reco-box">
+                                    <img src="<?php echo $recentImage;?>">
+                                    <div class="box-page-title">
+                                        <p><?php echo $recentTitle;?></p>
+                                    </div>
                                 </div>
+                            </a>
+                        </div>
+                        <div class="reco-box-section">
+                            <div class="box-title">
+                                <p>Most viewed</p>
                             </div>
-                        </a>
+                            <a href="Article.php?page=<?php echo $popular;?>">
+                                <div class="reco-box">
+                                    <img src="<?php echo $popularImage;?>">
+                                    <div class="box-page-title">
+                                        <p><?php echo $popularTitle;?></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                    <a href="random.php">
+                        <div class="pick-for-me">
+                            <p>Pick a topic for me</p>
+                        </div>
+                    </a>
+                    <a href="list.php">
+                        <div class="pick-for-me">
+                            <p>View all topics</p>
+                        </div>
+                    </a>
                 </div>
-                <a href="random.php">
-                    <div class="pick-for-me">
-                        <p>Pick a topic for me</p>
-                    </div>
-                </a>
-                <a href="list.php">
-                    <div class="pick-for-me">
-                        <p>View all topics</p>
-                    </div>
-                </a>
+                <img src="Images/Tree.png">
             </div>
         </div>
         <?php echo $footerFile;?>
