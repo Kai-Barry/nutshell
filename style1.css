@@ -320,7 +320,7 @@ ul {
         width: 80%;
     }
     .recommendation {
-        width: 80%;
+        width: 80% !important;
     }
 }
 
