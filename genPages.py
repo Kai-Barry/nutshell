@@ -1,4 +1,3 @@
-from cv2 import add
 import openai, os, sys
 import requests
 from bs4 import BeautifulSoup
@@ -56,7 +55,10 @@ def createImages(topic, subheadings):
         i = 0
         added = False
         for image in images:
-            src = image['src']
+            try:
+                src = image['src']
+            except:
+                continue
             if "data:image" in src or 'gif' in src or ';base64' in src: #avoid pure data images
                 continue
             if src in result:
