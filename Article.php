@@ -1,27 +1,27 @@
 <?php
 $page = strtolower(htmlspecialchars($_GET["page"]));
 if (!file_exists("/var/www/html/pages/" . $page  . ".data")) {
-		echo "error: /var/www/html/pages/" . $page  . ".data";
-		header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
-		exit();
+        echo "error: /var/www/html/pages/" . $page  . ".data";
+        header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
+        exit();
 }
 $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
 $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 $file = file_get_contents("./pages/" . $page  . ".data", FILE_USE_INCLUDE_PATH);
 $data = explode("\======/", $file);
 foreach ($data as &$value) {
-		$value = preg_split("/\r\n|\n|\r/", $value);
-		$i = 0;
-		foreach ($value as &$line) {
-				if ($line[0] == '#') {
-						unset($value[$i]);
-				}
-				else if (substr($line, 0, 3) == '***') {
-						$value[$i] =substr($value[$i], 3);
-				}
-				$i++;
-		}
-		$value = array_filter(array_values($value));
+        $value = preg_split("/\r\n|\n|\r/", $value);
+        $i = 0;
+        foreach ($value as &$line) {
+                if ($line[0] == '#') {
+                        unset($value[$i]);
+                }
+                else if (substr($line, 0, 3) == '***') {
+                        $value[$i] =substr($value[$i], 3);
+                }
+                $i++;
+        }
+        $value = array_filter(array_values($value));
 }
 unset($value);
 $title = $data[0][0];
@@ -34,21 +34,21 @@ $paras = [];
 $breakpoint = 0;
 $para = "";
 for ($x = 0; $x <= 5; $x++) {
-		$count = 0;
-		foreach ($body as &$line) {
-			$count = $count + 1;
-			if ($count <= $breakpoint) {
-				continue;
-			}
-			else if ($line === "\=====/") {
-				$breakpoint = $count;
-				break;
-			}
-			$para = $para . $line . "\n";
-		}
-		unset($line);
-		$paras[] = $para;
-		unset($para);
+        $count = 0;
+        foreach ($body as &$line) {
+            $count = $count + 1;
+            if ($count <= $breakpoint) {
+                continue;
+            }
+            else if ($line === "\=====/") {
+                $breakpoint = $count;
+                break;
+            }
+            $para = $para . $line . "\n";
+        }
+        unset($line);
+        $paras[] = $para;
+        unset($para);
 }
 
 $headings = [];
@@ -77,9 +77,9 @@ file_put_contents("stats/dict.json",json_encode($files));
 <html  lang="en">
     <head>
     <!--insert header code here-->
-	    <title><?php
+        <title><?php
                 echo $title;
-		        echo $headerFile; ?>
+                echo $headerFile; ?>
         <div class="jumptomenu">
             <div class="jumpto">
                 <a href="#Sub1" id="subOne">

@@ -1,7 +1,7 @@
 /*generic styling*/
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     font-size: 1.5vw;
     text-align: justify;
 }
@@ -10,9 +10,9 @@ a {
     text-decoration: none;
 }
 a:hover {
-	color: #71481f;
-	transition: color, background-color;
-	transition-duration: 0.3s;
+    color: #71481f;
+    transition: color, background-color;
+    transition-duration: 0.3s;
 }
 
 @font-face {
@@ -21,14 +21,14 @@ a:hover {
 }
 
 body {
-	font-family: 'MyWebFont', sans-serif;
-	overflow-x: hidden;
+    font-family: 'MyWebFont', sans-serif;
+    overflow-x: hidden;
     background: #1B5528;
-	/* background-image: linear-gradient(3E9551, 1B5528); */
+    /* background-image: linear-gradient(3E9551, 1B5528); */
 }
 
 ul {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 /*Background*/
@@ -47,7 +47,7 @@ ul {
 
 /*Nav Bar*/
 .nav-bar {
-	/* position: fixed; */
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -71,7 +71,7 @@ ul {
     margin: auto 20px;
     display: flex;
     flex-direction: row;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -92,15 +92,15 @@ ul {
 }
 
 .navigation-bar a:link,.navigation-bar a:visited {
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-button p:hover, .nav-button:hover p {
-	color: #71481f;
-	text-decoration: none;
-	transition: color, background-color;
-	transition-duration: 0.3s;
+    color: #71481f;
+    text-decoration: none;
+    transition: color, background-color;
+    transition-duration: 0.3s;
 }
 .nav-logo {
     display: flex;
@@ -619,15 +619,15 @@ img {
 }
 
 .footer-list a:link,.footer-list a:visited {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .footer-list a:hover {
-	color: #cd863f;
-	text-decoration: none;
-	transition: color, background-color;
-	transition-duration: 0.3s;
+    color: #cd863f;
+    text-decoration: none;
+    transition: color, background-color;
+    transition-duration: 0.3s;
 }
 
 /* Footer Responsive layout*/

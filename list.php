@@ -17,7 +17,8 @@ if (isset($_GET["display"])) {
     <!--insert header code here-->
             <title>List<?php
                 echo $headerFile; ?>
-            <div class="wantMore" style="width:80% !important; float:left !important; margin-left:10% !important; margin-top: 50px">
+            <div class="wantMore"
+                style="width:80% !important; float:left !important; margin-left:10% !important; margin-top: 50px">
                 <h2>Below are all our pages:</h2>
                 <?php
                 echo '<h2 style="text-align:center"><';

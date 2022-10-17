@@ -1,6 +1,6 @@
 <?php
-	$headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
-	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
+    $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
+    $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 
     $latest_ctime = 0;
     $recent = '';
@@ -53,8 +53,8 @@
             element.style.height = (element.scrollHeight)+"px";
         }
     </script>
-	<title>Search<?php
-		echo $headerFile; ?>
+    <title>Search<?php
+        echo $headerFile; ?>
 <!-- Set up template html code here-->
         <div class="one">
             <h1 class="title">Let your curiosity drive you!</h1>
