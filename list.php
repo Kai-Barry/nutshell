@@ -4,11 +4,11 @@ $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 $files = glob('pages/*.data');
 $page = 1;
 if (isset($_GET["page"])) {
-    $page = $_GET["page"];
+    $page = htmlspecialchars($_GET["page"]);
 }
 $display = 20;
 if (isset($_GET["display"])) {
-    $display = $_GET["display"];
+    $display = htmlspecialchars($_GET["display"]);
 }
 ?>
 <!DOCTYPE html>

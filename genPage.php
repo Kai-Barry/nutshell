@@ -1,5 +1,5 @@
 <?php
-        $page = strtolower($_GET["page"]);
+        $page = strtolower(htmlspecialchars($_GET["page"]));
         $command = escapeshellcmd('/var/www/html/genPage.sh "' . $page . '"');
         //echo $command;
         $output = shell_exec($command);
