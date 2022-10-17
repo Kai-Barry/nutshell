@@ -1,3 +1,4 @@
+from cv2 import add
 import openai, os, sys
 import requests
 from bs4 import BeautifulSoup
@@ -53,11 +54,19 @@ def createImages(topic, subheadings):
         soup = BeautifulSoup(page.content, "html.parser")
         images = soup.find_all('img', class_='mimg')
         i = 0
-        image = images[i]['src']
-        while image in result and i < 8:
-            i += 1
-            image = images[i]['src']
-        result.append(image)
+        added = False
+        for image in images:
+            src = image['src']
+            if "data:image" in src or 'gif' in src or ';base64' in src: #avoid pure data images
+                continue
+            if src in result:
+                continue
+            else:
+                result.append(src)
+                added = True
+                break
+        if added == False:
+            result.append("#") #placeholder for empty image
     return result
 
 
