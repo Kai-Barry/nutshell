@@ -7,9 +7,7 @@
     <head>
 	<title>Ethics<?php
 		echo $headerFile; ?>
-        <center>
-            <h1 class="title">About Us</h1>
-        </center>
+        <h1 class="title">About Us</h1>
         <div class="AboutBox">
             <div class="AboutMessage">
                 <h4>The In a Nutshell Team (🦖➕☄️=☠️) is a group of university students that are passionate about making online experiences simpler and accessible to everyone. Combining our unique perspectives and passions, we are a diverse team that seeks to create unique and engaging experiences through our different skill sets.  

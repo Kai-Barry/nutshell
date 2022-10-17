@@ -97,10 +97,10 @@ if (isset($_GET["display"])) {
                     echo '
                     <div style="float:left; width:50%;">
                         <a href="Article.php?page=' . $fileName . '">
-                            <center class="relate">
+                            <div class="relate" style="margin-left:auto; margin-right:auto">
                                 <img style="width:80%"src="' . $image . '">
                                 <h2>' . $fileTitle . '</h2>
-                            </center>
+                            </div>
                         </a>
                     </div>';
                     if ($i % 2 == 1) {

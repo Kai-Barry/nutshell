@@ -129,7 +129,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                 </a>
             </div>
         </div>
-        <center class="textPlus">
+        <div class="textPlus" style="margin-left:auto; margin-right:auto">
             <div class="article">
                 <div class="articleContainer">
                     <h1><?php echo $header;?></h1>
@@ -195,10 +195,10 @@ file_put_contents("stats/dict.json",json_encode($files));
                         }
                         echo '
                         <a href="Article.php?page=' . $fileName . '">
-                            <center class="relate">
+                            <div class="relate" style="margin-left:auto; margin-right:auto">
                                 <img src="' . $image . '">
                                 <h2>' . $fileTitle . '</h2>
-                            </center>
+                            </div>
                         </a>';
                         if ($i % 2 == 1) {
                             echo '</div>';
@@ -212,7 +212,7 @@ file_put_contents("stats/dict.json",json_encode($files));
                     <div class="spacer"></div>
                 </div>
             </div>
-        </center>
+            </div>
         <div class="spacer"></div>
         <!--insert body code here-->
         <?php echo $footerFile;?>

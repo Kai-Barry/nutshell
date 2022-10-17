@@ -212,6 +212,8 @@ img {
     justify-content: space-evenly;
     margin-bottom: 50px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 .title div {
