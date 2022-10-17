@@ -4,10 +4,11 @@
         $recent = '';
         $files = glob('stats/currVisits*.json');
         foreach($files as $file) {
-            if (is_file($file) && filectime($file) > $latest_ctime && $file != "stats/currVisits-" . date("Y-m-d") . ".json") {
-                    $latest_ctime = filectime($file);
-                    $recent = $file;
-            }
+                if (is_file($file) && filectime($file) > $latest_ctime
+                        && $file != "stats/currVisits-" . date("Y-m-d") . ".json") {
+                        $latest_ctime = filectime($file);
+                        $recent = $file;
+                }
         }
         //Compare files
         $oldDictName = $recent;
