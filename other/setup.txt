@@ -2,11 +2,7 @@
 
 autoindex off;
 
-location ~ .htaccess {
-    return 404;
-}
-
-location ~ \.(sh|py|old|html|json|txt)$ {
+location ~ \.(sh|py|old|html|json|md)$ {
     return 404;
 }
 
@@ -15,6 +11,10 @@ location ~ old/* {
 }
 
 location ~ stats/* {
+    return 404;
+}
+
+location ~ testing* {
     return 404;
 }
 

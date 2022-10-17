@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://deco3801-dinosandcometsequaldeath.uqcloud.net/</title>
+  <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/</link>
+
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/</link>
+     <title>Search - In a Nutshell</title>
+     <description>Search - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/summarise.php</link>
+     <title>Summariser - In a Nutshell</title>
+     <description>Summariser - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/list.php</link>
+     <title>List - In a Nutshell</title>
+     <description>List - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/Ethics.php</link>
+     <title>Ethics - In a Nutshell</title>
+     <description>Ethics - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/Ethos.php</link>
+     <title>Ethos - In a Nutshell</title>
+     <description>Ethos - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://deco3801-dinosandcometsequaldeath.uqcloud.net/About.php</link>
+     <title>Ethics - In a Nutshell</title>
+     <description>Ethics - In a Nutshell</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
