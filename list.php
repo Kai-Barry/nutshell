@@ -12,7 +12,7 @@ if (isset($_GET["display"])) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html  lang="en">
     <head>
     <!--insert header code here-->
             <title>List<?php

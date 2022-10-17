@@ -37,7 +37,7 @@
     $popularImage = explode("\n", explode("\======/", $file)[2])[1];
 ?>
 <!DOCTYPE html>
-<html>
+<html  lang="en">
     <head>
     <meta name="google-site-verification" content="QTQpuTXPDRKhbp3taY6chLsDu5tFqz7XhMIsaknx5o4" />
     <script>

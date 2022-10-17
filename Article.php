@@ -99,7 +99,7 @@ $files["pages/" . $page  . ".data"] += 1;
 file_put_contents("stats/dict.json",json_encode($files));
 ?>
 <!DOCTYPE html>
-<html>
+<html  lang="en">
     <head>
     <!--insert header code here-->
 	    <title><?php

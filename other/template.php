@@ -3,7 +3,7 @@
 	$footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 ?>
 <!DOCTYPE html>
-<html>
+<html  lang="en">
     <head>
     <!--insert header code here-->
 	    <title><!--Page title the php will append the site name after--><?php
