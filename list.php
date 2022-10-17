@@ -17,8 +17,7 @@ if (isset($_GET["display"])) {
     <!--insert header code here-->
             <title>List<?php
                 echo $headerFile; ?>
-            <div class="wantMore" style="width:80% !important; float:left !important; margin-left:10% !important <?php // ; max-length:<?php echo (ceil(((count($files) - ($display * ($page - 1))) % 20) / 4) * 350) + 66;
-            ?>">
+            <div class="wantMore" style="width:80% !important; float:left !important; margin-left:10% !important>
                 <h2>Below are all our pages:</h2>
                 <?php
                 echo '<h2 style="text-align:center"><';
@@ -79,7 +78,9 @@ if (isset($_GET["display"])) {
                 </h2>
                 <?php
                 $i = 0;
-                for ($index = (($page - 1) * $display); $index < ($page * $display) && $index < count($files); $index++) {
+                for ($index = (($page - 1) * $display);
+                    $index < ($page * $display) && $index < count($files);
+                    $index++) {
                     $file = $files[$index];
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
@@ -119,10 +120,14 @@ if (isset($_GET["display"])) {
                 }
                 echo '<div class="spacer"></div>';
                 if ($page > 1) {
-                    echo '<a style="text-decoration:none"  href="/list.php?display=' . $display . '&page=' . ($page - 1) . '"><div class="pick-for-me" style="float:left"><p>Previous Page</p></div></a>';
+                    echo '<a style="text-decoration:none"  href="/list.php?display='
+                        . $display . '&page=' . ($page - 1)
+                        . '"><div class="pick-for-me" style="float:left"><p>Previous Page</p></div></a>';
                 }
                 if ($page < $maxPage) {
-                    echo '<a style="text-decoration:none" href="/list.php?display=' . $display . '&page=' . ($page + 1) . '"><div class="pick-for-me" style="float:right"><p>Next Page</p></div></a>';
+                    echo '<a style="text-decoration:none" href="/list.php?display='
+                        . $display . '&page=' . ($page + 1)
+                        . '"><div class="pick-for-me" style="float:right"><p>Next Page</p></div></a>';
                 }
                 ?>
                 <div class="spacer"></div>
