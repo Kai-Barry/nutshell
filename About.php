@@ -16,7 +16,7 @@
                 </h4>
                 <h4>We’re just students who want to make the process of being a student easier for the next generation; we hope we’ve succeeded. 
                 </h4>
-                <h4>This page is open source and is available on <a href="https://github.com/Kai-Barry/nutshell">github</a>. 
+                <h4>This page is open source and is available on <a href="https://github.com/Kai-Barry/nutshell">github</a>.
                 </h4>
                 <div class="image">
                     <img id="nav-logo-1" src="/images/Logo 01- 600 x 600 px.png" alt="Navigation logo">
