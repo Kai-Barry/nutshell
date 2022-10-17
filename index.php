@@ -5,10 +5,8 @@
     $latest_ctime = 0;
     $recent = '';
     $files = glob('pages/*.data');
-    foreach($files as $file)
-    {
-            if (is_file($file) && filectime($file) > $latest_ctime)
-            {
+    foreach ($files as $file) {
+            if (is_file($file) && filectime($file) > $latest_ctime) {
                     $latest_ctime = filectime($file);
                     $recent = $file;
             }

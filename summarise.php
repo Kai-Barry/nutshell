@@ -3,11 +3,11 @@
     $footerFile = file_get_contents("./pages/footer.html", FILE_USE_INCLUDE_PATH);
 
     $text = "Your translated text will appear here.";
-    if(strlen(htmlspecialchars($_POST['inputText'])) > 0){ //check if form was submitted
+    if (strlen(htmlspecialchars($_POST['inputText'])) > 0) { //check if form was submitted
         $input = htmlspecialchars($_POST['inputText']); //get input text
         $command = escapeshellcmd('/var/www/html/summarise.sh "' . $input .  '" 2>&1 &');
         $output = shell_exec($command);
-        if (strpos($output, "An error occured processing that") == false) {
+        if (!(strpos($output, "An error occured processing that"))) {
             $text = $output;
         }
     }

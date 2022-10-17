@@ -6,5 +6,4 @@
                 echo $file . "\n";
         }
         mkdir("stats");
-        file_put_contents("stats/dict.json",json_encode($dict));
-?>
+        file_put_contents("stats/dict.json", json_encode($dict));

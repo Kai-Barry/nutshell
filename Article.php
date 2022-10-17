@@ -15,8 +15,7 @@ foreach ($data as &$value) {
         foreach ($value as &$line) {
                 if ($line[0] == '#') {
                         unset($value[$i]);
-                }
-                else if (substr($line, 0, 3) == '***') {
+                } elseif (substr($line, 0, 3) == '***') {
                         $value[$i] =substr($value[$i], 3);
                 }
                 $i++;
@@ -39,8 +38,7 @@ for ($x = 0; $x <= 5; $x++) {
             $count = $count + 1;
             if ($count <= $breakpoint) {
                 continue;
-            }
-            else if ($line === "\=====/") {
+            } elseif ($line === "\=====/") {
                 $breakpoint = $count;
                 break;
             }
@@ -55,7 +53,7 @@ $headings = [];
 $i = 0;
 //Isolate headings
 foreach ($paras as $para) {
-    $headings[$i] = explode("\n",$para)[0];
+    $headings[$i] = explode("\n", $para)[0];
     $i++;
 }
 
@@ -64,14 +62,14 @@ $paragraphs = [];
 $i = 0;
 //Isolate headings
 foreach ($paras as $para) {
-    $paragraphs[$i] = explode("\n",$para)[1];
+    $paragraphs[$i] = explode("\n", $para)[1];
     $i++;
 }
 
 
 $files = json_decode(file_get_contents('stats/dict.json'), true);
 $files["pages/" . $page  . ".data"] += 1;
-file_put_contents("stats/dict.json",json_encode($files));
+file_put_contents("stats/dict.json", json_encode($files));
 ?>
 <!DOCTYPE html>
 <html  lang="en">

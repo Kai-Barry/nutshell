@@ -6,9 +6,7 @@
         if (strpos($output, "Success") !== false || strpos($output, "Page exists") !== false) {
                 $page = explode(": ", $output)[1];
                 header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/Article.php?page=' . $page);
-        }
-        else {
+        } else {
                 header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/OhNoPage.php');
         }
         exit();
-?>
