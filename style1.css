@@ -937,24 +937,29 @@ img {
  }
 
  .articleContainer img{
-    width: 49%;
+    padding: 1%;
+    width: 48%;
     float: left;
  }
 
  .articleContainer p{
-    width: 49%;
+    padding: 1%;
+    width: 48%;
     text-align: justify;
     float: left;
  }
 
  .articleContainer h3{
-    width: 49%;
+    padding: 1%;
+    width: 48%;
     float: left;
  }
 
  .articleContainer h1{
-    width: 49%;
+    padding: 1%;
+    width: 48%;
     float: left;
+    text-align: center;
  }
 
  .articleContainer {

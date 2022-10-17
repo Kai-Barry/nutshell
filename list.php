@@ -97,8 +97,8 @@ if (isset($_GET["display"])) {
                     echo '
                     <div style="float:left; width:50%;">
                         <a href="Article.php?page=' . $fileName . '">
-                            <div class="relate" style="margin-left:auto; margin-right:auto">
-                                <img style="width:80%"src="' . $image . '">
+                            <div class="relate" >
+                                <img style="width:80%; margin-left:10%; margin-right:10%" src="' . $image . '">
                                 <h2>' . $fileTitle . '</h2>
                             </div>
                         </a>
