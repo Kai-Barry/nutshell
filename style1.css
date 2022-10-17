@@ -169,6 +169,10 @@ ul {
     }
 }
 
+img {
+    object-fit: cover;
+}
+
  /* Main screen*/
  .one {
     flex: 1;
@@ -361,6 +365,7 @@ ul {
     margin: 10px;
     display: flex;
     flex-direction: column;
+    width: 50%;
     justify-content: space-evenly;
 }
 
@@ -389,6 +394,15 @@ ul {
     margin-left: 25px;
     margin-right: 25px;
     width: 80%;
+    height: 20vw;
+}
+@media screen and (max-width: 1500px) {
+    .reco-box-section {
+        width: 100% !important;
+    }
+    .reco-box img {
+        height: 50vw;
+    }
 }
 
 .box-page-title {
