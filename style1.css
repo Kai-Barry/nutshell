@@ -20,7 +20,7 @@ a:hover {
 }
 
 body {
-	font-family: 'MyWebFont';
+	font-family: 'MyWebFont', sans-serif;
 	overflow-x: hidden;
     background: #1B5528;
 	/* background-image: linear-gradient(3E9551, 1B5528); */
@@ -179,18 +179,14 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
     width: 100%;
-    height: calc(100% - 560px);
  }
  .two {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
     width: 100%;
-    height: calc(100% - 560px);
  }
 
  .two a {
@@ -281,7 +277,7 @@ img {
     width:100%;
 }
  #search-element {
-    font-family: 'MyWebFont', cursive;
+    font-family: 'MyWebFont', sans-serif;
     background-color: transparent;
     border: none;
     outline: none;
@@ -484,7 +480,6 @@ img {
 .translater-box {
     flex:1;
     z-index: 3;
-    height: 100px;
     border: 7px solid #875930;
     background: #FFFDF6;
     box-shadow: none;
@@ -509,8 +504,6 @@ img {
 .translate-text-box {
     flex:1;
     z-index: 3;
-    height: 100px;
-    margin: 20px;
     border: 7px solid #875930;
     background: #FFFDF6;
     box-shadow: none;
@@ -536,7 +529,7 @@ img {
 
 .summarise-button p {
     font-size: 32px;
-    font-family: 'MyWebFont';
+    font-family: 'MyWebFont', sans-serif;
     color:white;
     margin-left: 25px;
     margin-right: 25px;
@@ -756,50 +749,12 @@ img {
     margin-right: 5vw;
  }
 
- .sub1 {
+ .sub {
     background-size: 100px;
-    background-color:#C9864E;
-    box-shadow: none;
     border-radius: 30px;
     border-color: black;
     border-width: 2px;
     border-style: solid;
-    padding: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
- }
-
- .sub2 {
-    background-size: 100px;
-    background-color:#875930;
-    box-shadow: none;
-    border-radius: 30px;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
- }
-
- .sub3 {
-    background-size: 100px;
-    background-color:#6F442A;
-    box-shadow: none;
-    border-radius: 30px;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
- }
-
- .sub4 {
-    background-size: 100px;
-    background-color:#5D3525;
-    box-shadow: none;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 30px;
     padding: 10px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.39);
  }
@@ -912,16 +867,7 @@ img {
         display: block;
         text-align: center;
     }
-    .sub1 {
-        margin-bottom: 20px;
-    }
-    .sub2 {
-        margin-bottom: 20px;
-    }
-    .sub3 {
-        margin-bottom: 20px;
-    }
-    .sub4 {
+    .sub {
         margin-bottom: 20px;
     }
     #nav-logo-1 {

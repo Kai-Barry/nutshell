@@ -108,22 +108,22 @@ file_put_contents("stats/dict.json",json_encode($files));
         <div class="jumptomenu">
             <div class="jumpto">
                 <a href="#Sub1" id="subOne">
-                    <div class="sub1">
+                    <div class="sub" style="background-color:#C9864E">
                         <?php echo $headings[2];?>
                     </div>
                 </a>
                 <a href="#Sub2" id="subTwo">
-                    <div class="sub2">
+                    <div class="sub" style="background-color:#875930">
                         <?php echo $headings[3];?>
                     </div>
                 </a>
                 <a href="#Sub3" id="subThree">
-                    <div class="sub3">
+                    <div class="sub" style="background-color:#6F442A">
                         <?php echo $headings[4];?>
                     </div>
                 </a>
                 <a href="#Sub4" id="subFour">
-                    <div class="sub4">
+                    <div class="sub" style="background-color:#5D3525">
                     <?php echo $headings[5];?></a>
                     </div>
                 </a>
