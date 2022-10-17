@@ -851,12 +851,15 @@ img {
         clear: both;
         float: none !important;
         width: 90% !important;
+        margin: 50px auto;
     }
 
     .wantMore {
         clear: both;
         float: none !important;
         width: 90% !important;
+        margin: 50px auto;
+        margin-top: 0px;
     }
 
     .moreArt a {
