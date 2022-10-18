@@ -62,7 +62,7 @@
     <title>Search<?php
         echo $headerFile; ?>
 <!-- Set up template html code here-->
-        <div class="one">
+        <div class="one" id ="one">
             <h1 class="title">Let your curiosity drive you!</h1>
             <div class="search">
                 <div class="search-bar">
