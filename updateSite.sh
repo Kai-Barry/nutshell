@@ -23,6 +23,7 @@ chmod +x updateSite.sh
 chmod -R g+w .
 sudo chgrp -R sysadmin .
 #ensure requirements are up to date for www-data user's python space
-sudo -u www-data php other/requirements.php
+#this can be toggled on if needed
+#sudo -H -u www-data pip3 install --upgrade -r other/requirements.txt
 #Transfer ownership to www-data
 sudo chown -R www-data .

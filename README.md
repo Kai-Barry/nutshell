@@ -21,7 +21,7 @@ The site is hosted at www.inanutshell.info however, you can follow these instruc
 
 ### Prerequisites
 
-- Python 3.7
+- Python 3.7 (Other versions can be used if all requirements are met)
 - Nginx or apache2 (apache2 will require similar setup but exact details not specified here)
 - PHP7.x (preferably 7.4)
 
@@ -43,6 +43,7 @@ unzip main.zip
 rm main.zip
 chmod +x updateSite.sh
 sudo ./updateSite.sh
+sudo -H -u www-data pip3 install --upgrade -r other/requirements.txt
 ```
 
 Once this is done you will need to update genPage.sh to include you openai key/s.
