@@ -22,7 +22,7 @@ The site is hosted at www.inanutshell.info however, you can follow these instruc
 ### Prerequisites
 
 - Python 3.7 (Other versions can be used if all requirements are met)
-- Nginx or apache2 (apache2 will require similar setup but exact details not specified here)
+- Nginx or apache2
 - PHP7.x (preferably 7.4)
 
 ### Notes
@@ -50,7 +50,8 @@ Once this is done you will need to update genPage.sh to include you openai key/s
 
 ### Setup web server config
 
-Once this is complete the nginx or apache2 site-config/.htaccess file needs to be updated to include the requirements specified in: other/setup.txt.
+skip this stage if using apache2, a .htaccess file has been provided for you
+Once this is complete the nginx  site-config file needs to be updated to include the requirements specified in: other/setup.txt.
 In Nginx this is done by adding the following to the site's config in the server class:
 ```
 autoindex off;
