@@ -34,7 +34,7 @@ Deny from all
 </FilesMatch>
 
 # Prevent Apache from serving protected dirs:
-<FilesMatch "(old|stats|testing)*">
+<FilesMatch "/(old|stats|testing)*">
 Order allow,deny
 Deny from all
 </FilesMatch>
