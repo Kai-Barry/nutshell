@@ -45,6 +45,8 @@ chmod +x updateSite.sh
 sudo ./updateSite.sh
 ```
 
+Once this is done you will need to update genPage.sh to include you openai key/s.
+
 ### Setup web server config
 
 Once this is complete the nginx or apache2 site-config/.htaccess file needs to be updated to include the requirements specified in: other/setup.txt.
