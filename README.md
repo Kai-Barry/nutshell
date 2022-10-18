@@ -36,13 +36,13 @@ The updateSite.sh script also assumes the php user is set to the default 'www-da
 
 The first step is to setup your webserver so it is capable of serving a php page.
 Once this is done the site can be installed.
-The following commands will perform most of the setup required:
+The following commands will perform most of the setup required and must be run as admin e.g. sudo, doas:
 ```
-wget https://github.com/Kai-Barry/nutshell/archive/refs/heads/main.zip
-unzip main.zip
-rm main.zip
-chmod +x updateSite.sh
-sudo ./updateSite.sh
+sudo wget https://github.com/Kai-Barry/nutshell/archive/refs/heads/main.zip
+sudo unzip main.zip
+sudo rm main.zip
+sudo chmod +x nutshell-main/updateSite.sh
+sudo nutshell-main/updateSite.sh
 sudo -H -u www-data pip3 install --upgrade -r other/requirements.txt
 ```
 
@@ -88,3 +88,7 @@ Then add the following line to the bottom:
 `50 23 * * * cd /var/www/html && php stats/compareDictionary.php`
 
 Each day, just before midnight, this will log the sites that were accessed that day and the ones newly created that day.
+
+### Final changes
+
+Finally, the sitemap files will need to be updated to reflect your actual domain, if needed/used.

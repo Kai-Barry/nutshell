@@ -21,7 +21,7 @@ mv old/stats/*.json ./stats/
 #update permissions
 chmod +x updateSite.sh
 chmod -R g+w .
-sudo chgrp -R sysadmin .
+sudo chgrp -R www-data .
 #ensure requirements are up to date for www-data user's python space
 #this can be toggled on if needed
 #sudo -H -u www-data pip3 install --upgrade -r other/requirements.txt

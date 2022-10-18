@@ -2,7 +2,7 @@
 $page = strtolower(htmlspecialchars($_GET["page"]));
 if (!file_exists("/var/www/html/pages/" . $page  . ".data")) {
         echo "error: /var/www/html/pages/" . $page  . ".data";
-        header('Location: https://deco3801-dinosandcometsequaldeath.uqcloud.net/genPage.php?page=' . $page);
+        header('Location: /genPage.php?page=' . $page);
         exit();
 }
 $headerFile = file_get_contents("./pages/header.html", FILE_USE_INCLUDE_PATH);
