@@ -21,7 +21,7 @@ The site is hosted at www.inanutshell.info however, you can follow these instruc
 
 ### Prerequisites
 
-- Python 3.7 (Other versions can be used if all requirements are met)
+- Python 3.10 (Other versions can be used if all requirements are met)
 - Nginx or apache2
 - PHP7.x (preferably 7.4)
 

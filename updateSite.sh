@@ -20,6 +20,7 @@ mv old/pages/*.data pages/
 mv old/stats/*.json ./stats/
 #update permissions
 chmod +x updateSite.sh
+chmod +x genPage.sh
 chmod -R g+w .
 sudo chgrp -R www-data .
 #ensure requirements are up to date for www-data user's python space
