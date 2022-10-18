@@ -2,6 +2,9 @@
 
 autoindex off;
 
+error_page 404 = /OhNoPage.php;
+error_page 403 = /OhNoPage.php;
+
 location ~ \.(sh|py|old|html|json|md)$ {
     return 404;
 }
@@ -17,8 +20,6 @@ location ~ stats/* {
 location ~ testing* {
     return 404;
 }
-
-error_page   404 403  /OhNoPage.php;
 
 sudo crontab -e
 50 23 * * * cd /var/www/html && php stats/compareDictionary.php

@@ -1,0 +1,4 @@
+pip
+openai
+requests
+bs4
