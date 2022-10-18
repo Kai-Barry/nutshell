@@ -44,6 +44,12 @@
             if (element.value.includes("\n") || element.value.includes("\r")) {
                 element.value = element.value.replace(/[\r\n]/gm, '');
                 if (element.value.length > 0) {
+                    const para = document.createElement("p");
+                    const node = document.createTextNode("Loading");
+                    para.appendChild(node);
+                    const element = document.getElementById("one");
+                    element.appendChild(para);
+                    
                     window.location.href = "/genPage.php?page=" + element.value;
                 }
             }
