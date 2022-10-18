@@ -1,0 +1,40 @@
+# Disable directory browsing
+Options -Indexes
+
+#Alternate default index pages
+DirectoryIndex index.php
+
+#404 error page
+ErrorDocument 404 /OhNoPage.php
+#403 error page
+ErrorDocument 403 /OhNoPage.php
+
+# Prevent Apache from serving .ht* files:
+<FilesMatch "^\.ht">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Prevent Apache from serving .log files:
+<FilesMatch "\.log">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Prevent Apache from serving .bat files:
+<FilesMatch "\.bat">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Prevent Apache from serving .sh files:
+<FilesMatch "\.(sh|py|old|html|json|md)">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Prevent Apache from serving protected dirs:
+<FilesMatch "(old|stats|testing)*">
+Order allow,deny
+Deny from all
+</FilesMatch>
