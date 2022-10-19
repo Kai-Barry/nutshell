@@ -57,7 +57,7 @@ def createImages(topic, subheadings):
         for image in images:
             if not image.has_key('src'):
                 continue
-            src = image['src']
+            src = image['src'].split('?')[0]
             if "data:image" in src or 'gif' in src or ';base64' in src: #avoid pure data images
                 continue
             if src in result:
