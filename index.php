@@ -27,12 +27,28 @@
     $file = file_get_contents($recent, FILE_USE_INCLUDE_PATH);
     $recent = substr($recent, 6, strlen($recent)-strlen("pages/.data"));
     $recentTitle = preg_split("/\r\n|\n|\r/", $file)[2];
-    $recentImage = explode("\n", explode("\======/", $file)[2])[1];
+    $images = explode("\n", explode("\======/", $file)[2]);
+    $recentImage = "";
+    //Make sure an image is displayed
+    foreach ($images as &$im) {
+        if ($im != "#") {
+            $recentImage = $im;
+            break;
+        }
+    }
 
     $file = file_get_contents($popular, FILE_USE_INCLUDE_PATH);
     $popular = substr($popular, 6, strlen($popular)-strlen("pages/.data"));
     $popularTitle = preg_split("/\r\n|\n|\r/", $file)[2];
-    $popularImage = explode("\n", explode("\======/", $file)[2])[1];
+    $images = explode("\n", explode("\======/", $file)[2]);
+    $popularImage = "";
+    //Make sure an image is displayed
+    foreach ($images as &$im) {
+        if ($im != "#") {
+            $popularImage = $im;
+            break;
+        }
+    }
 ?>
 <!DOCTYPE html>
 <html  lang="en">
