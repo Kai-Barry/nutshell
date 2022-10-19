@@ -19,7 +19,7 @@ In a Nutshell is a website that is powered by openAI's GPT 3 to create articles 
 
 ## Installation
 
-The site is hosted at www.inanutshell.info however, you can follow these instructions to setup your own version of the site and tinker around with how it works.
+The site is hosted at https://www.inanutshell.info or https://deco3801-dinosandcometsequaldeath.uqcloud.net however, you can follow these instructions to setup your own version of the site and tinker around with how it works.
 
 ### Prerequisites
 
