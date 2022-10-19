@@ -50,7 +50,7 @@
 //                     para.setAttribute('style', 'padding-top:50px; text-align: center')
 //                     const insertElement = document.getElementById("one");
 //                     insertElement.appendChild(para);
-                    document.getElementById("loading").style.visibility = "visible";
+                    document.getElementById("loading").style.visibility = "hidden";
                     
                     window.location.href = "/genPage.php?page=" + element.value;
                 }
