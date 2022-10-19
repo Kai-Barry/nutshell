@@ -102,7 +102,7 @@ file_put_contents("stats/dict.json", json_encode($files));
                 </a>
                 <a href="#Sub4" id="subFour">
                     <div class="sub" style="background-color:#5D3525">
-                    <?php echo $headings[5];?></a>
+                        <?php echo $headings[5];?>
                     </div>
                 </a>
             </div>
