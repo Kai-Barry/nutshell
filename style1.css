@@ -890,6 +890,7 @@ img {
     padding: 1%;
     width: 48%;
     float: left;
+    min-height: 3vw;
  }
 
  .articleContainer p{
