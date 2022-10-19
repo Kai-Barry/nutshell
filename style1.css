@@ -1053,5 +1053,6 @@ img {
 .loading h2 {
     visibility: hidden;
     text-align: center;
-    padding: 5px;
+    padding-top: 50px;
+    color: white;
 }

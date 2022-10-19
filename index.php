@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <h2 class="loading" id="loading" style="visibility: hidden;">Loading...</h2>
+            <h2 class="loading" id="loading">Loading...</h2>
         </div>
         <div class="two">
             <div class="between-two-ferns">
