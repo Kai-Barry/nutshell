@@ -272,6 +272,12 @@ img {
     margin-right: 30px;
 }
 
+.loading {
+    visibility: hidden;
+    text-align: center;
+    padding: 5px;
+}
+
 .search-input {
     display: flex;
     align-items: center;
@@ -457,10 +463,6 @@ img {
     text-decoration: none;
     transition: color, background-color;
     transition-duration: 0.3s;
-}
-
-.loading {
-    visibility: hidden;
 }
 
 /* Recomendation Responsive layout*/
