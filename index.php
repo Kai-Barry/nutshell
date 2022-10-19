@@ -44,12 +44,13 @@
             if (element.value.includes("\n") || element.value.includes("\r")) {
                 element.value = element.value.replace(/[\r\n]/gm, '');
                 if (element.value.length > 0) {
-                    const para = document.createElement("p");
-                    const node = document.createTextNode("Loading...");
-                    para.appendChild(node);
-                    para.setAttribute('style', 'padding-top:50px; text-align: center')
-                    const insertElement = document.getElementById("one");
-                    insertElement.appendChild(para);
+//                     const para = document.createElement("p");
+//                     const node = document.createTextNode("Loading...");
+//                     para.appendChild(node);
+//                     para.setAttribute('style', 'padding-top:50px; text-align: center')
+//                     const insertElement = document.getElementById("one");
+//                     insertElement.appendChild(para);
+                    document.getElementById("loading").style.visibility = "visible";
                     
                     window.location.href = "/genPage.php?page=" + element.value;
                 }
@@ -74,6 +75,7 @@
                     </div>
                 </div>
             </div>
+            <h2 class="loading" id="loading">Loading...</h2>
         </div>
         <div class="two">
             <div class="between-two-ferns">
