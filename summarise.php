@@ -15,6 +15,12 @@
 <!DOCTYPE html>
 <html  lang="en">
     <head>
+    <script>
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight)+"px";
+        }
+    </script>
     <title>Summariser<?php
         echo $headerFile; ?>
     <div class="one">
@@ -33,7 +39,7 @@
                         echo 'style="min-width:50%"';
                         }?>>
                         <textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..."
-                            autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"><?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
+                            autocomplete="off" autocapitalize="off" crows="1" spellcheck="false" oninput="auto_grow(this)" onresize="auto_grow(this)"><?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
                         echo $_POST['inputText'];
                         }?></textarea>
                         <div class="spacer"></div>
