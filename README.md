@@ -2,7 +2,9 @@
 
 ## About
 
-In a Nutshell is a website that is powered by openAI's GPT 3 to create articles for children.
+In a Nutshell is a website that is powered by openAI's GPT 3 to create articles for children. Search for a topic on the home page, or find an article from the list of already generated articles. The website will generate an article for anything that it deems appropriate for children and a valid article topic. Each article consists of 5 sections, each with a picture scrapped from the internet. There is also an option to 'translate' text into a more easy to read version.
+
+![main_page](https://i.imgur.com/KoGpxol.png)
 
 ## Features
 
