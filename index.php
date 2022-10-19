@@ -48,6 +48,7 @@
                     const node = document.createTextNode("Loading...");
                     para.appendChild(node);
                     para.style.padding = "5px";
+                    para.style.textAlign = "center";
                     const insertElement = document.getElementById("one");
                     insertElement.appendChild(para);
                     
