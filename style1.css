@@ -493,7 +493,7 @@ img {
 
 .translater-box textarea {
     margin: 10px;
-    margin-left: 0px;
+    margin-right: -20px;
     direction: ltr;
     background-color: transparent;
     border: none;
@@ -501,6 +501,8 @@ img {
     width: 100%;
     resize: vertical;
     min-height: 125px;
+    resize: none;
+    overflow: hidden;
 }
 
 .translate-text-box {
