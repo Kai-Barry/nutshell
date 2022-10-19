@@ -34,7 +34,9 @@
                             autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
                         <div class="spacer"></div>
                     </div>
-                    <div class="translate-text-box">
+                    <div class="translate-text-box" <?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
+                        echo 'style="min-size:50%"'
+                        }?>>
                         <p><?php echo $text;?></p>
                         <div class="spacer"></div>
                     </div>
