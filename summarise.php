@@ -28,15 +28,15 @@
         </div>
         <div class="summarising-area">
             <form action = "" method = "post" style="width:100%">
-                <div class="summariser-result">
+                <div class="summariser-result"<?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
+                        echo 'style="min-size:50%"';
+                        }?>>
                     <div class="translater-box">
                         <textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..."
                             autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"></textarea>
                         <div class="spacer"></div>
                     </div>
-                    <div class="translate-text-box" <?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
-                        echo 'style="min-size:50%"';
-                        }?>>
+                    <div class="translate-text-box">
                         <p><?php echo $text;?></p>
                         <div class="spacer"></div>
                     </div>
