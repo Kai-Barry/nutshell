@@ -26,7 +26,7 @@ unset($value);
 $title = $data[0][0];
 $header = $data[0][1];
 $body = $data[1];
-$images = $data[2];
+$images = $images = explode("\n", explode("\======/", $fileData)[2]);
 
 //Seperate body into paragraph and topics
 $paras = [];
