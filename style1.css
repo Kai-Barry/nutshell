@@ -1050,7 +1050,7 @@ img {
     margin: 20px
 }
 
-.loading h2 {
+.loading {
     visibility: hidden;
     text-align: center;
     padding-top: 50px;
