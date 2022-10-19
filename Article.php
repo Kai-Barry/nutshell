@@ -166,7 +166,15 @@ file_put_contents("stats/dict.json", json_encode($files));
                         $fileData = file_get_contents($files[$subject], FILE_USE_INCLUDE_PATH);
                         $fileName = substr($files[$subject], 6, strlen($files[$subject])-strlen("pages/.data"));
                         $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
-                        $image = explode("\n", explode("\======/", $fileData)[2])[1];
+                        $images = explode("\n", explode("\======/", $file)[2]);
+                        $image = "";
+                        //Make sure an image is displayed
+                        foreach ($images as &$im) {
+                            if ($im != "#") {
+                                $image = $im;
+                                break;
+                            }
+                        }
 
                         if ($i % 2 == 0) {
                             echo '<div class="spacer">';
