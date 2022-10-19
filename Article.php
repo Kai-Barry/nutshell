@@ -26,7 +26,7 @@ unset($value);
 $title = $data[0][0];
 $header = $data[0][1];
 $body = $data[1];
-$images = $images = explode("\n", explode("\======/", $file)[2]);
+$images = explode("\n", explode("\======/", $file)[2]);
 for ($i = 1; $i <= count($images); i++) {
     if ($images[$i] == '#') {
         $images[$i] = '';
