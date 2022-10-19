@@ -45,8 +45,9 @@
                 element.value = element.value.replace(/[\r\n]/gm, '');
                 if (element.value.length > 0) {
                     const para = document.createElement("p");
-                    const node = document.createTextNode("Loading");
+                    const node = document.createTextNode("Loading...");
                     para.appendChild(node);
+                    para.style.padding = "5px";
                     const insertElement = document.getElementById("one");
                     insertElement.appendChild(para);
                     
