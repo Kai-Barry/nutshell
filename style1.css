@@ -272,12 +272,6 @@ img {
     margin-right: 30px;
 }
 
-.loading h2 {
-    visibility: hidden;
-    text-align: center;
-    padding: 5px;
-}
-
 .search-input {
     display: flex;
     align-items: center;
@@ -1049,4 +1043,10 @@ img {
 
 .EthicsMessage h4 {
     margin: 20px
+}
+
+.loading h2 {
+    visibility: hidden;
+    text-align: center;
+    padding: 5px;
 }
