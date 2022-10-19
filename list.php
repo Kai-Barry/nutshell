@@ -90,7 +90,8 @@ if (isset($_GET["display"])) {
                     $image = "";
                     //Make sure an image is displayed
                     foreach ($images as &$im) {
-                        if ($im != "#") {
+                        echo $im . "\n";
+                        if ($im !== "#" && $im !== "") {
                             $image = $im;
                             break;
                         }

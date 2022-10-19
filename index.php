@@ -31,7 +31,7 @@
     $recentImage = "";
     //Make sure an image is displayed
     foreach ($images as &$im) {
-        if ($im != "#") {
+        if ($im !== "#" && $im !== "") {
             $recentImage = $im;
             break;
         }
@@ -44,7 +44,7 @@
     $popularImage = "";
     //Make sure an image is displayed
     foreach ($images as &$im) {
-        if ($im != "#") {
+        if ($im !== "#" && $im !== "") {
             $popularImage = $im;
             break;
         }

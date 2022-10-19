@@ -170,7 +170,7 @@ file_put_contents("stats/dict.json", json_encode($files));
                         $image = "";
                         //Make sure an image is displayed
                         foreach ($images as &$im) {
-                            if ($im != "#") {
+                            if ($im !== "#" && $im !== "") {
                                 $image = $im;
                                 break;
                             }
