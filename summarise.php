@@ -30,7 +30,7 @@
             <form action = "" method = "post" style="width:100%">
                 <div class="summariser-result">
                     <div class="translater-box"<?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
-                        echo 'style="min-size:50%"';
+                        echo 'style="min-width:50%"';
                         }?>>
                         <textarea name="inputText" placeholder ="Enter any paragraph that you want summarised here..."
                             autocomplete="off" autocapitalize="off" crows="1" spellcheck="false"><?php if (strlen(htmlspecialchars($_POST['inputText'])) > 0) {
