@@ -272,7 +272,7 @@ img {
     margin-right: 30px;
 }
 
-.loading {
+.loading h2 {
     visibility: hidden;
     text-align: center;
     padding: 5px;
