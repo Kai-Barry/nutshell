@@ -27,6 +27,11 @@ $title = $data[0][0];
 $header = $data[0][1];
 $body = $data[1];
 $images = $images = explode("\n", explode("\======/", $file)[2]);
+foreach ($images as $im) {
+    if ($im == '#') {
+        $im = '';
+    } 
+}
 
 //Seperate body into paragraph and topics
 $paras = [];

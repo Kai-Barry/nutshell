@@ -87,7 +87,7 @@ if (isset($_GET["display"])) {
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
                     $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
                     $images = explode("\n", explode("\======/", $fileData)[2]);
-                    $image = "#";
+                    $image = "";
                     //Make sure an image is displayed
                     foreach ($images as &$im) {
                         if ($im != "#") {
