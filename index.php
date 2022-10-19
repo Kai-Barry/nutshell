@@ -47,6 +47,7 @@
                     const para = document.createElement("p");
                     const node = document.createTextNode("Loading");
                     para.appendChild(node);
+                    para.setAttribute('style', 'margin-top:50px')
                     const insertElement = document.getElementById("one");
                     insertElement.appendChild(para);
                     
