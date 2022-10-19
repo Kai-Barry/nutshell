@@ -459,6 +459,10 @@ img {
     transition-duration: 0.3s;
 }
 
+.loading {
+    visibility: "hidden";
+}
+
 /* Recomendation Responsive layout*/
 @media screen and (max-width: 1500px) {
     .reco-page {
