@@ -86,7 +86,15 @@ if (isset($_GET["display"])) {
                     $fileData = file_get_contents($file, FILE_USE_INCLUDE_PATH);
                     $fileName = substr($file, 6, strlen($file)-strlen("pages/.data"));
                     $fileTitle = preg_split("/\r\n|\n|\r/", $fileData)[2];
-                    $image = explode("\n", explode("\======/", $fileData)[2])[1];
+                    $images = explode("\n", explode("\======/", $fileData)[2]);
+                    $image = "#";
+                    //Make sure an image is displayed
+                    foreach ($images as &$im) {
+                        if ($im != "#") {
+                            $image = $im;
+                            break;
+                        }
+                    }
                     
                     $direction = "right";
                     if ($i % 4 == 0) {
