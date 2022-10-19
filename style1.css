@@ -411,7 +411,7 @@ img {
 
 .box-page-title {
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .box-page-title p {
@@ -419,6 +419,7 @@ img {
     color: white;
     font-size: 2vw;
     text-decoration: none;
+    text-align: center;
 }
 
 @media screen  and (max-width: 1500px){
